@@ -174,7 +174,7 @@ gulp.task('t',function(){
 
 // start the development
 gulp.task('watch', function () {
-  gulp.start(['injectscss', 'compilescss', 'compilehtml']);
+  gulp.start(['injectscss', 'injectjs', 'compilescss', 'compilehtml']);
   browserSync.init({
     server: {
       baseDir: ["./deploy/dev", "./bower_components", "./resources"]
