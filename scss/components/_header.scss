@@ -1,0 +1,18 @@
+nav{
+
+	position:relative;
+	z-index:1000;
+
+	img.logo{
+		width:120px;
+		margin-top: 13px;
+		margin-left: 20px;
+	}
+
+	.top-navbar{
+		li > a{
+			padding: 0px 50px;
+			font-size: 1.1em;
+		}
+	}
+}

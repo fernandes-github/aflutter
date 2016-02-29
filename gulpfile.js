@@ -133,14 +133,14 @@ gulp.task('c',function(){
     mkdirp(path, function(err){
       fs.writeFileSync('./scss/' + path + '/_' + filename +'.scss', '');
       fs.writeFileSync('./' + path + '/' + filename +'.html', '');
-      gulp.start(['inject']);
+      gulp.start(['injectscss']);
     });
   }
   else{
     var path = 'components/';
     fs.writeFileSync('./scss/' + path + '_' + filename +'.scss', '');
     fs.writeFileSync('./' + path + '/' + filename +'.html', '');
-    gulp.start(['inject']);
+    gulp.start(['injectscss']);
   }
 });
 
@@ -162,13 +162,13 @@ gulp.task('t',function(){
     var path = 'trumps/' + folders;
     mkdirp(path, function(err){
       fs.writeFileSync('./scss/' + path + '/_' + filename +'.scss', '');
-      gulp.start(['inject']);
+      gulp.start(['injectscss']);
     });
   }
   else{
     var path = 'trumps/';
     fs.writeFileSync('./scss/' + path + '_' + filename +'.scss', '');
-    gulp.start(['inject']);
+    gulp.start(['injectscss']);
   }
 });
 
