@@ -1,0 +1,23 @@
+.page-content{
+	margin-left:240px;
+
+	.below-navbar{
+		background-color: #364559;
+	}
+
+	.right{
+		width: 15%;
+    	text-align: center;
+		margin-top: -47px;
+	    position: relative;
+	    z-index: 10000;
+
+	    p{
+	    	color: #fff;
+	    	margin-bottom: 5px;
+    		margin-top: 5px;
+	    }
+	}
+
+}
+

@@ -1,0 +1,27 @@
+.search {
+  position: relative;
+  color: #EDEEEE;
+  font-size: 16px;
+  margin-top: -5px;
+  margin-left: 15px;
+
+  input {
+	  width: 100%;
+	  height: 32px;
+	  background: #4F637F;
+      border: 1px solid #4F637F;
+	  border-radius: 5px;
+	  text-indent: 50px;
+
+	  &:focus{
+	  	border-bottom: 1px solid transparent !important;
+    	box-shadow: none !important;
+	  }
+	}
+
+	.search-icon { 
+	  position: absolute;
+	  top: 5px;
+	  left: 10px;
+	}
+}
