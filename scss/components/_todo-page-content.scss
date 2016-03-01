@@ -1,0 +1,14 @@
+.add-todo{
+	text-align: center;
+    margin-top: -65px;
+    position: relative;
+    z-index: 10000;
+
+    p{
+    	color: #fff;
+    }
+
+	@media #{$medium-and-up}{
+		margin-top: -45px;
+	}
+}
