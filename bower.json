@@ -17,5 +17,8 @@
   ],
   "devDependencies": {
     "Materialize": "materialize#^0.97.5"
+  },
+  "dependencies": {
+    "modernizr": "^3.3.1"
   }
 }
