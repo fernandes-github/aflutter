@@ -19,7 +19,7 @@ var fileinclude = require('gulp-file-include'),
 var MODE = 'dev';
 var JSFILES = [
   './bower_components/jquery/dist/jquery.js',
-  './bower_components/modernizr/lib/js/materialize.js'
+  './bower_components/Materialize/dist/js/materialize.js'
 ];
 
 var onError = function(err) {

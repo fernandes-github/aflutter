@@ -8,6 +8,12 @@ nav{
 		width:120px;
 		margin-top: 13px;
 		margin-left: 20px;
+	
+		@media #{$medium-and-up}{
+			width: 105px;
+		    margin-top: 13px;
+		    margin-left: 10px;
+		}
 	}
 
 	.top-navbar{
@@ -17,11 +23,15 @@ nav{
 			font-weight: 400;
 
 			@media #{$medium-and-up}{
-				padding: 0px 15px;
+				padding: 0px 12px;
 			}
 
 			@media #{$large-and-up}{
-				padding: 0px 50px;
+				padding: 0px 40px;
+			}
+
+			@media only screen and (min-width:1024px){
+				padding: 0px 30px;
 			}
 		}
 	}
