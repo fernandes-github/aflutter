@@ -1,16 +1,18 @@
 .page-content{
-	margin-left:240px;
 
 	.below-navbar{
 		background-color: #364559;
 	}
 
 	.right{
-		width: 15%;
     	text-align: center;
-		margin-top: -47px;
+		margin-top: -40px;
 	    position: relative;
 	    z-index: 10000;
+
+	    @media #{$medium-and-up}{
+	    	margin-top: -47px;
+	    }
 
 	    p{
 	    	color: #fff;

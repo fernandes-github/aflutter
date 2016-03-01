@@ -13,6 +13,14 @@ nav{
 		li > a{
 			padding: 0px 50px;
 			font-size: 1.1em;
+
+			@media #{$medium-and-up}{
+				padding: 0px 15px;
+			}
+
+			@media #{$large-and-up}{
+				padding: 0px 50px;
+			}
 		}
 	}
 }

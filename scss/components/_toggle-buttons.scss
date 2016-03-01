@@ -1,0 +1,23 @@
+.toggle-wrapper{
+	border:1px solid #BE8775;
+	border-radius:7px;
+	line-height:35px;
+	margin-top:-5px;
+
+	div{
+		padding-left: 0px !important;
+		padding-right:0px !important;
+	}
+
+	.incomplete-section{
+		background-color: #F8A382;
+		background-color: #F8A382;
+	    border-top-left-radius: 5px;
+	    border-bottom-left-radius: 5px;
+	    color: #fff;
+	}
+
+	.complete-section{
+		color: #BE8775;
+	}
+}
