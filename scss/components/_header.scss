@@ -1,16 +1,3 @@
-@font-face{
-	src:url('../font/VisbyCF-Medium.ttf');
-	font-family: 'VisbyCF-Medium';
-	src: url('../font/VisbyCF-Medium_gdi.eot');
-	src: url('../font/VisbyCF-Medium_gdi.eot?#iefix') format('embedded-opentype'),
-		 url('../font/VisbyCF-Medium_gdi.woff') format('woff'),
-		 url('../font/VisbyCF-Medium_gdi.ttf') format('truetype');
-	font-weight: 400;
-	font-style: normal;
-	font-stretch: normal;
-	unicode-range: U+0020-25CA;
-}
-
 
 nav{
 
@@ -26,8 +13,7 @@ nav{
 	.top-navbar{
 		li > a{
 			padding: 0px 50px;
-			font-size: 1.4em;
-			font-family: "VisbyCF-Medium";
+			font-size: 1.2em;
 			font-weight: 400;
 
 			@media #{$medium-and-up}{
@@ -37,6 +23,13 @@ nav{
 			@media #{$large-and-up}{
 				padding: 0px 50px;
 			}
+		}
+	}
+
+	#menu-icon{
+		i{
+			font-size: 2rem;
+			color: rgba(105, 117, 132, 0.58);
 		}
 	}
 }

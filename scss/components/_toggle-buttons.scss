@@ -9,15 +9,24 @@
 		padding-right:0px !important;
 	}
 
-	.incomplete-section{
-		background-color: #F8A382;
-		background-color: #F8A382;
-	    border-top-left-radius: 5px;
-	    border-bottom-left-radius: 5px;
-	    color: #fff;
+	.toggle-section{
+	    color: #BE8775;
+	   	cursor: pointer;
+
+		&.border-left-radius{
+			border-top-left-radius: 5px;
+	    	border-bottom-left-radius: 5px;
+		}
+
+		&.border-right-radius{
+			border-top-right-radius: 5px;
+	    	border-bottom-right-radius: 5px;
+		}
+
+	    &.active{
+			background-color: #F8A382;
+			color: #fff;
+	    }
 	}
 
-	.complete-section{
-		color: #BE8775;
-	}
 }
