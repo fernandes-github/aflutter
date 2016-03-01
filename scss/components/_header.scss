@@ -1,3 +1,4 @@
+
 nav{
 
 	position:relative;
@@ -12,7 +13,23 @@ nav{
 	.top-navbar{
 		li > a{
 			padding: 0px 50px;
-			font-size: 1.1em;
+			font-size: 1.2em;
+			font-weight: 400;
+
+			@media #{$medium-and-up}{
+				padding: 0px 15px;
+			}
+
+			@media #{$large-and-up}{
+				padding: 0px 50px;
+			}
+		}
+	}
+
+	#menu-icon{
+		i{
+			font-size: 2rem;
+			color: rgba(105, 117, 132, 0.58);
 		}
 	}
 }

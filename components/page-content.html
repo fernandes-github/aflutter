@@ -1,13 +1,11 @@
-<div class="page-content">
-	<div class="row below-navbar">
-		<div class="col s4">
-			@@include("../components/search.html")
-		</div>
-		<div class="col s8">
-			<div class="right">
-				<a class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">add</i></a>
-				<p>Add Person</p>
-			</div>
+<div class="row below-navbar">
+	<div class="col s8 l4">
+		@@include("../components/search.html", {"placeholder" : "Search people"})
+	</div>
+	<div class="col s4 l8">
+		<div class="right">
+			<a class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">add</i></a>
+			<p>Add Person</p>
 		</div>
 	</div>
 </div>
