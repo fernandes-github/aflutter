@@ -1,14 +1,26 @@
-.add-todo{
-	text-align: center;
-    margin-top: -65px;
-    position: relative;
-    z-index: 10000;
+.to-do-content{
+    margin-bottom: 0;
 
-    p{
-    	color: #fff;
+    .to-do-search{
+        margin-top: 0px;
     }
 
-	@media #{$medium-and-up}{
-		margin-top: -45px;
-	}
+    .add-todo{
+    	text-align: center;
+        margin-top: -65px;
+        position: relative;
+        z-index: 10000;
+        float: right;
+
+        @media #{$large-and-up}{
+            margin-right: 20px;
+        }
+        p{
+        	color: #fff;
+            margin-bottom: 0px;        }
+
+    	@media #{$medium-and-up}{
+    		margin-top: -45px;
+    	}
+    }
 }

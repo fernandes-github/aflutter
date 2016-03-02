@@ -1,0 +1,28 @@
+.card{
+	
+	padding:15px;
+	width:95%;
+
+	.card-img{
+		width: 110px;
+	}
+
+	h5{
+		color: #697584;
+	}
+
+	p{
+		margin-bottom: 0px;
+		margin-top: 5px;
+
+		&.title{
+			color:#ccc;
+			font-size: 1.2em;
+		}
+
+		&.risk-txt{
+			color: #F8A382;
+			font-size: 1.2em;
+		}
+	}
+}

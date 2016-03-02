@@ -1,0 +1,83 @@
+.range-slider-wrapper{
+	background-color:#F8F5F4;
+	padding-top:10px;
+	padding-bottom:30px;
+	-webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.16);
+	   -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.16);
+	        box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.16);
+	position: relative;
+    z-index: 1000;
+
+	p{
+		margin-top:5px;
+		color: #516580;
+	}
+
+	.ui-slider{
+		padding-top: 0px;
+
+		.ui-rangeSlider-container{
+			width: 100% !important;
+			margin: 0px;
+			background: #E6E6E6;
+			border:1px solid #E6E6E6;
+			border-radius: 7px;
+
+			.ui-rangeSlider-innerBar{
+				width: 100% !important;
+			}
+
+			.ui-rangeSlider-bar{
+				@include linear-gradient-left(#364559, #364559, 20%, #CCC, 100%);
+			}
+
+			.ui-rangeSlider-handle{
+				background:#F8A382;
+				width: 25px;
+				border-radius: 7px;
+				height: 35px;
+			}
+		}
+
+		.ui-rangeSlider-label{
+			box-shadow:none;
+			background:none;
+			padding:0px;
+			bottom:-35px;
+			color: #B0B0B0;
+		}
+
+		.ui-rangeSlider-label-inner{
+			display: none;
+		}
+
+		.ui-rangeSlider-leftArrow, .ui-rangeSlider-rightArrow{
+			display: none;
+		}
+	}
+
+	.rings-section{
+
+		color: #516580;
+		margin-top: 40px;
+		font-size: 1.2em;
+		float: right;
+
+		@media #{$medium-and-up}{
+			margin-top: 5px;
+		}
+
+		@media #{$large-and-up}{
+			margin-right: 20px;
+		}
+		span{
+			margin-left: 7px;
+			float: left;
+		}
+
+		.wedding-rings{
+			width: 30px;
+			float: left;
+		}
+	}
+}

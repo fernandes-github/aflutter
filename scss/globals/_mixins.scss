@@ -1,0 +1,9 @@
+@mixin linear-gradient-left($default,$color1,$stop1,$color2,$stop2) {
+    background-color: $default;
+    background-image: -webkit-gradient(linear, left top, left top, color-stop($stop1, $color1), color-stop($stop2 $color2));
+    background-image: -webkit-linear-gradient(left, $color1 $stop1, $color2 $stop2);
+    background-image: -moz-linear-gradient(left, $color1 $stop1, $color2 $stop2);
+    background-image: -ms-linear-gradient(left, $color1 $stop1, $color2 $stop2);
+    background-image: -o-linear-gradient(left, $color1 $stop1, $color2 $stop2);
+    background-image: linear-gradient(left, $color1 $stop1, $color2 $stop2);
+}
