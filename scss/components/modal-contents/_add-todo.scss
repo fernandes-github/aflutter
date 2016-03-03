@@ -3,14 +3,16 @@
 	width:100%;
 	.attached-img{
 		margin-top:1rem;
-		height: 6rem !important;
+		width: 5rem;
+		height: 5rem !important;
 	}
 
 	.attach{
 		background-color: #ccc;
 	    cursor: pointer;
-	    height: 6rem !important;
-	    line-height: 6rem !important;
+	    width: 5rem;
+	    height: 5rem !important;
+	    line-height: 5rem !important;
 	    padding: 1rem;
 
 	    &:hover{
