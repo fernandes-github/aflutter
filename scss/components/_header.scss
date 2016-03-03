@@ -1,44 +1,46 @@
 body{
 	overflow:auto !important;
 }
-nav{
 
-	position:relative;
+.navbar-fixed{
 	z-index:1000;
+	nav{
 
-	img.logo{
-		width:120px;
-		margin-top: 13px;
-		margin-left: 20px;
-	
-		@media #{$medium-and-up}{
-			width: 105px;
-		    margin-top: 13px;
-		    margin-left: 10px;
-		}
-	}
-
-	.top-navbar{
-		li > a{
-			padding: 0px 50px;
-			font-size: 1.2em;
-			font-weight: 400;
-
+		img.logo{
+			width:120px;
+			margin-top: 13px;
+			margin-left: 20px;
+		
 			@media #{$medium-and-up}{
-				padding: 0px 12px;
+				width: 105px;
+			    margin-top: 13px;
+			    margin-left: 10px;
 			}
+		}
 
-			@media #{$large-and-up}{
-				padding: 0px 40px;
+		.top-navbar{
+			li > a{
+				padding: 0px 50px;
+				font-size: 1.2em;
+				font-weight: 400;
+
+				@media #{$medium-and-up}{
+					padding: 0px 12px;
+				}
+
+				@media #{$large-and-up}{
+					padding: 0px 40px;
+				}
+				
 			}
-			
+		}
+
+		#menu-icon{
+			i{
+				font-size: 2rem;
+				color: rgba(105, 117, 132, 0.58);
+			}
 		}
 	}
 
-	#menu-icon{
-		i{
-			font-size: 2rem;
-			color: rgba(105, 117, 132, 0.58);
-		}
-	}
 }

@@ -55,6 +55,7 @@
 @import "components/_cards";
 @import "components/_footer";
 @import "components/_header";
+@import "components/_modal";
 @import "components/_page-content";
 @import "components/_people-collapsed";
 @import "components/_range-slider";
@@ -62,9 +63,11 @@
 @import "components/_side-nav";
 @import "components/_todo-page-content";
 @import "components/_toggle-buttons";
+@import "components/modal-contents/_add-person";
 // endinject
 
 //trumps
 // inject:trumps
+@import "trumps/_formfields";
 @import "trumps/_helper";
 // endinject
