@@ -1,0 +1,26 @@
+
+.todo-form{
+	width:100%;
+	.attached-img{
+		margin-top:1rem;
+		height: 6rem !important;
+	}
+
+	.attach{
+		background-color: #ccc;
+	    cursor: pointer;
+	    height: 6rem !important;
+	    line-height: 6rem !important;
+	    padding: 1rem;
+
+	    &:hover{
+	    	background-color:#ccc;
+	    	box-shadow:none;
+	    }
+
+	    img{
+	    	width: 35px;
+	    }
+	}
+
+}

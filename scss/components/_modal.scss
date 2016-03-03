@@ -1,6 +1,26 @@
-.add-person-modal{
+.modal{
+	background-color:#fff;
+	top:5% !important;
+	max-height:90% !important;
+	width:45%;
+	overflow-y:hidden;
+
+	.modal-content{
+		padding:15px !important;
+	}
+	
 	h5{
-		border-bottom: 2px solid #ccc;
+		border-bottom: 2px solid #E6E6E6;
 		padding-bottom: 15px;
+	}
+
+	.modal-footer{
+
+		margin-bottom:10px;
+		margin-top: 0px;
+		background-color: #fff;
+		a{
+			border-radius:7px;
+		}
 	}
 }

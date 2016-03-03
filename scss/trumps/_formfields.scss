@@ -9,26 +9,57 @@ form{
 		.input-fields{
 			border-bottom:none !important;
 			border:1px solid #ccc !important;
-			height:auto !important;
+			height:1.5rem;
 			padding: 7px 5px !important;
     		border-radius: 5px;
+
+    		&:focus{
+    			border:1px solid #F8A382 !important;
+    		}
+
+    		&:focus{
+    			box-shadow: none;
+    		}
 		}
 
 		label{
 			color: #4A4A4A;
-			font-size: 1.2em;
+			font-size: 1.1em;
+		}
+
+		select{
+			height: 2.5rem;
+    		border-radius: 7px;
+    		border:1px solid #ccc !important;
+    		margin-bottom: 10px;
+
+    		option:disabled{
+    			color:#eeeeee !important;
+    		}
 		}
 
 		&.upload-section{
+
+			margin-top: 15px;
+			margin-bottom: 15px;
 			label, a.btn{
-				margin-top: 25px !important;
+				margin-top: 15px !important;
 				display: inline-block;
 			}
 		}
 	}
 
-	.upload-section{
-		margin-bottom: 20px;
-	}
+}
 
+.btn-default{
+	margin-right:5px !important;
+	background: transparent;
+    color: #000;
+    box-shadow: none;
+    text-decoration: underline;
+
+    &:hover{
+    	background-color:transparent;
+    	box-shadow:none;
+    }
 }

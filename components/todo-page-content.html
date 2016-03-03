@@ -10,8 +10,14 @@
 	</div>
 	<div class="col s4 m2 l2">
 		<div class="add-todo">
-			<a class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">add</i></a>
+			<a class="btn-floating btn-large waves-effect waves-light modal-trigger" href="#addtodo-modal"><i class="material-icons">add</i></a>
 			<p>Add To-do</p>
 		</div>
 	</div>
 </div>
+
+@@include('./modal.html', {
+	"title" : "Add a To-do",
+	"id" : "addtodo-modal",
+	"modalContent" : "add-todo"
+})

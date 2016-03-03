@@ -12,10 +12,10 @@
 </div>
 <div class="row">
 	<div class="col s2">
-		<label>Photo</label>
+		<label>Name*</label>
 	</div>
 	<div class="col s5">
-		<input type="text" class="input-fields" placeholder="Laura"/>
+		<input type="text" class="input-fields active" placeholder="Laura"/>
 	</div>
 	<div class="col s5">
 		<input type="text" class="input-fields" placeholder="last name"/>
@@ -25,7 +25,7 @@
 	<div class="col s2">
 		<label>Email*</label>
 	</div>
-	<div class="col s10">
+	<div class="col s7">
 		<input type="email" class="validate input-fields" placeholder="email address"/>
 	</div>
 </div>
@@ -33,7 +33,7 @@
 	<div class="col s2">
 		<label>Phone*</label>
 	</div>
-	<div class="col s10">
+	<div class="col s5">
 		<input type="tel" class="validate input-fields" placeholder="(XXX) XXX-XXXX"/>
 	</div>
 </div>
@@ -41,7 +41,7 @@
 	<div class="col s2">
 		<label>Group*</label>
 	</div>
-	<div class="col s10">
+	<div class="col s5">
 		<select class="browser-default">
 		    <option value="" disabled selected>Unassigned</option>
 		    <option value="1">Option 1</option>
@@ -54,7 +54,7 @@
 	<div class="col s2">
 		<label>Role</label>
 	</div>
-	<div class="col s10">
+	<div class="col s5">
 		<input type="text" class="input-fields" placeholder="i.e. Maid of Honor"/>
 	</div>
 </div>
@@ -62,13 +62,13 @@
 	<div class="col s2">
 		<label>Address</label>
 	</div>
-	<div class="col s10">
+	<div class="col s7">
 		<input type="text" class="input-fields" placeholder="address"/>
-		<div class="row">
-			<div class="col s6">
+		<div class="row marginBottomNone">
+			<div class="col s5 paddingLeftNone">
 				<input type="text" class="input-fields" placeholder="city"/>
 			</div>
-			<div class="col s2">
+			<div class="col s3">
 				<select class="browser-default">
 				    <option value="" disabled selected>-</option>
 				    <option value="1">Option 1</option>
@@ -76,7 +76,7 @@
 				    <option value="3">Option 3</option>
 				</select>
 			</div>
-			<div class="col s4">
+			<div class="col s4 paddingLeftNone paddingRightNone">
 				<input type="text" class="input-fields" placeholder="zip"/>
 			</div>
 		</div>
@@ -86,7 +86,7 @@
 	<div class="col s2">
 		<label>Company</label>
 	</div>
-	<div class="col s10">
+	<div class="col s5">
 		<input type="text" class="input-fields" placeholder="company name"/>
 	</div>
 </div>
@@ -94,8 +94,12 @@
 	<div class="col s2">
 		<label>Website</label>
 	</div>
-	<div class="col s10">
+	<div class="col s5">
 		<input type="text" class="input-fields" placeholder="website"/>
 	</div>
+</div>
+<div class="modal-footer">
+	<button type="submit" class="waves-effect waves-red btn">Add Person</button>
+	<button type="button" class="modal-close waves-effect waves-green btn btn-default">Cancel</button>
 </div>
 </form>
