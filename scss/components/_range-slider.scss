@@ -23,6 +23,10 @@
 			border:1px solid #E6E6E6;
 			border-radius: 7px;
 
+			.ui-rangeSlider-handle{
+				top: -2px !important;
+			}
+
 			.ui-rangeSlider-innerBar{
 				width: 100% !important;
 			}
@@ -64,7 +68,7 @@
 		float: right;
 
 		@media #{$medium-and-up}{
-			margin-top: 5px;
+			margin-top: 0px;
 		}
 
 		@media #{$large-and-up}{
