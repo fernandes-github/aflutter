@@ -25,4 +25,18 @@
 	    }
 	}
 
+	.tag-inputs{
+
+		background-color:#4D5C6F;
+		color: #fff;
+		font-size: 1.1em;
+		padding:0 25px;
+
+		.chip-close{
+			float: left;
+			padding-left:0px;
+			padding-right:10px;
+		}
+	}
+
 }

@@ -10,8 +10,54 @@ form{
 			border-bottom:none !important;
 			border:1px solid #ccc !important;
 			height:1.5rem;
-			padding: 7px 5px !important;
+			padding: 1.5% 2% !important;
     		border-radius: 5px;
+    		width:96%;
+
+    		&.large-inputs{
+				height:2.8rem !important;
+				padding:0.5% 2% !important;
+				font-size: 1.2em;
+				color: #364559;
+
+				&::-webkit-input-placeholder {
+				  color: #364559;
+				}
+
+				&:-moz-placeholder { /* Firefox 18- */
+				   color: #364559;
+				}
+
+				&::-moz-placeholder {  /* Firefox 19+ */
+				   color: #364559;
+				}
+
+				&:-ms-input-placeholder {  
+				   color: #364559;
+				}
+			}
+
+			&.textarea-field{
+				font-size: 1.2em !important;
+				color: #364559;
+				padding:2% !important;
+
+				&::-webkit-input-placeholder {
+				  color: #364559;
+				}
+
+				&:-moz-placeholder { /* Firefox 18- */
+				   color: #364559;
+				}
+
+				&::-moz-placeholder {  /* Firefox 19+ */
+				   color: #364559;
+				}
+
+				&:-ms-input-placeholder {  
+				   color: #364559;
+				}
+			}
 
     		&:focus{
     			border:1px solid #F8A382 !important;
