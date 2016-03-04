@@ -118,3 +118,17 @@ form{
 		padding:0 2rem;
 	}
 }
+
+.btn-green{
+    color: #fff;
+    background-color: #50B3A1;
+    margin-top:10px;
+    text-transform: initial;
+    width: 100%;
+    border-radius: 7px;
+
+    &:hover{
+    	color: #fff;
+    	background-color: #50B3A1;
+    }
+}

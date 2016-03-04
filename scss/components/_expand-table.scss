@@ -1,0 +1,84 @@
+
+.todo-item-row{
+
+	border-bottom: 2px solid #F2F2F2;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+
+	.left-right-grey-border{
+		i.datepicker{
+			/*color:#9F1340;*/
+			color:#ccc;
+			float: left;
+		}
+
+		p{
+			float: left;
+			margin: 0px;
+			color: #ccc;
+		}
+	}
+
+	.checkbox-wrapper{
+		margin-bottom: 0px;
+	    margin-top: 0px;
+
+		[type="checkbox"].filled-in:checked + label:after, .filled-in:not(:checked) + label:after {
+			border: 2px solid #e8e8e8;
+			border-radius:5px;
+			width: 25px;
+	    	height: 25px;
+		}
+
+		[type="checkbox"].filled-in:checked + label:before{
+			width: 10px;
+	    	height: 17px;
+		}
+
+		label{
+			padding-left: 0px;
+		}
+	}
+
+	&.selected{
+		.left-right-grey-border{
+			i.datepicker, p{
+				color:#9F1340;
+			}
+		}	
+	}
+}
+
+
+.badges{
+	position:relative;
+
+	>.row{
+		margin-bottom: 0px;
+	}	
+
+	span{
+		display: inline-block;
+		right: auto;
+		font-size:1.2em;
+		background-color: #F2F2F2;
+		padding:0px 20px;
+		border-radius:7px;
+		color: #697584;
+	}
+
+	p{
+		font-size:1.2em;
+		display: inline-block;
+		margin: 0px;
+		color: #888888;
+	}
+}
+
+.expand-link{
+	text-decoration:underline;
+	color:#000;
+	text-align:center;
+	display: block;
+}

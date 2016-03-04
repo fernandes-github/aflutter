@@ -9,4 +9,27 @@
 	    	color: #F8A382;
 		}
 	}
+
+	.details-section{
+		background-color:#fff;
+		margin-top:-15px !important;
+		border-top-right-radius: 7px;
+	    border-bottom-left-radius: 7px;
+	    border-bottom-right-radius: 7px;
+
+	    .details-wrapper{
+			border-bottom:2px solid #F2F2F2;
+			padding: 15px 0px;
+
+			h6, p{
+				color: #888888;
+			    font-size: 1.2em;
+			    font-weight: bold;
+			}
+			p{
+				font-size: 1.1em;
+				font-weight: normal;
+			}
+	    }
+	}
 }
