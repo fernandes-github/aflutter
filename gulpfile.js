@@ -19,7 +19,11 @@ var fileinclude = require('gulp-file-include'),
 var MODE = 'dev';
 var JSFILES = [
   './bower_components/jquery/dist/jquery.js',
-  './bower_components/Materialize/dist/js/materialize.js'
+  './bower_components/Materialize/dist/js/materialize.js',
+  './bower_components/jquery-ui/jquery-ui.js',
+  './bower_components/jQRangeSlider/jQRangeSlider.js',
+  './bower_components/jQRangeSlider/jQDateRangeSlider.js',
+  './bower_components/jquery-slimscroll/jquery.slimscroll.js'
 ];
 
 var onError = function(err) {

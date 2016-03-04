@@ -10,9 +10,9 @@ form{
 			border-bottom:none !important;
 			border:2px solid #E6E6E6 !important;
 			height:1.5rem;
-			padding: 1.5% 2% !important;
+			padding: 1.5% 10px !important;
     		border-radius: 5px;
-    		width:96%;
+    		max-width:100%;
 
     		&.large-inputs{
 				height:2.8rem !important;
@@ -60,7 +60,7 @@ form{
 			}
 
     		&:focus{
-    			border:1px solid #F8A382 !important;
+    			border:2px solid #F8A382 !important;
     		}
 
     		&:focus{
