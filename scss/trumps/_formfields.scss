@@ -1,6 +1,6 @@
 form{
 
-	width: 85%;
+	width: 90%;
     margin: 0px auto;
 
 	& > .row{
@@ -69,8 +69,9 @@ form{
 		}
 
 		label{
-			color: #4A4A4A;
-			font-size: 1.1em;
+			color: #8B8B8B;
+    		font-size: 1.1em;
+    		float: right;
 		}
 
 		select{
@@ -108,4 +109,12 @@ form{
     	background-color:transparent;
     	box-shadow:none;
     }
+}
+
+.btn-primary{
+	padding:0 0.5rem;
+
+	@media #{$medium-and-up}{
+		padding:0 2rem;
+	}
 }
