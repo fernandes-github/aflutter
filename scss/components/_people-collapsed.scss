@@ -12,7 +12,8 @@
 
 	.details-section{
 		background-color:#fff;
-		margin-top:-15px !important;
+		margin-top:-16px !important;
+		border:1px solid #ccc;
 		border-top-right-radius: 7px;
 	    border-bottom-left-radius: 7px;
 	    border-bottom-right-radius: 7px;
@@ -27,7 +28,7 @@
 			    font-weight: bold;
 			}
 			p{
-				font-size: 1.1em;
+				font-size: 1em;
 				font-weight: normal;
 			}
 	    }

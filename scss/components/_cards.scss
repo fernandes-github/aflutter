@@ -25,4 +25,11 @@
 			font-size: 1.2em;
 		}
 	}
+
+	&.expanded{
+		box-shadow:none;
+		border:1px solid #ccc;
+		border-bottom:0px solid #ccc;
+		height: 170px;
+	}
 }
