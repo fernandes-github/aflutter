@@ -1,8 +1,12 @@
 .reminder-wrapper{
 	background-color: #F6F6F6;
-    width: 45%;
+    width: 100%;
     margin-bottom: 20px;
     float: right;
+
+     @media #{$medium-and-up}{
+     	width:45%;
+     }
 
     p{
     	font-size: 1.1em;
