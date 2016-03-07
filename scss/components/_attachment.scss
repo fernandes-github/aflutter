@@ -1,0 +1,23 @@
+.attach{
+		background-color: #ccc;
+	    cursor: pointer;
+	    width: 5rem;
+	    height: 5rem !important;
+	    line-height: 5rem !important;
+	    padding: 1rem;
+
+	    &:hover{
+	    	background-color:#ccc;
+	    	box-shadow:none;
+	    }
+
+	    img{
+	    	width: 35px;
+	    }
+	}
+
+	.attached-img{
+		margin-top:1rem;
+		width: 5rem;
+		height: 5rem !important;
+	}
