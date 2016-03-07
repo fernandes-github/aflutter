@@ -1,42 +1,44 @@
-<div class="row details-wrapper">
-	<div class="col s3">
-		<h6>Phone</h6>
-		<p>`faker.phone.phoneNumber`</p>
-	</div>
-	<div class="col s3">
-		<h6>Email</h6>
-		<p>`faker.internet.email`</p>
-	</div>
-	<div class="col s3">
-		<h6>Address</h6>
-		<p>`faker.address.streetName`, `faker.address.streetAddress`, `faker.address.zipCode`</p>
-	</div>
-	<div class="col s3">
-		<h6>Website</h6>
-		<p>`faker.internet.url`</p>
-	</div>
-</div>
-<div class="row">
-	<div class="col s3">
-		@@include("../components/toggle-buttons.html")
-	</div>
-</div>
+<div class="card-expanded ">
+    <div class="row details-wrapper">
+        <div class="col s3">
+            <h6>Phone</h6>
+            <p>`faker.phone.phoneNumber`</p>
+        </div>
+        <div class="col s3">
+            <h6>Email</h6>
+            <p>`faker.internet.email`</p>
+        </div>
+        <div class="col s3">
+            <h6>Address</h6>
+            <p>`faker.address.streetName`, `faker.address.streetAddress`, `faker.address.zipCode`</p>
+        </div>
+        <div class="col s3">
+            <h6>Website</h6>
+            <p><a href="#">`faker.internet.url`</a></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s3">
+            @@include("../components/toggle-buttons.html")
+        </div>
+    </div>
 
-<div class="row">
-	<div class="col s12">
-		@@include("../components/expand-table.html")
-	</div>
-</div>
+    <div class="row">
+        <div class="col s12">
+            @@include("../components/expand-table.html")
+        </div>
+    </div>
 
-<div class="row">
-	<div class="col s12">
-		<div class="row reminder-wrapper">
-			<div class="col s5">
-				<p>1 to-do selected</p>
-			</div>
-			<div class="col s7">
-				<a class="waves-effect waves-light btn btn-green">Send Reminder</a>
-			</div>
-		</div>
-	</div>
+    <div class="row">
+        <div class="col s12">
+            <div class="row reminder-wrapper">
+                <div class="col s5">
+                    <p>1 to-do selected</p>
+                </div>
+                <div class="col s7">
+                    <a class="waves-effect waves-light btn btn-green">Send Reminder</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

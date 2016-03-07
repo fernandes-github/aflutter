@@ -21,9 +21,17 @@ var JSFILES = [
   './bower_components/jquery/dist/jquery.js',
   './bower_components/Materialize/dist/js/materialize.js',
   './bower_components/jquery-ui/jquery-ui.js',
+  './bower_components/jQRangeSlider/jQRangeSliderMouseTouch.js',
+  './bower_components/jQRangeSlider/jQRangeSliderDraggable.js',
+  './bower_components/jQRangeSlider/jQRangeSliderHandle.js',
+  './bower_components/jQRangeSlider/jQRangeSliderBar.js',
+  './bower_components/jQRangeSlider/jQRangeSliderLabel.js',
   './bower_components/jQRangeSlider/jQRangeSlider.js',
+  './bower_components/jQRangeSlider/jQDateRangeSliderHandle.js',
   './bower_components/jQRangeSlider/jQDateRangeSlider.js',
+  './bower_components/jQRangeSlider/jQRuler.js',
   './bower_components/jquery-slimscroll/jquery.slimscroll.js'
+  
 ];
 
 var onError = function(err) {

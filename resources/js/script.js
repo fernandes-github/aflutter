@@ -54,5 +54,12 @@ $(document).ready(function(){
       selectMonths: true, // Creates a dropdown to control month
       selectYears: 15 // Creates a dropdown of 15 years to control year
     });
+    
+    //card.js
+    $('.people-collapsed-wrapper .card').click(function(){
+        var expandedSection = $(this).parent().next();
+        $(this).toggleClass('hoverable').toggleClass('expanded');
+        expandedSection.toggleClass('hide');
+    });
 
 });
