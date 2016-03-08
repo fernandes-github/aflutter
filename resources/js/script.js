@@ -49,6 +49,15 @@ $(document).ready(function(){
           height: '550px'
     });
     
+    $('body').slimScroll({
+        size: '8px', 
+        width: '100%', 
+        height: '100%', 
+        color: '#ff4800', 
+        allowPageScroll: true, 
+        alwaysVisible: true     
+    });
+    
     $(".datepicker").pickadate({
       selectMonths: true, // Creates a dropdown to control month
       selectYears: 15 // Creates a dropdown of 15 years to control year

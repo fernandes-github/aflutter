@@ -18,9 +18,10 @@ var fileinclude = require('gulp-file-include'),
 
 var MODE = 'dev';
 var JSFILES = [
+  './resources/js/modernizr.js',  
   './bower_components/jquery/dist/jquery.js',
   './bower_components/Materialize/dist/js/materialize.js',
-  './bower_components/jquery-ui/jquery-ui.js',
+  './resources/js/jquery-ui.min.js',
   './bower_components/jQRangeSlider/jQRangeSliderMouseTouch.js',
   './bower_components/jQRangeSlider/jQRangeSliderDraggable.js',
   './bower_components/jQRangeSlider/jQRangeSliderHandle.js',
@@ -31,7 +32,6 @@ var JSFILES = [
   './bower_components/jQRangeSlider/jQDateRangeSlider.js',
   './bower_components/jQRangeSlider/jQRuler.js',
   './bower_components/jquery-slimscroll/jquery.slimscroll.js'
-  
 ];
 
 var onError = function(err) {
@@ -120,6 +120,7 @@ gulp.task('injectjs', function(){
   gulp.src('./components/footer.html')
       .pipe(inject(gulp.src(files, {read: false})))
       .pipe(replace(search, replaceWord))
+      .pipe(replace('/resources','.'))
       .pipe(gulp.dest('./components'));
 })
 
