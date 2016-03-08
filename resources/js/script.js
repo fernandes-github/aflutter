@@ -62,7 +62,6 @@ $(document).ready(function(){
         expandedSection.toggleClass('hide');
     });
 
-      $('ul.tabs').tabs();
-
+      $("ul.todo-tabs").tabs();
 
 });

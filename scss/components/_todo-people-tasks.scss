@@ -7,6 +7,7 @@
 		height:3rem;
 		line-height:3rem;
 		color:#BBACAC;
+		border-bottom: 0px solid #ccc;
 
 		 .row{
 			margin-bottom: 0px;
@@ -14,17 +15,17 @@
 			p.task-text{
 				margin:0px;
 			}
-
-			i.3dots-icon{
-				float: right;
-				margin-right: 0px;
-			}
 		}
 	}
 
 	.collapsible-body{
+
+		background-color: #fff;
+		color: #BBACAC;
+		
 		.task-desc{
-			padding: 1rem;
+			padding: 0rem;
+			padding-top: 10px;
 		}
 	}
 
