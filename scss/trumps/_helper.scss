@@ -37,3 +37,38 @@
 .w80{
 	width:80%;
 }
+
+.blue-btn{
+	background-color:#364559;
+	color:#fff;
+	width: 100%;
+    height: 45px;
+
+	&:hover{
+		background-color:#364559;
+		color:#fff;
+	}
+}
+
+.completed{
+	color:#50B3A1;
+	font-size: 1.3em;
+}
+
+.incomplete{
+	color:#F8A382;
+	font-size:1.3em;
+}
+
+.pink-border{
+	background-color:#fff;
+	border:1px solid #F8A382;
+	color:#F8A382;
+	float:right;
+
+	&:hover{
+		background-color:#fff;
+		border:1px solid #F8A382;
+		color:#F8A382;
+	}
+}

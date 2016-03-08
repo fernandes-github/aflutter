@@ -1,14 +1,103 @@
 <div class="row">
     <div class="col s12">
         <ul class="tabs todo-tabs">
-            <li class="tab col s3"><a href="#test1">Test 1</a></li>
-            <li class="tab col s3"><a class="active" href="#test2">Test 2</a></li>
-            <li class="tab col s3 disabled"><a href="#test3">Disabled Tab</a></li>
-            <li class="tab col s3"><a href="#test4">Test 4</a></li>
+            <li class="tab col s2"><a class="active" href="#discussion">Discussion</a></li>
+            <li class="tab col s2"><a href="#people">People</a></li>
         </ul>
     </div>
-    <div id="test1" class="col s12">Test 1</div>
-    <div id="test2" class="col s12">Test 2</div>
-    <div id="test3" class="col s12">Test 3</div>
-    <div id="test4" class="col s12">Test 4</div>
+    <div id="discussion" class="col s12 m10 offset-m1">
+      <div class="row discussion-tab">
+        <div class="col s1">
+          <img src="`faker.internet.avatar`" class="responsive-img circle">
+          <p>ANNA</p>
+        </div>
+        <div class="col s11">
+          <p>Dec 6th at 9:02am</p>
+          <p>If you wait until tomorrow you can get them on sale... there is a big selection of navy blue gowns in this style online at <a href="#">bridesmaiddresses.com</a></p>
+        </div>
+      </div>
+      <div class="row discussion-tab">
+        <div class="col s1">
+          <img src="`faker.internet.avatar`" class="responsive-img circle">
+          <p>ANNA</p>
+        </div>
+        <div class="col s11">
+          <p>Dec 6th at 9:02am</p>
+          <img src="`faker.internet.avatar`" class="responsive-img comments-img">
+          <p class="comment-txt">If you wait until tomorrow you can get them on sale... there is a big selection of navy blue gowns in this style online at <a href="#">bridesmaiddresses.com</a></p>
+        </div>
+      </div>
+      <hr>
+      <div class="row send-row">
+        <div class="col s1">
+          <i class="fa fa-circle-thin"></i>
+        </div>
+        <div class="col s9">
+          <input type="text" class="add-textfield"><button type="btn" class="send-btn"><i class="fa fa-plus"></i></button>
+        </div>
+        <div class="col s2">
+          <button type="submit" class="btn btn-primary blue-btn">SEND</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="people" class="col s12 m10 offset-m1">
+      <div class="row people-tab-row">
+        <div class="col s1">
+          <img src="`faker.internet.avatar`" class="responsive-img circle">
+        </div>
+        <div class="col s3">
+          <p>Nina Smith</p>
+        </div>
+        <div class="col s2">
+          <p class="completed">
+            <i class="fa fa-check-circle-o"></i>
+            <span>Complete</span>
+          </p>
+        </div>
+        <div class="col s6"></div>
+      </div>
+      <div class="row people-tab-row">
+        <div class="col s1">
+          <img src="`faker.internet.avatar`" class="responsive-img circle">
+        </div>
+        <div class="col s3">
+          <p>Nina Smith</p>
+        </div>
+        <div class="col s2">
+          <p class="completed"><i class="fa fa-check-circle-o"></i>
+          <span>Complete</span></p>
+        </div>
+        <div class="col s6"></div>
+      </div>
+      <div class="row people-tab-row incomplete-section">
+        <div class="col s1">
+          <img src="`faker.internet.avatar`" class="responsive-img circle">
+        </div>
+        <div class="col s3">
+          <p>Nina Smith</p>
+        </div>
+        <div class="col s2">
+          <p class="incomplete"><i class="fa fa-check-circle-o"></i>
+          <span>Complete</span></p>
+        </div>
+        <div class="col s6">
+          <button type="button" class="btn btn-primary pink-border">Remove Person</button>
+        </div>
+      </div>
+      <div class="row people-tab-row">
+        <div class="col s1">
+          <img src="`faker.internet.avatar`" class="responsive-img circle">
+        </div>
+        <div class="col s3">
+          <p>Nina Smith</p>
+        </div>
+        <div class="col s2">
+          <p class="completed"><i class="fa fa-check-circle-o"></i>
+          <span>Complete</span></p>
+        </div>
+        <div class="col s6"></div>
+      </div>
+    </div>
 </div>
