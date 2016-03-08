@@ -1,12 +1,10 @@
 .range-slider-wrapper{
-	background-color:#F8F5F4;
 	padding-top:10px;
 	padding-bottom:30px;
-	-webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.16);
-	   -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.16);
-	        box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.16);
+	border-bottom:2px solid #ccc;
 	position: relative;
-    z-index: 1000;
+    z-index: 999;
+    margin-bottom: 0px;
 
 	p{
 		margin-top:5px;

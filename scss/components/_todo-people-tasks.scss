@@ -1,26 +1,31 @@
-.todo-tasks-header{
+.collapsible{
+	box-shadow: 0 1px 0px 0 rgba(0, 0, 0, 0.16), 0 2px 6px 0 rgba(0, 0, 0, 0.12);
 
-	min-height:none;
-	height:3rem;
-	line-height:3rem;
-	color:#BBACAC;
+	.todo-tasks-header{
 
-	 .row{
-		margin-bottom: 0px;
+		min-height:none;
+		height:3rem;
+		line-height:3rem;
+		color:#BBACAC;
 
-		p.task-text{
-			margin:0px;
-		}
+		 .row{
+			margin-bottom: 0px;
 
-		i.3dots-icon{
-			float: right;
-			margin-right: 0px;
+			p.task-text{
+				margin:0px;
+			}
+
+			i.3dots-icon{
+				float: right;
+				margin-right: 0px;
+			}
 		}
 	}
-}
 
-.collapsible-body{
-	.task-desc{
-		padding: 1rem;
+	.collapsible-body{
+		.task-desc{
+			padding: 1rem;
+		}
 	}
+
 }
