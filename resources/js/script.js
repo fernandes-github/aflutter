@@ -62,5 +62,41 @@ $(document).ready(function(){
     });
       
     $("ul.todo-tabs").tabs();
+    
+    var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $('.chips-input').autocomplete({source: availableTags}).keypress(function(e){
+        if(e.which !== 13) {
+            return true;
+        }
+        var input = $(this).val();
+        var chip = '<div class="chip tag-inputs"><i class="material-icons chip-close">close</i>'+input+'</div>';
+        $(this).val('').parent().next().append(chip);
+    });
+    
+    
+    
 
 });
