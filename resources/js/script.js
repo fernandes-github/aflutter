@@ -99,4 +99,9 @@ $(document).ready(function(){
           height: '250px'
     });
 
+    $(function() {
+      $( ".sortable" ).sortable({items: "> .row"});
+      $( ".sortable" ).disableSelection();
+    });
+
 });

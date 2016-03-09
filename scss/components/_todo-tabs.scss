@@ -1,11 +1,13 @@
 .tabs-wrapper-row{
-
 	margin-bottom:0px;
+	background-color: #FAFAFA;
+    padding: 10px 10px 0px 10px;
+    height: auto;
+}
 
 	.todo-tabs{
 		width: 100% !important;
 	    background-color: #FAFAFA;
-	    padding: 10px 10px 0px 10px;
 	    height: auto;
 
 	    li.tab{
@@ -115,7 +117,17 @@
 				p{
 					padding:0px;
 					margin-top: 10px;
+
+					&.completed{
+						margin-top: 5px;
+					}
+
+					&.incomplete{
+						margin-top: 5px;
+					}
+
 				}
+
 
 				&.incomplete-section{
 					background-color:#F8F8F8;
@@ -150,4 +162,3 @@
 			}
 		}
 	}
-}
