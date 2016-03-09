@@ -16,11 +16,16 @@
 			color:#516580;
 			border-bottom: 0px solid #ccc;
 
-			 .row{
+			 .todo-inner-content{
 				margin-bottom: 0px;
 
 				p.task-text{
 					margin:0px;
+				}
+
+				.dots-icon{
+					float: right;
+    				margin-right: 0px;
 				}
 			}
 		}
