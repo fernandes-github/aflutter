@@ -44,7 +44,7 @@ $(document).ready(function(){
       }, 'slow');
     });
 
-   
+   /*modal scroll*/
     $(".modal-content").slimScroll({
           height: '550px'
     });
@@ -93,6 +93,10 @@ $(document).ready(function(){
     });
     
     
-    
+    /*tabs scroll*/
+
+    $(".people-scroll").slimScroll({
+          height: '250px'
+    });
 
 });
