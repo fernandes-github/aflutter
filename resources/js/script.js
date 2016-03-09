@@ -104,4 +104,12 @@ $(document).ready(function(){
       $( ".sortable" ).disableSelection();
     });
 
+
+    $(function () {
+      $(".datepicker-box").datepicker({ 
+            autoclose: true, 
+            todayHighlight: true
+      }).datepicker('update', new Date());;
+    });
+
 });

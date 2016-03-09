@@ -1,0 +1,22 @@
+
+
+.datepicker{
+	z-index: 1000 !important;
+	
+	&.dropdown-menu{
+		background-color:#F8A382;
+		color: #fff;
+	}
+
+	&.datepicker-dropdown:after{
+		border-bottom: 6px solid #F8A382;
+	}
+
+	table tr td.new{
+		color: #EB5D45;
+	}
+
+	table tr td.old{
+			color: #EB5D45;
+		}
+}
