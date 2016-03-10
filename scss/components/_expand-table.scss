@@ -7,16 +7,27 @@
     padding-top: 10px;
 
 	.left-right-grey-border{
-		i.datepicker{
-			/*color:#9F1340;*/
-			color:#ccc;
-			float: left;
-		}
+		.expand-datepicker{
+			i{
+				color:#ccc;
+				position: relative;
+			    top: 7px;
+			    margin-right: 15px;
+			}
 
-		p{
-			float: left;
-			margin: 0px;
-			color: #ccc;
+			span{
+				color:#ccc;
+			}
+
+			&.active{
+				i{
+					color:#F8A382;
+				}
+
+				span{
+					color:#F8A382;
+				}
+			}
 		}
 	}
 
@@ -58,7 +69,7 @@
 		margin-bottom: 0px;
 	}	
 
-	span{
+	span.attire{
 		display: inline-block;
 		right: auto;
 		font-size:1.2em;
@@ -68,7 +79,7 @@
 		color: #697584;
 	}
 
-	p{
+	span{
 		font-size:1.2em;
 		display: inline-block;
 		margin: 0px;
@@ -78,7 +89,26 @@
 
 .expand-link{
 	text-decoration:underline;
-	color:#000;
+	color: #697584;
 	text-align:center;
-	display: block;
+	margin-left: 5px;
+    margin-right: 5px;
+}
+
+.reminder-modal{
+	height:400px !important;
+	.slimScrollDiv{
+		height: auto !important;
+	.modal-content{
+		height: auto !important;
+	}
+	.editable{
+		width: 100%;
+	    height: auto;
+	    border: 1px solid #ccc;
+	    padding: 10px;
+		background-color: #F2F2F2;
+		margin-top: 15px;
+	}
+}
 }

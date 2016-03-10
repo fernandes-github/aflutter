@@ -1,15 +1,22 @@
-.reminder-wrapper{
-	background-color: #F6F6F6;
-    width: 100%;
-    margin-bottom: 20px;
-    float: right;
+.card-expanded{
+    
+    padding-left: 15px;
+    padding-right:15px;
+    padding-bottom:10px;
 
-     @media #{$medium-and-up}{
-     	width:45%;
-     }
+    .reminder-wrapper{
+    	background-color: #F6F6F6;
+        width: 100%;
+        margin-bottom: 20px;
+        float: right;
 
-    p{
-    	font-size: 1.1em;
-    	color: #888888;
+         @media #{$medium-and-up}{
+         	width:45%;
+         }
+
+        p{
+        	font-size: 1.1em;
+        	color: #888888;
+        }
     }
 }

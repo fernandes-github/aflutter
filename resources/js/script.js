@@ -112,4 +112,8 @@ $(document).ready(function(){
       }).datepicker('update', new Date());;
     });
 
+    $('.editable').each(function(){
+      this.contentEditable = true;
+  });
+
 });
