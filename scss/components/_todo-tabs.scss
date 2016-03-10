@@ -38,29 +38,34 @@
 	    }
 	}
 
-	.discussion-tab{
+	.discussion-row{
 
-	    padding:20px 15px 10px 15px;
-	    margin-bottom: 0px;
+		margin-bottom: 0px;
 
-		p{
-			padding:0px;
+		.discussion-tab{
+
+		    padding:20px 15px 10px 15px;
+		    margin-bottom: 0px;
+
+			p{
+				padding:0px;
+			}
+
+			.comments-img{
+				float: left;
+				margin-right: 15px;
+				width: 100px;
+			}
+
+			p.comment-txt{
+				margin-top: 20px;
+			}
 		}
-
-		.comments-img{
-			float: left;
-			margin-right: 15px;
-			width: 100px;
-		}
-
-		p.comment-txt{
-			margin-top: 20px;
-		}
-	}
 
 	.send-row{
 
 		padding:20px 15px 10px 15px;
+		margin-bottom: 0px;
 
 		i{
 			font-size: 3em;
@@ -93,6 +98,8 @@
 
 		}
 	}
+
+}
 
 	.slimScrollDiv{
 		

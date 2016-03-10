@@ -8,15 +8,18 @@
 
 	.left-right-grey-border{
 		.expand-datepicker{
+			margin-top: 0px !important;
+
 			i{
 				color:#ccc;
 				position: relative;
-			    top: 7px;
+			    top: 3px;
 			    margin-right: 15px;
 			}
 
 			span{
 				color:#ccc;
+				display: inline-block;
 			}
 
 			&.active{
@@ -28,6 +31,7 @@
 					color:#F8A382;
 				}
 			}
+
 		}
 	}
 
@@ -80,7 +84,7 @@
 	}
 
 	span{
-		font-size:1.2em;
+		font-size:1.1em;
 		display: inline-block;
 		margin: 0px;
 		color: #888888;
@@ -95,20 +99,3 @@
     margin-right: 5px;
 }
 
-.reminder-modal{
-	height:400px !important;
-	.slimScrollDiv{
-		height: auto !important;
-	.modal-content{
-		height: auto !important;
-	}
-	.editable{
-		width: 100%;
-	    height: auto;
-	    border: 1px solid #ccc;
-	    padding: 10px;
-		background-color: #F2F2F2;
-		margin-top: 15px;
-	}
-}
-}

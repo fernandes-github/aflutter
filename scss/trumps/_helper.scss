@@ -23,6 +23,11 @@
 	border-right:2px solid #ccc;
 }
 
+.no-bg-border{
+	background-color:transparent !important;
+	border:0px solid #fff !important;
+}
+
 .pink-heading{
 	color:#F8A382;
 	margin-left:15px;
@@ -74,7 +79,7 @@
 }
 
 .no-margin{
-	margin-top:0px;
+	margin-top:0px !important;
 }
 
 .bold-text{
@@ -85,4 +90,27 @@
 	color:#F8A382;
 	cursor:pointer;
 	text-decoration:underline;
+}
+
+.datepicker-box{
+	z-index: 1000; 
+	border:1px solid #ccc;
+	background-color: #F1F1F1;
+	margin-bottom: 0px;
+	margin-top: 7px;
+
+	span:hover{cursor: pointer;}	
+
+	input{
+		border-bottom:0px;
+		margin-bottom: 0px;
+		height: 2rem;
+		width: 85%;
+		position: relative;
+    	top: -5px;
+	}
+
+	i{
+		line-height: 2rem;
+	}
 }

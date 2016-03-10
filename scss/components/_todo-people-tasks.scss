@@ -25,26 +25,6 @@
 					float: right;
     				margin-right: 0px;
 				}
-
-				.datepicker-box{
-					z-index: 1000; 
-					border:1px solid #ccc;
-					background-color: #F1F1F1;
-					margin-bottom: 0px;
-					margin-top: 7px;
-
-					span:hover{cursor: pointer;}	
-
-					input{
-						border-bottom:0px;
-						margin-bottom: 0px;
-						height: 2rem;
-					}
-
-					i{
-						line-height: 2rem;
-					}
-				}
 			}
 		}
 

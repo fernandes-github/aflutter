@@ -10,16 +10,20 @@
 			<span>Choose gown color</span>
 	</div>
 	<div class="col s6 m3 l3 left-right-grey-border">
-		<div class="center-align expand-datepicker active">
+		<!--<div class="center-align expand-datepicker active">
 			<i class="material-icons">today</i>
 			<span>Mon Jan 11 2016</span>
-		</div>
+		</div>-->
+		<div id="" class="row input-group date datepicker-box no-bg-border expand-datepicker active" data-date-format="D M dd yyyy">
+	        <span class="input-group-addon"><i class="material-icons">today</i></span>
+	        <span><input class="form-control" type="text" readonly /></span>
+      </div>
 	</div>
 	<div class="col s6 m2 l3">
 		<div class="expanded-links center-align">
-		<a class="expand-link modal-trigger" href="#reminder">Remind</a>
-		<a href="#" class="expand-link">Remove</a>
-		<a href="#" class="expand-link">Expand</a>
+			<a class="expand-link modal-trigger" href="#reminder">Remind</a>
+			<a href="#" class="expand-link">Remove</a>
+			<a href="#expand" class="expand-link modal-trigger">Expand</a>
 		</div>
 	</div>
 </div>
@@ -35,16 +39,16 @@
 			<span>Choose gown sizes and measurements</span>
 	</div>
 	<div class="col s6 m3 l3 left-right-grey-border">
-		<div class="center-align expand-datepicker">
-			<i class="material-icons">today</i>
-			<span>Mon Jan 11 2016</span>
-		</div>
+		<div id="" class="row input-group date datepicker-box no-bg-border expand-datepicker" data-date-format="D M dd yyyy">
+	        <span class="input-group-addon"><i class="material-icons">today</i></span>
+	        <span><input class="form-control" type="text" readonly /></span>
+      </div>
 	</div>
 	<div class="col s6 m2 l3">
 		<div class="expanded-links center-align">
-		<a href="#" class="expand-link">Remind</a>
-		<a href="#" class="expand-link">Remove</a>
-		<a href="#" class="expand-link">Expand</a>
+			<a class="expand-link modal-trigger" href="#reminder">Remind</a>
+			<a href="#" class="expand-link">Remove</a>
+			<a href="#" class="expand-link">Expand</a>
 		</div>
 	</div>
 </div>
@@ -61,37 +65,28 @@
 			<span>Order tuxedos</span>
 	</div>
 	<div class="col s6 m3 l3 left-right-grey-border">
-		<div class="center-align expand-datepicker">
-			<i class="material-icons">today</i>
-			<span>Mon Jan 11 2016</span>
-		</div>
+		<div id="" class="row input-group date datepicker-box no-bg-border expand-datepicker" data-date-format="D M dd yyyy">
+	        <span class="input-group-addon"><i class="material-icons">today</i></span>
+	        <span><input class="form-control" type="text" readonly /></span>
+      </div>
 	</div>
 	<div class="col s6 m2 l3">
 		<div class="expanded-links center-align">
-		<a href="#" class="expand-link">Remind</a>
-		<a href="#" class="expand-link">Remove</a>
-		<a href="#" class="expand-link">Expand</a>
+			<a class="expand-link modal-trigger" href="#reminder">Remind</a>
+			<a href="#" class="expand-link">Remove</a>
+			<a href="#" class="expand-link">Expand</a>
 		</div>
 	</div>
 </div>
 
-<!-- Modal Structure -->
-  <div id="reminder" class="modal reminder-modal">
-    <div class="modal-content">
-      <h6>Send reminder to <span class="bold-text">Jane</span> to complete <span class="bold-text">Choose gown color</span>?</h6>
-      <hr>
-      <div class="editable">
+@@include('./reminder-modal.html', {
+	"title" : "",
+	"id" : "reminder",
+	"modalContent" : "reminder-modal"
+})
 
-      	<p>Hey Jane,<p>
-		
-		<p>It looks like <span class="bold-text">Choose gown color</span> is overdue! If you have already completed this item,<a href="#" class="active-link"> update your status</a></p>
-
-		<p>If you have a question or need more time, click to<a href="#" class="active-link"> discuss</a>.</p>
-
-		<p>Thanks,</p>
-		<p>Aflutter Team</p>
-      </div>
-    </div>
-   		<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">CANCEL</a>
-       <a href="#!" class="modal-action waves-effect waves-green">SEND REMINDER</a>
-  </div>
+@@include('./expand-modal.html', {
+	"title" : "",
+	"id" : "expand",
+	"modalContent" : "expand-modal"
+})

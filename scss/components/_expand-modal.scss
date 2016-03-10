@@ -1,0 +1,31 @@
+.expand-modal{
+	width:85% !important;
+	color: #516580;
+
+	p{
+		margin:0px;
+	}
+
+	.todo-inner-content{
+		color: #516580;
+
+		p{
+			margin:0px;
+			margin-top: 5px;
+		}
+
+		.expand-modal-complete{
+			i{
+				position:relative;
+				top:5px;
+			}
+		}
+
+		i.list-icon{
+			float: right;
+		    margin-top: 5px;
+		    font-size: 1.4em;
+		    color: #ccc;
+		}
+	}
+}
