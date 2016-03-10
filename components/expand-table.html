@@ -48,7 +48,7 @@
 		<div class="expanded-links center-align">
 			<a class="expand-link modal-trigger" href="#reminder">Remind</a>
 			<a href="#" class="expand-link">Remove</a>
-			<a href="#" class="expand-link">Expand</a>
+			<a href="#expand" class="expand-link modal-trigger">Expand</a>
 		</div>
 	</div>
 </div>
@@ -74,19 +74,8 @@
 		<div class="expanded-links center-align">
 			<a class="expand-link modal-trigger" href="#reminder">Remind</a>
 			<a href="#" class="expand-link">Remove</a>
-			<a href="#" class="expand-link">Expand</a>
+			<a href="#expand" class="expand-link modal-trigger">Expand</a>
 		</div>
 	</div>
 </div>
 
-@@include('./reminder-modal.html', {
-	"title" : "",
-	"id" : "reminder",
-	"modalContent" : "reminder-modal"
-})
-
-@@include('./expand-modal.html', {
-	"title" : "",
-	"id" : "expand",
-	"modalContent" : "expand-modal"
-})
