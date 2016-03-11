@@ -106,7 +106,7 @@ $(document).ready(function(){
       "Scala",
       "Scheme"
     ];
-    $('.chips-input').autocomplete({source: availableTags}).keypress(function(e){
+    $('.chips-input').keypress(function(e){
         if(e.which !== 13) {
             return true;
         }
@@ -139,18 +139,22 @@ $(document).ready(function(){
       this.contentEditable = true;
   });
 
-    $(".dropdown-button").dropdown({
-        inDuration: 300,
-        outDuration: 225,
-        constrain_width: false, // Does not change width of dropdown to that of the activator
-        hover: true, // Activate on hover
-        gutter: 0, // Spacing from edge
-        belowOrigin: false, // Displays dropdown below the button
-        alignment: 'left' // Displays dropdown with edge aligned to the left of button
-    });
+    $(".dropdown-button").dropdown();
 
     $('.add-groups-btn').click(function(){
       $(this).closest('li').next().toggleClass('hide');
+    });
+
+    $('.select-image').click(function(){
+        $(this).next().click();
+    });
+
+    $('p.checkbox-wrapper').each(function(){
+      var input = $(this).find('input');
+      var label = $(this).find('label');
+      var randomId = Math.random() * (9999 - 99) + 99;
+      input.attr('id', 'checkbox' + randomId);
+      label.attr('for', 'checkbox' + randomId);
     });
 
 });
