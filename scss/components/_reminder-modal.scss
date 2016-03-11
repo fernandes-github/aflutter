@@ -1,5 +1,5 @@
 .reminder-modal{
-	height:385px !important;
+	height:365px !important;
 	.slimScrollDiv{
 		height: auto !important;
 	.modal-content{
@@ -8,10 +8,25 @@
 	.editable{
 		width: 100%;
 	    height: auto;
-	    border: 1px solid #ccc;
+	    border: 2px solid #E5E5E5;
 	    padding: 10px;
 		background-color: #F2F2F2;
-		margin-top: 15px;
+		margin-top: 25px;
+		border-radius: 5px;
+		}
+	}
+
+	.reminder-title{
+		border-bottom:2px solid #E5E5E5;
+		padding-bottom:10px;
+	}
+
+	.modal-footer{
+		padding-right: 15px;
+	
+		.reminder-cancel{
+			color:#ccc;
+			font-size: 1.2em;
 		}
 	}
 }

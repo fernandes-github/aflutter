@@ -4,7 +4,6 @@
 
 	li{
 		padding:0px;
-		line-height: 45px;
 		&:hover, &.active { background-color: transparent; }
 	}
 
@@ -51,20 +50,24 @@
 		}
 	}
 
+
 	li:nth-child(2){
 		
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.01), 0 3px 0px 0 rgba(0, 0, 0, 0.06);
 		padding:5px;
 		margin-bottom: 1px;
 		margin-top: 1px;
+    	position: relative;
+    	z-index: 1000;
 
 		h5{
 			float: left;
 			color: $navbar-font-color;
 			margin-left: 10px;
+			font-size: 1.4em;
 		}
 
-		a.groups-btn{
+		a.add-groups-btn{
 			float: right;
 			margin-right: 10px;
 			background-color:$button-color;
@@ -74,6 +77,28 @@
 
 			i{
 				width: auto;
+			}
+		}
+	}
+
+	li:nth-child(3){
+		.new-project-input{
+			margin-bottom: 0px;
+		    border: 1px solid #ccc;
+		    margin: 10px 5px;
+		    height: 2rem;
+		    width: 95%;
+		    text-indent: 15px;
+		    border-top:2px solid #ccc;
+		    border-radius:7px;
+
+			&:focus{
+				border-bottom: 1px solid #ccc;
+    			box-shadow: none;
+			}
+
+			&:active{
+
 			}
 		}
 	}
@@ -88,6 +113,7 @@
 		height: 45px;
 		line-height: 45px;
 		padding: 0 10px;
+		display:inline-block;
 	}
 
 	&.active{
@@ -97,6 +123,11 @@
 		a{
 			color: #F8A382;
 		}
+	}
+
+	.dropdown-button{
+		float: right;
+    	margin-top: 10px;
 	}
 }
 

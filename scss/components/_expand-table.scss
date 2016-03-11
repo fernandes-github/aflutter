@@ -7,6 +7,7 @@
     padding-top: 10px;
 
 	.left-right-grey-border{
+		
 		.expand-datepicker{
 			margin-top: 0px !important;
 
@@ -52,7 +53,17 @@
 		}
 
 		label{
-			padding-left: 0px;
+			padding-left: 40px;
+
+			span.attire{
+				display: inline-block;
+				right: auto;
+				font-size:1.2em;
+				background-color: #F2F2F2;
+				padding:0px 20px;
+				border-radius:7px;
+				color: #697584;
+			}
 		}
 	}
 
@@ -63,25 +74,6 @@
 			}
 		}	
 	}
-}
-
-
-.badges{
-	position:relative;
-
-	>.row{
-		margin-bottom: 0px;
-	}	
-
-	span.attire{
-		display: inline-block;
-		right: auto;
-		font-size:1.2em;
-		background-color: #F2F2F2;
-		padding:0px 20px;
-		border-radius:7px;
-		color: #697584;
-	}
 
 	span{
 		font-size:1.1em;
@@ -90,6 +82,7 @@
 		color: #888888;
 	}
 }
+
 
 .expand-link{
 	text-decoration:underline;
