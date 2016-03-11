@@ -3,6 +3,20 @@
 	padding-left:15px;
 	padding-right:15px;
 
+	> .col {
+		.box{
+			position : relative;
+
+			.col{
+				position:relative;
+
+				&.expanded{
+					z-index:200;
+				}
+			}
+		}
+	}
+
 	h4{
 		color: #95A0AF;
 		&.active{

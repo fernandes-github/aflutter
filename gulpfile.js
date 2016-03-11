@@ -18,10 +18,10 @@ var fileinclude = require('gulp-file-include'),
 
 var MODE = 'dev';
 var JSFILES = [
-  './resources/js/modernizr.js',  
+  './resources/js/modernizr.js',
   './bower_components/jquery/dist/jquery.js',
-  './bower_components/Materialize/dist/js/materialize.js',
   './resources/js/jquery-ui.js',
+  './bower_components/Materialize/dist/js/materialize.js',
   './bower_components/jQRangeSlider/jQRangeSliderMouseTouch.js',
   './bower_components/jQRangeSlider/jQRangeSliderDraggable.js',
   './bower_components/jQRangeSlider/jQRangeSliderHandle.js',
