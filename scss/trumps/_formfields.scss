@@ -132,8 +132,14 @@ form{
     text-transform: initial;
     width: 100%;
     border-radius: 7px;
+    text-decoration: none;
 
     &:hover{
+    	color: #fff;
+    	background-color: #50B3A1;
+    }
+
+    &:focus{
     	color: #fff;
     	background-color: #50B3A1;
     }
