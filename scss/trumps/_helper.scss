@@ -167,3 +167,8 @@ p.alert{
     	text-decoration: underline;
     }
 }
+
+.modal{
+	z-index: 10003 !important;
+	top:10% !important;
+}
