@@ -100,6 +100,11 @@
 	text-decoration:underline;
 }
 
+.cancel-btn{
+	color: #828282;
+	font-size: 1.2em;
+}
+
 .datepicker-box{
 	z-index: 1000;
 	background-color: #F7F7F7;
@@ -133,7 +138,6 @@
 		width: 85%;
 		position: relative;
 		color: #828282;
-    	font-size: 1.2em;
 
     	&:hover{
     		color: #fff !important;

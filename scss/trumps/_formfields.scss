@@ -19,6 +19,7 @@ form{
 				padding:0.5% 2% !important;
 				font-size: 1.2em;
 				color: #364559;
+				width:95%;
 
 				&::-webkit-input-placeholder {
 				  color: #364559;
@@ -41,6 +42,7 @@ form{
 				font-size: 1.2em !important;
 				color: #364559;
 				padding:2% !important;
+				width:95%;
 
 				&::-webkit-input-placeholder {
 				  color: #364559;
@@ -65,6 +67,10 @@ form{
 
     		&:focus{
     			box-shadow: none;
+    		}
+
+    		&.chips-input{
+    			width:95%;
     		}
 		}
 
