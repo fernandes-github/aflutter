@@ -5,4 +5,13 @@
     border-radius: 5px;
     height: 35px;
     color: #fff;
+
+    &:focus{
+    	border: 1px solid #4F637F;
+    	outline: none;
+    }
+
+    &:active{
+    	border: 1px solid #4F637F;
+    }
 }
