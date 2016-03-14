@@ -122,10 +122,22 @@ $(document).ready(function(){
           height: '250px'
     });
 
-    $(function() {
-      $( ".sortable" ).sortable({items: "> .row"});
-      $( ".sortable" ).disableSelection();
-    });
+    $( ".sortable" ).sortable({
+        items: "> .row",
+        start : function(event, ui){
+          var sortable = $(event.target).closest('.sortable');
+          sortable.prev().find('p.alert').slideUp(50);
+        },
+        stop : function( event, ui ){
+          var sortable = $(event.target).closest('.sortable');
+          sortable.prev().find('p.alert').slideDown();
+        }
+      }).disableSelection();
+
+    // $('li.droppable').droppable({
+    //   accept : '.sortable > .row',
+    //   activeClass: "ui-state-highlight"
+    // });
 
 
     $(function () {

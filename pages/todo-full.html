@@ -4,6 +4,12 @@
 	@@include("../components/todo-page-content.html")
 	@@include("../components/range-slider.html")
 	<div class="row grey-bg">
+		<div class="col s12">
+			<p class="alert success" style="display:none">
+				To do order changed
+				<a href="#" class="right">Undo</a>
+			</p>
+		</div>
 		<div class="col s12 sortable">
 			<h5 class="pink-heading">Bridesmaids</h5>
 			@@include("../components/todo-people-tasks.html")

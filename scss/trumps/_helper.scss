@@ -149,3 +149,21 @@
 	}
 }
 
+
+p.alert{
+	margin: 0;
+    color: #fff;
+    margin-left: -0.75em;
+    margin-right: -0.75em;
+    padding: 5px 30px;
+
+    &.success{
+    	background-color: #8EC0B7;
+    }
+
+    a{
+    	margin-top: 0px !important;
+    	color: #fff;
+    	text-decoration: underline;
+    }
+}
