@@ -6,36 +6,59 @@
 	}
 
 	.collapsible{
-		box-shadow: 0 1px 0px 0 rgba(0, 0, 0, 0.16), 0 2px 6px 0 rgba(0, 0, 0, 0.12);
+		box-shadow: none;
+		border:none;
 
-		.todo-tasks-header{
+		.ui-state-default{
 
-			min-height:none;
-			color:#516580;
-			border-bottom: 0px solid #ccc;
+			border:0px solid #fff;
 
-			 .todo-inner-content{
-				margin-bottom: 0px;
+			.todo-tasks-header{
 
-				p.task-text{
-					margin:0px;
-				}
+				min-height:none;
+				color:#516580;
+				border-bottom: 0px solid #ccc;
 
-				.dots-icon{
-					float: right;
-    				margin-right: 0px;
+				 .todo-inner-content{
+					margin-bottom: 0px;
+
+					p{
+						margin:0px;
+					}
+
+					.task-text{
+						margin:0px;
+						font-size: 1.3em;
+						color: #8B8B8B;
+					}
+
+					span{
+						color: #9C9C9C;
+						font-size: 1.1em;
+					}
+
+					.dots-icon{
+						float: right;
+	    				margin-right: 0px;
+					}
 				}
 			}
-		}
 
-		.collapsible-body{
+			.collapsible-body{
 
-			background-color: #fff;
-			color: #516580;
-			
-			.task-desc{
-				padding: 0rem;
-				padding-top: 10px;
+				background-color: #fff;
+				color: #516580;
+				
+				.task-desc{
+					padding: 0rem;
+					padding-top: 10px;
+					font-size: 1.15em;
+    				color: #8B8B8B;
+				}
+
+				> .row{
+					margin-bottom: 0px;
+				}
 			}
 		}
 	}

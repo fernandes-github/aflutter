@@ -8,9 +8,12 @@
 	.todo-tabs{
 		width: 100% !important;
 	    background-color: #FAFAFA;
-	    height: auto;
+	    padding-bottom: 5px;
 
 	    li.tab{
+	    height: auto;
+
+	    	text-transform: none;
 			
 			a{
 				background-color: #F1F1F1;

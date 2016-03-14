@@ -97,13 +97,30 @@
 }
 
 .datepicker-box{
-	z-index: 1000; 
-	border:1px solid #ccc;
-	background-color: #F1F1F1;
+	z-index: 1000;
+	background-color: #F7F7F7;
 	margin-bottom: 0px;
 	margin-top: 7px;
 
-	span:hover{cursor: pointer;}	
+	&:focus{
+		background-color:#F8A382;
+		border:1px solid #F8A382;
+	}
+
+	&:hover{
+		background-color:#F8A382;
+		border:1px solid #F8A382;
+	}
+
+	&:visited{
+		background-color:#F8A382;
+		border:1px solid #F8A382;
+	}
+
+	span:hover{
+		cursor: pointer;
+		color: #fff !important;
+	}	
 
 	input{
 		border-bottom:0px;
@@ -111,7 +128,12 @@
 		height: 2rem;
 		width: 85%;
 		position: relative;
-    	top: -5px;
+		color: #828282;
+    	font-size: 1.2em;
+
+    	&:hover{
+    		color: #fff !important;
+    	}
 	}
 
 	i{
