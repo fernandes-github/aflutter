@@ -5,6 +5,8 @@
 	    height: 5rem !important;
 	    line-height: 5rem !important;
 	    padding: 1rem;
+	    position: relative;
+    	z-index: 1000;
 
 	    &:hover{
 	    	background-color:#ccc;

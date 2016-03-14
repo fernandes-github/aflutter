@@ -11,6 +11,9 @@
         position: relative;
         z-index: 1000;
         float: right;
+        position: relative;
+        z-index: 10000;
+
 
         @media #{$large-and-up}{
             margin-right: 20px;
