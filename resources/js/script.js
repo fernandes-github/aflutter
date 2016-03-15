@@ -99,17 +99,7 @@ $(document).ready(function(){
           height: '250px'
     });
 
-    $( ".sortable" ).sortable({
-      items: "> .row",
-      start : function(event, ui){
-        var sortable = $(event.target).closest('.sortable');
-        sortable.prev().find('p.alert').slideUp(50);
-      },
-      stop : function( event, ui ){
-        var sortable = $(event.target).closest('.sortable');
-        sortable.prev().find('p.alert').slideDown();
-      }
-    }).disableSelection();
+    
 
 
     $(".datepicker-box").datepicker({
@@ -143,8 +133,28 @@ $(document).ready(function(){
       evt.stopPropagation();
     });
 
+    // todo-items.sort.js
+    $( ".sortable-todo-items" ).sortable({
+      items: "> .row",
+      start : function(event, ui){
+        var sortable = $(event.target).closest('.sortable-todo-items');
+        sortable.prev().find('p.alert').slideUp(50);
+      },
+      stop : function( event, ui ){
+        var sortable = $(event.target).closest('.sortable-todo-items');
+        sortable.prev().find('p.alert').find('.undo-todo-move').show();
+        sortable.prev().find('p.alert').find('span.message').text('To do order changed');
+        sortable.prev().find('p.alert').slideDown();
+      }
+    }).disableSelection();
+
     $('p.alert .fa-times-circle').click(function(){
       $(this).closest('p.alert').slideUp();
+    });
+
+    $('p.alert .undo-todo-move').click(function(){
+       $( ".sortable-todo-items" ).sortable('cancel');
+       $(this).hide().closest('p.alert').find('span.message').text('Todo item restored');
     });
 
 });
