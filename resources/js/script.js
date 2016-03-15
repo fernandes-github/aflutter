@@ -1,22 +1,64 @@
 var $ = jQuery.noConflict();
 $(document).ready(function(){
-	$(".button-collapse").sideNav();
+
+    //$('.navigation-side-nav').height($(document).height());
+
+	  $(".button-collapse").sideNav();
 
     var isMediumAndAbove = Modernizr.mq('(min-width: 900px)')
     if(isMediumAndAbove){
         $('#menu-icon').click(function(){
             if(parseInt($('#nav-mobile').css('left')) !== 0 ){
                 $('.page-content').animate({
-                    'margin-left' : '240px'
+                    'padding-left' : '240px'
                 }, 200);
             }
             else{
                 $('.page-content').animate({
-                    'margin-left' : '0px'
+                    'padding-left' : '0px'
                 }, 200);
             }
         }).click();
     }
+
+
+    //new group/project
+    $('.add-groups-btn').click(function(){
+      $(this).closest('li').next().toggleClass('hide');
+    });
+    $('.new-project-input').keypress(function(e){
+      if(e.keyCode !== 13){
+        return;
+      }
+      var value = $(this).val();
+      var smallCapsName = value.toLowerCase();
+      var randomId = parseInt( Math.random() * (9999 - 99) + 99 );
+      var html =  '<li class="group droppable"> '+
+                    '<a href="#'+smallCapsName+'">'+value+'</a>'+
+                    '<a href="#" class="dropdown-button"  data-activates="dropdown'+randomId+'"><i class="material-icons right">more_vert</i></a>'+
+                    '<!-- Dropdown Structure -->'+
+                      '<ul id="dropdown'+randomId+'" class="dropdown-content">'+
+                        '<li><a href="#!">Rename</a></li>'+
+                        '<li><a href="#!">Delete</a></li>'+
+                      '</ul>'+
+                  '</li>';
+      html = $(html).hide();
+      $(this).parent().siblings().last().after(html);
+      html.slideDown();
+      $(this).val('');
+      $(html).find(".dropdown-button").dropdown({
+        constrainwidth : false,
+        alignment : 'right'
+      });
+      $('.add-groups-btn').click();
+
+      //add element to right content
+      var html =  '<div class="row" id="'+smallCapsName+'">' +
+                      '<div class="col s12">' +
+                      '<h4 class="">'+value+'</h4> </div>' +
+                    '</div>';
+      $('.people-collapsed-wrapper > .col.s12').append($(html));
+    });
 
   	$(".toggle-wrapper > .col").click(function(){
   		$(this).parent().find(".toggle-section").removeClass("active");
@@ -30,7 +72,7 @@ $(document).ready(function(){
 
     $('.modal-trigger').leanModal();
 
-    $('#nav-mobile .group a:not(.dropdown-button').click(function(e){
+    $('#nav-mobile .group a:not(.dropdown-button').on('click',function(e){
       e.stopPropagation();
       e.preventDefault();
       var hash = $(this).attr('href');
@@ -111,11 +153,12 @@ $(document).ready(function(){
       this.contentEditable = true;
     });
 
-    $(".dropdown-button").dropdown();
-
-    $('.add-groups-btn').click(function(){
-      $(this).closest('li').next().toggleClass('hide');
+    $(".dropdown-button").dropdown({
+      constrainwidth : false,
+      alignment : 'right'
     });
+
+    
 
     $('.select-image').click(function(){
         $(this).next().click();

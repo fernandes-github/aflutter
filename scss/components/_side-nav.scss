@@ -108,6 +108,23 @@
 	border-left:6px solid #8996AB;
 	margin-bottom:2px;
 
+	.dropdown-content.sidenav-links-activity{
+		overflow: hidden;
+
+		li{
+			    min-height: 35px;
+			    line-height: 35px;
+		
+			a{
+				color: #F8A382;
+				height: 30px;
+				line-height: 35px;
+				padding: 0 16px;
+				display:inline-block;
+			}
+		}
+	}
+
 	a{
 		color: #ccc;
 		height: 45px;

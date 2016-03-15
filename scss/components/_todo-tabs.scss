@@ -9,6 +9,8 @@
 		width: 100% !important;
 	    background-color: #FAFAFA;
 	    padding-bottom: 5px;
+	    overflow-x: hidden;
+
 
 	    li.tab{
 	    height: auto;
@@ -85,10 +87,15 @@
 		    padding:10px;
 		    border: 2px solid #ECECEC;
 		    background-color: #F8F8F8;
+
+		    &:focus{
+		    	border-bottom:0px solid #fff;
+		    	box-shadow:none;
+		    }
 		}
 		
 		.send-btn{
-			margin-left: -50px;
+			margin-left: -35px;
 		    height: auto;
 		    padding: 11px;
 		    width: 50px;
@@ -123,6 +130,14 @@
 				border-bottom: 1px solid #F1F1F1;
 				margin-bottom:0px;
 				padding-top: 10px;
+				
+				&:hover{
+					background-color:#F8F8F8;
+
+					.pink-border{
+						display: block;
+					}
+				}
 
 				img{
 					width: 40px;
@@ -142,9 +157,8 @@
 
 				}
 
-
-				&.incomplete-section{
-					background-color:#F8F8F8;
+				.pink-border{
+					display: none;
 				}
 			}
 		}
