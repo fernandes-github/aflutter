@@ -143,4 +143,8 @@ $(document).ready(function(){
       evt.stopPropagation();
     });
 
+    $('p.alert .fa-times-circle').click(function(){
+      $(this).closest('p.alert').slideUp();
+    });
+
 });
