@@ -37,6 +37,7 @@ $(document).ready(function(){
       $('#nav-mobile .group').removeClass('active');
       $('.people-collapsed-wrapper h4').removeClass('active');
       $(this).parent().addClass('active');
+      $(hash).siblings().find('h4.active').removeClass('active');
       $(hash).find('h4').addClass('active');
       var scrollOffset = $('#couple').parent().offset().top + 50;
       $('html,body').animate({
@@ -82,30 +83,6 @@ $(document).ready(function(){
 
     $("ul.todo-tabs").tabs();
 
-    var availableTags = [
-      "ActionScript",
-      "AppleScript",
-      "Asp",
-      "BASIC",
-      "C",
-      "C++",
-      "Clojure",
-      "COBOL",
-      "ColdFusion",
-      "Erlang",
-      "Fortran",
-      "Groovy",
-      "Haskell",
-      "Java",
-      "JavaScript",
-      "Lisp",
-      "Perl",
-      "PHP",
-      "Python",
-      "Ruby",
-      "Scala",
-      "Scheme"
-    ];
     $('.chips-input').keypress(function(e){
         if(e.which !== 13) {
             return true;
@@ -123,33 +100,26 @@ $(document).ready(function(){
     });
 
     $( ".sortable" ).sortable({
-        items: "> .row",
-        start : function(event, ui){
-          var sortable = $(event.target).closest('.sortable');
-          sortable.prev().find('p.alert').slideUp(50);
-        },
-        stop : function( event, ui ){
-          var sortable = $(event.target).closest('.sortable');
-          sortable.prev().find('p.alert').slideDown();
-        }
-      }).disableSelection();
-
-    // $('li.droppable').droppable({
-    //   accept : '.sortable > .row',
-    //   activeClass: "ui-state-highlight"
-    // });
+      items: "> .row",
+      start : function(event, ui){
+        var sortable = $(event.target).closest('.sortable');
+        sortable.prev().find('p.alert').slideUp(50);
+      },
+      stop : function( event, ui ){
+        var sortable = $(event.target).closest('.sortable');
+        sortable.prev().find('p.alert').slideDown();
+      }
+    }).disableSelection();
 
 
-    $(function () {
-      $(".datepicker-box").datepicker({
-            autoclose: true,
-            todayHighlight: true
-      }).datepicker('update', new Date());;
-    });
-
+    $(".datepicker-box").datepicker({
+        autoclose: true,
+        todayHighlight: true
+    }).datepicker('update', new Date());;
+    
     $('.editable').each(function(){
       this.contentEditable = true;
-  });
+    });
 
     $(".dropdown-button").dropdown();
 
@@ -167,6 +137,10 @@ $(document).ready(function(){
       var randomId = Math.random() * (9999 - 99) + 99;
       input.attr('id', 'checkbox' + randomId);
       label.attr('for', 'checkbox' + randomId);
+    });
+
+    $('.datepicker-box').click(function(evt){
+      evt.stopPropagation();
     });
 
 });
