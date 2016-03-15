@@ -22,6 +22,7 @@ $(document).ready(function(){
     }
 
 
+
     //new group/project
     $('.add-groups-btn').click(function(){
       $(this).closest('li').next().toggleClass('hide');
@@ -123,7 +124,7 @@ $(document).ready(function(){
         }
     });
 
-    $("ul.todo-tabs").tabs();
+    
 
     $('.chips-input').keypress(function(e){
         if(e.which !== 13) {
@@ -171,6 +172,19 @@ $(document).ready(function(){
       input.attr('id', 'checkbox' + randomId);
       label.attr('for', 'checkbox' + randomId);
     });
+
+    $('ul.tabs li a').each(function(){
+      var panelID = $(this).attr('href').replace('#','');
+      var randomId = parseInt(Math.random() * (9999 - 99) + 99);
+      var panelContainer = $(this).closest('.tabs-wrapper-row').next();
+      var newId = panelID + randomId;
+      $(panelContainer).find('[tab-id="'+panelID+'"]').attr('id', newId)
+      $(this).attr('href', '#'+newId);
+    });
+
+    setTimeout(function(){
+      $("ul.todo-tabs").tabs();
+    }, 300);
 
     $('.datepicker-box').click(function(evt){
       evt.stopPropagation();
