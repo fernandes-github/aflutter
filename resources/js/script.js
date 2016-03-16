@@ -111,6 +111,27 @@ $(document).ready(function(){
           height: '550px'
     });
 
+    $('.card-expanded .toggle-section').click(function(){
+      var action = $(this).find('span').text();
+      if(action === 'Complete'){
+        $(this).closest('.card-expanded').find('.row.todo-items').find('.todo-item-row').hide();
+        $(this).closest('.card-expanded').find('.row.todo-items').find('.todo-item-row.selected').show();
+      }
+      else{
+        $(this).closest('.card-expanded').find('.row.todo-items').find('.todo-item-row').show();
+        $(this).closest('.card-expanded').find('.row.todo-items').find('.todo-item-row.selected').hide(); 
+      }
+    }).click();
+
+    $('.todo-item-row input[type="checkbox"]').change(function(){
+      if($(this).is(':checked')){
+        $(this).closest('.todo-item-row').addClass('selected');
+      }
+      else{
+        $(this).closest('.todo-item-row').removeClass('selected');
+      }
+    });
+
 
     //card.js
     $('.people-collapsed-wrapper .card').click(function(){
