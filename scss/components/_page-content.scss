@@ -1,26 +1,34 @@
 .page-content{
 
-	.below-navbar{
-		background-color: #364559;
-		margin-bottom:0px;
-		padding-top: 15px;
+	.blue-bar{
+		position: fixed;
+	    width: 100%;
+	    left: 0px;
+	    z-index: 10000;
+	    background-color: #364559;
 	}
 
-	.add-person-section{
-    	text-align: center;
-		margin-top: -40px;
-	    position: relative;
-	    z-index: 10000;
+	.below-navbar{
+		margin-bottom:0px;
+		padding-top: 15px;
+		margin-left: 240px;
 
-	    @media #{$medium-and-up}{
-	    	margin-top: -47px;
-	    }
+		.add-person-section{
+	    	text-align: center;
+			margin-top: -40px;
+		    position: relative;
+		    z-index: 10000;
 
-	    p{
-	    	color: #fff;
-	    	margin-bottom: 5px;
-    		margin-top: 5px;
-	    }
+		    @media #{$medium-and-up}{
+		    	margin-top: -47px;
+		    }
+
+		    p{
+		    	color: #fff;
+		    	margin-bottom: 5px;
+	    		margin-top: 5px;
+		    }
+		}
 	}
 
 }
