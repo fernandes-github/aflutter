@@ -2,6 +2,10 @@
 	clear: both;
 }
 
+.lean-overlay{
+	z-index: 10002 !important;
+}
+
 .marginBottomNone{
 	margin-bottom:0px;
 }

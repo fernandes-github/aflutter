@@ -4,8 +4,17 @@
     cursor : pointer;
 
     .toggle-plus{
-    	font-size: 1.5em;
-    	color: #F8A382;
+    	box-shadow:none;
+    	border-radius:0px;
+    	background: none;
+    	position: absolute;
+    	right: 10px;
+		
+
+		i{
+			color: #F8A382;
+			font-size: 2em;
+		}
     }
     
 	.card-img{
