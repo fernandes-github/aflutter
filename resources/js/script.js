@@ -51,7 +51,7 @@ $(document).ready(function(){
           topMenu = $("li.group").first(),
           // All list items
           menuItems = $("li.group a.linked-section");
-          topMenuHeight = 120;// topMenu.outerHeight()+15;
+          topMenuHeight = 130;// topMenu.outerHeight()+15;
           // Anchors corresponding to menu items
           scrollItems = menuItems.map(function(){
             var item = $($(this).attr("href"));
