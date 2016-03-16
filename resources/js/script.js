@@ -145,7 +145,12 @@ $(document).ready(function(){
     },200);
 
 
-    $('.modal-trigger').leanModal();
+    $('.modal-trigger').leanModal({
+      ready: function(evt){
+        var resetBtn = $('.modal-content form input.reset-btn');
+        resetBtn.click();
+      }
+    });
 
    /*modal scroll*/
     $(".modal-content").slimScroll({

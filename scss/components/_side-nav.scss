@@ -1,5 +1,5 @@
 .side-nav{
-	z-index: 100000;
+	z-index: 10000;
 	top: auto; 
 
 	li{
@@ -85,15 +85,15 @@
 	li:nth-child(3){
 		.new-project-input{
 			margin-bottom: 0px;
-		    border: 2px solid #F8A382;
+		    border: 1px solid #ccc;
 		    margin: 10px 5px;
 		    height: 2rem;
 		    width: 95%;
 		    text-indent: 15px;
 		    border-radius:7px;
+		    border-top:2px solid #ccc;
 
 			&:focus{
-				border-bottom: 2px solid #F8A382;
     			box-shadow: none;
 			}
 
