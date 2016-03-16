@@ -1,6 +1,6 @@
 form{
 
-	width: 90%;
+	width: 100%;
     margin: 0px auto;
 
 	& > .row{
@@ -12,14 +12,13 @@ form{
 			height:1.5rem;
 			padding: 1.5% 10px !important;
     		border-radius: 5px;
-    		width:90%;
+    		width: 95%;
 
     		&.large-inputs{
 				height:2.8rem !important;
 				padding:0.5% 2% !important;
 				font-size: 1.2em;
 				color: #364559;
-				width:95%;
 
 				&::-webkit-input-placeholder {
 				  color: #364559;

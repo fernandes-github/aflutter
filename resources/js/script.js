@@ -24,9 +24,27 @@ $(document).ready(function(){
 
 
     //new group/project
+    function checkIfEsc(evt){
+      if(evt.keyCode === 27){
+        $('.add-groups-btn').click();
+        $(document).off('keyup', checkIfEsc);
+        $(document).off('click', documentClick);
+      }
+    }
+    function documentClick(){
+      if($('.new-project-input').is(':visible')){
+        $('.add-groups-btn').click();
+        $(document).off('keyup', checkIfEsc);
+        $(document).off('click', documentClick);
+      }
+    }
     $('.add-groups-btn').click(function(){
-      $(this).closest('li').next().toggleClass('hide');
+      $(this).closest('li').next().toggleClass('hide').find('input').focus();
+      $(document).off('keyup', checkIfEsc).on('keyup', checkIfEsc);
+      //$(document).on('click', documentClick);
     });
+
+
     $('.new-project-input').keypress(function(e){
       if(e.keyCode !== 13){
         return;
@@ -73,7 +91,7 @@ $(document).ready(function(){
 
     $('.modal-trigger').leanModal();
 
-    $('#nav-mobile .group a:not(.dropdown-button').on('click',function(e){
+    $('#nav-mobile .group a:not(.dropdown-button)').on('click',function(e){
       e.stopPropagation();
       e.preventDefault();
       var hash = $(this).attr('href');
@@ -82,7 +100,7 @@ $(document).ready(function(){
       $(this).parent().addClass('active');
       $(hash).siblings().find('h4.active').removeClass('active');
       $(hash).find('h4').addClass('active');
-      var scrollOffset = $('#couple').parent().offset().top + 50;
+      var scrollOffset = $('#couple').parent().offset().top + 20;
       $('html,body').animate({
         scrollTop : $(hash).offset().top - scrollOffset
       }, 'slow');
