@@ -148,6 +148,10 @@
 		position: relative;
 		top: -4px;
 		text-align: center;
+
+		&.tasks-date-input{
+			margin-top: 5px;
+		}
 	}
 
 	i{

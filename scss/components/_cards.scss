@@ -1,7 +1,12 @@
 .card{
 	
-	padding:15px;
+	padding: 10px 15px;
     cursor : pointer;
+
+    .toggle-plus{
+    	font-size: 1.5em;
+    	color: #F8A382;
+    }
     
 	.card-img{
 		width: 110px;
@@ -21,7 +26,7 @@
 		}
 
 		&.risk-txt{
-			color: #F8A382;
+			color: #990C3D;
 			font-size: 1.2em;
 		}
 	}

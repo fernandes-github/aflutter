@@ -84,16 +84,15 @@
 	li:nth-child(3){
 		.new-project-input{
 			margin-bottom: 0px;
-		    border: 1px solid #ccc;
+		    border: 2px solid #F8A382;
 		    margin: 10px 5px;
 		    height: 2rem;
 		    width: 95%;
 		    text-indent: 15px;
-		    border-top:2px solid #ccc;
 		    border-radius:7px;
 
 			&:focus{
-				border-bottom: 1px solid #ccc;
+				border-bottom: 2px solid #F8A382;
     			box-shadow: none;
 			}
 
@@ -142,13 +141,25 @@
 		}
 	}
 
-	.dropdown-button{
+
+	.dots3-sidenav{
 		float: right;
     	margin-top: 10px;
+    	display: none;
 
     	i{
     		margin-top: 5px;
+    		color: #F8A382;
     	}
+	}
+
+	&:hover{
+		background-color:#F8F8F8 !important;
+	
+		.dots3-sidenav{
+			display: block;
+		}
+
 	}
 }
 

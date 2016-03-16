@@ -1,17 +1,20 @@
 <div class="col s12 m6 l6">
   <div class="row card white hoverable">
+    <div class="col s12">
+        <a href="#" class="right toggle-plus"><i class="fa fa-plus"></i></a>
+    </div>
     <div class="col s4">
     	<img src="`faker.image.avatar`" class="responsive-img circle card-img" alt="card image"/>
     </div>
     <div class="col s8">
     	<h5 class="truncate">`faker.name.findName`</h5>
     	<p class="title truncate">`faker.name.title`</p>
-    	<p class="risk-txt truncate">`faker.name.jobDescriptor`</p>
+    	<p class="risk-txt truncate">1 To-do at risk!</p>
     </div>
   </div>
 </div>
 <div class="col s12 m12 hide">
-    <div class="details-section">
+    <div class="details-section hoverable">
         @@include("./cards-collapsed.html")
     </div>
 </div>
