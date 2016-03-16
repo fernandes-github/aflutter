@@ -31,20 +31,24 @@ $(document).ready(function(){
         $(document).off('click', documentClick);
       }
     }
-    function documentClick(){
-      if($('.new-project-input').is(':visible')){
-        $('.add-groups-btn').click();
+    function documentClick(evt){
+      if($(evt.target).hasClass('material-icons')){
+        return;
+      }
+      if(!$('.add-groups-btn').closest('li').next().hasClass('hide')){
+        $('.add-groups-btn').closest('li').next().toggleClass('hide');
         $(document).off('keyup', checkIfEsc);
         $(document).off('click', documentClick);
       }
     }
     $('.add-groups-btn').click(function(){
       $(this).closest('li').next().toggleClass('hide').find('input').focus();
-      $(document).off('keyup', checkIfEsc).on('keyup', checkIfEsc);
-      //$(document).on('click', documentClick);
+      $(document).on('keyup', checkIfEsc);
+      $(document).on('click', documentClick);
     });
+    
 
-    //$('.scrollspy').scrollSpy();
+    //scrollspy.js
     (function(){
       // Cache selectors
       var lastId,
