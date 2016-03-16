@@ -100,7 +100,7 @@ $(document).ready(function(){
       $(this).parent().addClass('active');
       $(hash).siblings().find('h4.active').removeClass('active');
       $(hash).find('h4').addClass('active');
-      var scrollOffset = $('#couple').parent().offset().top + 20;
+      var scrollOffset = $('.people-collapsed-wrapper > .col').parent().offset().top + 70;
       $('html,body').animate({
         scrollTop : $(hash).offset().top - scrollOffset
       }, 'slow');
@@ -123,6 +123,7 @@ $(document).ready(function(){
               expandedSection.removeAttr('style');
               expandedSection.toggleClass('hide');
               $(card).closest('.box').removeAttr('style');
+              $(card).find('.toggle-plus .fa').removeClass('fa-minus').addClass('fa-plus');
           }
         }
         var expandedSection = $(this).parent().next();
@@ -135,10 +136,12 @@ $(document).ready(function(){
             zIndex: 100
           });
           $(this).closest('.box').css('margin-bottom', expandedSection.height());
+          $(this).find('.toggle-plus .fa').removeClass('fa-plus').addClass('fa-minus');
         }
         else{
           expandedSection.removeAttr('style');
           $(this).closest('.box').removeAttr('style');
+          $(this).find('.toggle-plus .fa').removeClass('fa-minus').addClass('fa-plus');
         }
     });
 
