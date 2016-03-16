@@ -44,6 +44,58 @@ $(document).ready(function(){
       //$(document).on('click', documentClick);
     });
 
+    //$('.scrollspy').scrollSpy();
+    (function(){
+      // Cache selectors
+      var lastId,
+          topMenu = $("li.group").first(),
+          // All list items
+          menuItems = $("li.group a.linked-section");
+          topMenuHeight = 120;// topMenu.outerHeight()+15;
+          // Anchors corresponding to menu items
+          scrollItems = menuItems.map(function(){
+            var item = $($(this).attr("href"));
+            if (item.length) { return item; }
+          });
+          
+
+          // Bind click handler to menu items
+          // so we can get a fancy scroll animation
+          menuItems.click(function(e){
+            var href = $(this).attr("href"),
+                offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+            $('html, body').stop().animate({ 
+                scrollTop: offsetTop
+            }, 300);
+            e.preventDefault();
+          });
+
+          // Bind to scroll
+          $(window).scroll(function(){
+             // Get container scroll position
+             var fromTop = $(this).scrollTop()+topMenuHeight;
+             
+             // Get id of current scroll item
+             var cur = scrollItems.map(function(){
+               if ($(this).offset().top < fromTop)
+                 return this;
+             });
+             // Get the id of the current element
+             cur = cur[cur.length-1];
+             var id = cur && cur.length ? cur[0].id : "";
+             
+             if (lastId !== id) {
+                 lastId = id;
+                 // Set/remove active class
+                 menuItems
+                   .parent().removeClass("active")
+                   .end().filter("[href='#"+id+"']").parent().addClass("active");
+                var hash = '#'+ id;
+                $(hash).siblings().find('h4.active').removeClass('active');
+                $(hash).find('h4').addClass('active');
+             }                   
+          });
+      })()
 
     $('.new-project-input').keypress(function(e){
       if(e.keyCode !== 13){
@@ -90,21 +142,6 @@ $(document).ready(function(){
 
 
     $('.modal-trigger').leanModal();
-
-    $('#nav-mobile .group a:not(.dropdown-button)').on('click',function(e){
-      e.stopPropagation();
-      e.preventDefault();
-      var hash = $(this).attr('href');
-      $('#nav-mobile .group').removeClass('active');
-      $('.people-collapsed-wrapper h4').removeClass('active');
-      $(this).parent().addClass('active');
-      $(hash).siblings().find('h4.active').removeClass('active');
-      $(hash).find('h4').addClass('active');
-      var scrollOffset = $('.people-collapsed-wrapper > .col').parent().offset().top + 70;
-      $('html,body').animate({
-        scrollTop : $(hash).offset().top - scrollOffset
-      }, 'slow');
-    });
 
    /*modal scroll*/
     $(".modal-content").slimScroll({
