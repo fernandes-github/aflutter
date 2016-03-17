@@ -202,6 +202,21 @@ $(document).ready(function(){
     });
     $('.card-expanded .toggle-section.active').click();
 
+    function calculateSelectedTodos(container){
+      var selectedItemsCount = $(container).find('.todo-items input:checked').length;
+      $(container).find('.total-selected-todos > span' ).text(selectedItemsCount);
+      if(selectedItemsCount > 0){
+        $(container).find('.total-selected-todos').css({'visibility': 'visible'});
+        $(container).find('button.send-reminder').removeAttr('disabled').removeClass('disabled');
+      }
+      else{
+        $(container).find('.total-selected-todos').css({'visibility': 'hidden'});
+        $(container).find('button.send-reminder').attr('disabled', 'disabled').addClass('disabled');
+      }
+    }
+    function reclickToggleWrapper(container){
+      $(container).find('.toggle-section.active').click();
+    }
     $('.todo-item-row input[type="checkbox"]').change(function(){
       if($(this).is(':checked')){
         $(this).closest('.todo-item-row').addClass('selected');
@@ -209,6 +224,9 @@ $(document).ready(function(){
       else{
         $(this).closest('.todo-item-row').removeClass('selected');
       }
+      var container = $(this).closest('.card-expanded');
+      reclickToggleWrapper(container);
+      calculateSelectedTodos(container);
     });
 
     //card.js
