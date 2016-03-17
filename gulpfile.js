@@ -31,8 +31,7 @@ var JSFILES = [
   './bower_components/jQRangeSlider/jQDateRangeSliderHandle.js',
   './bower_components/jQRangeSlider/jQDateRangeSlider.js',
   './bower_components/jQRangeSlider/jQRuler.js',
-  './bower_components/jquery-slimscroll/jquery.slimscroll.js',
-  './bower_components/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js'
+  './bower_components/jquery-slimscroll/jquery.slimscroll.js'
 ];
 
 var onError = function(err) {
@@ -64,8 +63,8 @@ gulp.task('compilehtml', function() {
       }
     }))
     .pipe(prettify({indent_size: 2}))
-    .pipe(htmlhint())
-    .pipe(htmlhint.reporter())
+    // .pipe(htmlhint())
+    // .pipe(htmlhint.reporter())
     .pipe(gulp.dest('./deploy/dev'));
 });
 
