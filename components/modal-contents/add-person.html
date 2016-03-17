@@ -1,107 +1,131 @@
-<form>
-<div class="row upload-section">
-	<div class="col s2 l2">
-		<label class="upload-txt">Photo</label>
+<form data-parsley-validate>
+	<div class="row upload-section">
+		<div class="col s2 l2">
+			<label class="upload-txt">Photo</label>
+		</div>
+		<div class="col s3 l2">
+			<img src="images/upload.png" class="select-image responsive-img" alt="upload icon"/>
+			<input type="file" class="hide" />
+		</div>
+		<div class="col s7 l8">
+			<a class="btn btn-green upload-btn">Upload</a>
+		</div>
 	</div>
-	<div class="col s3 l2">
-		<img src="images/upload.png" class="select-image responsive-img" alt="upload icon"/>
-		<input type="file" class="hide" />
+	<div class="row">
+		<div class="col s2">
+			<label>Name *</label>
+		</div>
+		<div class="col s5">
+			<input type="text" name="first_name" class="input-fields active" placeholder="First name" required=""/>
+		</div>
+		<div class="col s5">
+			<input type="text" name="last_name" class="input-fields" placeholder="Last name" required=""/>
+		</div>
 	</div>
-	<div class="col s7 l8">
-		<a class="btn">Upload</a>
+	<div class="row">
+		<div class="col s2">
+			<label>Email *</label>
+		</div>
+		<div class="col s9 l7">
+			<input type="email" name="email_id" class="validate input-fields" placeholder="Email address" data-parsley-trigger="change" required=""/>
+		</div>
 	</div>
-</div>
-<div class="row">
-	<div class="col s2">
-		<label>Name*</label>
+	<div class="row">
+		<div class="col s2 l2">
+			<label>Phone *</label>
+		</div>
+		<div class="col s7 l5">
+			<input type="tel" name="tel_number" class="validate input-fields" placeholder="(XXX) XXX-XXXX" required=""/>
+		</div>
 	</div>
-	<div class="col s5">
-		<input type="text" class="input-fields active" placeholder="First name"/>
+	<div class="row">
+		<div class="col s2 l2">
+			<label>Group *</label>
+		</div>
+		<div class="col s7 l5">
+			<select name="group_name" class="browser-default js-example-basic-single" required="">
+			    <option value="" disabled selected>Unassigned</option>
+			    <option value="bridesmaid">Bridesmaid</option>
+			    <option value="groomsmen">Groomsmen</option>
+			    <option value="couple">Couple</option>
+			</select>
+		</div>
 	</div>
-	<div class="col s5">
-		<input type="text" class="input-fields" placeholder="Last name"/>
+	<div class="row">
+		<div class="col s2 l2">
+			<label>Role</label>
+		</div>
+		<div class="col s7 l5">
+			<input type="text" name="person_role" class="input-fields" placeholder="i.e. Maid of honor"/>
+		</div>
 	</div>
-</div>
-<div class="row">
-	<div class="col s2">
-		<label>Email*</label>
-	</div>
-	<div class="col s9 l7">
-		<input type="email" class="validate input-fields" placeholder="email address"/>
-	</div>
-</div>
-<div class="row">
-	<div class="col s2 l2">
-		<label>Phone*</label>
-	</div>
-	<div class="col s7 l5">
-		<input type="tel" class="validate input-fields" placeholder="(XXX) XXX-XXXX"/>
-	</div>
-</div>
-<div class="row">
-	<div class="col s2 l2">
-		<label>Group*</label>
-	</div>
-	<div class="col s7 l5">
-		<select class="browser-default">
-		    <option value="" disabled selected>Unassigned</option>
-		    <option value="1">Bridesmaid</option>
-		    <option value="2">Groomsmen</option>
-		    <option value="3">Couple</option>
-		</select>
-	</div>
-</div>
-<div class="row">
-	<div class="col s2 l2">
-		<label>Role</label>
-	</div>
-	<div class="col s7 l5">
-		<input type="text" class="input-fields" placeholder="i.e. Maid of Honor"/>
-	</div>
-</div>
-<div class="row">
-	<div class="col s2 l2">
-		<label>Address</label>
-	</div>
-	<div class="col s10 l7">
-		<input type="text" class="input-fields" placeholder="address"/>
-		<div class="row marginBottomNone">
-			<div class="col s5 l5 paddingLeftNone">
-				<input type="text" class="input-fields" placeholder="city"/>
-			</div>
-			<div class="col s3 l3">
-				<select class="browser-default">
-				    <option value="" disabled selected>-</option>
-				    <option value="1">Option 1</option>
-				    <option value="2">Option 2</option>
-				    <option value="3">Option 3</option>
-				</select>
-			</div>
-			<div class="col s4 l4 paddingLeftNone paddingRightNone">
-				<input type="text" class="input-fields" placeholder="zip"/>
+	<div class="row">
+		<div class="col s2 l2">
+			<label>Address 1</label>
+		</div>
+		<div class="col s10 l7">
+			<input type="text" name="address_1" class="input-fields address-fields" placeholder="Address 1"/>
+			<div class="row marginBottomNone">
+				<div class="col s5 l5 paddingLeftNone">
+					<input type="text" name="address1_city" class="input-fields" placeholder="City"/>
+				</div>
+				<div class="col s3 l3">
+					<select class="browser-default js-example-basic-single">
+					    <option value="" selected>-</option>
+					    <option value="1">1</option>
+					    <option value="2">2</option>
+					    <option value="3">3</option>
+					</select>
+				</div>
+				<div class="col s4 l4 paddingLeftNone paddingRightNone">
+					<input type="text" name="address1_zip" class="input-fields" placeholder="Zip"/>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
-<div class="row">
-	<div class="col s2 l2">
-		<label>Company</label>
+	<div class="row">
+		<div class="col s2 l2">
+			<label>Address 2</label>
+		</div>
+		<div class="col s10 l7">
+			<input type="text" name="address_2" class="input-fields address-fields" placeholder="Address 2"/>
+			<div class="row marginBottomNone">
+				<div class="col s5 l5 paddingLeftNone">
+					<input type="text" name="address1_city" class="input-fields" placeholder="City"/>
+				</div>
+				<div class="col s3 l3">
+					<select class="browser-default js-example-basic-single">
+					    <option value="" selected>-</option>
+					    <option value="1">1</option>
+					    <option value="2">2</option>
+					    <option value="3">3</option>
+					</select>
+				</div>
+				<div class="col s4 l4 paddingLeftNone paddingRightNone">
+					<input type="text" name="address1_zip" class="input-fields" placeholder="Zip"/>
+				</div>
+			</div>
+		</div>
 	</div>
-	<div class="col s7 l5">
-		<input type="text" class="input-fields" placeholder="company name"/>
+	<div class="row">
+		<div class="col s2 l2">
+			<label>Company</label>
+		</div>
+		<div class="col s7 l5">
+			<input type="text" class="input-fields" placeholder="Company name"/>
+		</div>
 	</div>
-</div>
-<div class="row">
-	<div class="col s2 l2">
-		<label>Website</label>
+	<div class="row">
+		<div class="col s2 l2">
+			<label>Website</label>
+		</div>
+		<div class="col s7 l5">
+			<input type="text" class="input-fields" placeholder="Website"/>
+		</div>
 	</div>
-	<div class="col s7 l5">
-		<input type="text" class="input-fields" placeholder="website"/>
+	<div class="modal-footer">
+		<button type="submit" class="btn btn-green add-person-btn">Add Person</button>
+		<input type="reset" class="hide reset-btn">
+		<button type="button" class="modal-close btn btn-default cancel-btn">Cancel</button>
 	</div>
-</div>
-<div class="modal-footer">
-	<button type="submit" class="btn btn-primary">Add Person</button>
-	<input type="reset" class="hide reset-btn">
-	<button type="button" class="modal-close btn btn-default cancel-btn">Cancel</button>
-</div>
 </form>

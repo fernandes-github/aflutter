@@ -32,7 +32,8 @@ var JSFILES = [
   './bower_components/jQRangeSlider/jQDateRangeSlider.js',
   './bower_components/jQRangeSlider/jQRuler.js',
   './bower_components/jquery-slimscroll/jquery.slimscroll.js',
-  './bower_components/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js'
+  './bower_components/parsleyjs/dist/parsley.js',
+  './bower_components/select2/dist/js/select2.js'
 ];
 
 var onError = function(err) {

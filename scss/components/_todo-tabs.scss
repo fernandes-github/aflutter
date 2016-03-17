@@ -99,7 +99,7 @@
 		    height: auto;
 		    padding: 11px;
 		    width: 50px;
-		    background: #E5E5E5;;
+		    background: #E5E5E5;
 		    color: white;
 		    border: 0;
 		    -webkit-appearance: none;
@@ -110,6 +110,12 @@
 		    	font-size: 1.5em;
 		    }
 
+		}
+
+		.discuss-send-btn{
+			height: 45px;
+    		line-height: 45px;
+    		margin-top: 0px;
 		}
 	}
 
