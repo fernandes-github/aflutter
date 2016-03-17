@@ -199,7 +199,8 @@ $(document).ready(function(){
         $(this).closest('.card-expanded').find('.row.todo-items').find('.todo-item-row').show();
         $(this).closest('.card-expanded').find('.row.todo-items').find('.todo-item-row.selected').hide(); 
       }
-    }).click();
+    });
+    $('.card-expanded .toggle-section.active').click();
 
     $('.todo-item-row input[type="checkbox"]').change(function(){
       if($(this).is(':checked')){
