@@ -37,6 +37,8 @@ $(document).ready(function(){
 
 	  $(".button-collapse").sideNav();
 
+    $("select.select-group").chosen({no_results_text: "Create group: "});
+
     var isMediumAndAbove = Modernizr.mq('(min-width: 900px)')
     if(isMediumAndAbove){
         $('#menu-icon').click(function(){
