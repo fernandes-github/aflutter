@@ -1,9 +1,9 @@
-<form class="todo-form">
+<form class="todo-form" data-parsley-validate>
     <br>
 	<div class="row">
 		<div class="col s12">
 			<label class="leftLabel">To-do Name*</label><br>
-			<input type="text" class="input-fields large-inputs"/>
+			<input type="text" class="input-fields large-inputs w90" required=""/>
 		</div>
 	</div>
 	<div class="row">
@@ -17,11 +17,11 @@
 			<label class="leftLabel">Project</label>
 		</div>
 		<div class="col s5">
-			<select class="browser-default">
-			    <option value="" disabled selected>Bridesmaids</option>
-			    <option value="1">Option 1</option>
-			    <option value="2">Option 2</option>
-			    <option value="3">Option 3</option>
+			<select style="width:100%;" name="group_name" class="select-group" required="">
+			    <option value="unassigned" selected>Unassigned</option>
+			    <option value="bridesmaid">Bridesmaid</option>
+			    <option value="groomsmen">Groomsmen</option>
+			    <option value="couple">Couple</option>
 			</select>
 		</div>
 	</div>
@@ -30,10 +30,15 @@
 			<label class="leftLabel">Due Date</label>
 		</div>
 		<div class="col s5">
-			 <div id="" class="row input-group date datepicker-box modal-datepicker expand-datepicker" data-date-format="D M dd yyyy">
+			 <!--<div id="" class="row input-group date modal-datepicker expand-datepicker" data-date-format="D M dd yyyy">
 		        <span class="input-group-addon"><i class="material-icons">today</i></span>
 		        <span><input class="form-control" type="text" readonly /></span>
-	      </div>
+	      	</div>-->
+
+	      	<div id="" class="row input-group date datepicker-box" data-date-format="D M dd yyyy">
+                <span class="input-group-addon col s2"><i class="material-icons">today</i></span>
+                <input class="form-control col s10 tasks-date-input" type="text" readonly />
+              </div>
 		</div> 	
 	</div>
 	<div class="row">
@@ -57,7 +62,7 @@
 		</div>
 	</div>
 	<div class="modal-footer">
-		<button type="button" class="btn">Add Person</button>
+		<button type="submit" class="btn btn-green disabled disabled-btn">Add To-do</button>
 		<input type="reset" class="hide reset-btn">
 		<button type="button" class="modal-close btn btn-default cancel-btn">Cancel</button>
 	</div>

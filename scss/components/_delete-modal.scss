@@ -1,0 +1,27 @@
+.delete-modal{
+	width: 30% !important;
+    height: 40%;
+
+    .delete-inner-content{
+
+    	margin-top: 20px;
+    	
+		p{
+	    	font-size: 1.4em;
+		    margin-top: 5px;
+		    margin-bottom: 5px;
+	    }
+
+		button{
+			border-radius: 0px;
+			width: 90%;
+		}
+    }
+
+	i.close-modal{
+		position: absolute;
+	    right: 10px;
+	    top: 10px;
+	    font-size: 2em;
+	}
+}

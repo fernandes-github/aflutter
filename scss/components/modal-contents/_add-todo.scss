@@ -8,6 +8,8 @@
 		color: #fff;
 		font-size: 1.1em;
 		padding:0 25px;
+		margin-top: 10px;
+	    margin-bottom: 10px;
 
 		.chip-close{
 			float: left;
@@ -16,10 +18,11 @@
 		}
 	}
 
-	.todo-modal-datepicke{
+	.todo-modal-datepicker{
 
 		.datepicker-box{
-			background-color:#F7F7F7 !important;
+			margin-top: 10px !important;
+			margin-bottom: 10px;
 		}
 	}
 

@@ -3,14 +3,25 @@ form{
 		width:30%;
 	}
 
-	.parsley-errors-list{
-		margin:0px;
-		color:red;
-	}
+	.chosen-container{
 
-	.chosen-search{
-		input{
-			width: 85% !important;
+		border: 2px solid #E6E6E6 !important;
+
+		.chosen-single{
+			border:0px solid #ccc;
+			border-radius:0px;
 		}
+
+		.chosen-search{
+			input{
+				width: 85% !important;
+			}
+		}
+
+		.chosen-drop{
+			border: 2px solid #E6E6E6 !important;
+			border-radius:0px;
+		}
+
 	}
 }

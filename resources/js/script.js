@@ -1,40 +1,6 @@
 var $ = jQuery.noConflict();
 $(document).ready(function(){
 
-  // add person modal submit
-  $('.add-person-btn').click(function(e){
-    e.preventDefault();
-    var form = $(this).closest('form');
-    var validator = form.parsley();
-    validator.validate();
-    if(validator.isValid()){
-      console.log(form.serializeArray());
-    }
-  });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	  $(".button-collapse").sideNav();
 
     $("select.select-group").chosen({no_results_text: "Create group: "});
@@ -64,7 +30,7 @@ $(document).ready(function(){
       }
     }
     function documentClick(evt){
-      if($(evt.target).hasClass('material-icons')){
+      if($(evt.target).hasClass('material-icons') || $(evt.target).hasClass('new-project-input')){
         return;
       }
       if(!$('.add-groups-btn').closest('li').next().hasClass('hide')){
@@ -141,12 +107,12 @@ $(document).ready(function(){
       var smallCapsName = value.toLowerCase();
       var randomId = parseInt( Math.random() * (9999 - 99) + 99 );
       var html =  '<li class="group droppable"> '+
-                    '<a href="#'+smallCapsName+'">'+value+'</a>'+
-                    '<a href="#" class="dropdown-button"  data-activates="dropdown'+randomId+'"><i class="material-icons right">more_vert</i></a>'+
+                    '<a class="linked-section" href="#'+smallCapsName+'">'+value+'</a>'+
+                    '<a href="#" class="dropdown-button dots3-sidenav"  data-activates="dropdown'+randomId+'"><i class="material-icons right">more_vert</i></a>'+
                     '<!-- Dropdown Structure -->'+
-                      '<ul id="dropdown'+randomId+'" class="dropdown-content">'+
+                      '<ul id="dropdown'+randomId+'" class="dropdown-content sidenav-links-activity">'+
                         '<li><a href="#!">Rename</a></li>'+
-                        '<li><a href="#!">Delete</a></li>'+
+                        '<li><a href="#delete" class="modal-trigger">Delete</a></li>'+
                       '</ul>'+
                   '</li>';
       html = $(html).hide();
@@ -157,14 +123,27 @@ $(document).ready(function(){
         constrainwidth : false,
         alignment : 'right'
       });
-      $('.add-groups-btn').click();
+      $(html).find(".modal-trigger").leanModal();
 
       //add element to right content
       var html =  '<div class="row" id="'+smallCapsName+'">' +
                       '<div class="col s12">' +
                       '<h4 class="">'+value+'</h4> </div>' +
                     '</div>';
-      $('.people-collapsed-wrapper > .col.s12').append($(html));
+      var wrapper = $('.people-collapsed-wrapper > .col.s12');
+      var model = 'group';
+      $('.add-groups-btn').click();
+      if('Project' === $(this).attr('data-model')){
+        wrapper = $('.sortable-todo-items');
+        model = 'project';
+      }
+      wrapper.append($(html));
+      $('.page-action-msg').find('p.alert').find('.undo-todo-move').hide();
+      $('.page-action-msg').find('p.alert').find('span.message').text('New ' + model + ' created successfully');
+      var t = $('.page-action-msg').find('p.alert').slideDown();
+      setTimeout(function(){
+        t.slideUp()
+      }, 2000);
     });
 
   	$(".toggle-wrapper > .col").click(function(){
@@ -294,7 +273,21 @@ $(document).ready(function(){
       $(this).next().click();
     });
 
-    $('p.checkbox-wrapper').each(function(){
+    $('.roundedTwo input[type="checkbox"]').change(function(){
+      var p = $('.page-action-msg p');
+      if($(this).is(':checked')){
+        p.slideDown().find('span.message').text('Todo item marked as complete');
+      }
+      else{
+        p.slideDown().find('span.message').text('Todo item marked as incomplete');
+      }
+      setTimeout(function(){
+        p.slideUp();
+      }, 2000);
+    });
+
+
+    $('p.checkbox-wrapper,.roundedTwo').each(function(){
       var input = $(this).find('input');
       var label = $(this).find('label');
       var randomId = Math.random() * (9999 - 99) + 99;
@@ -334,6 +327,17 @@ $(document).ready(function(){
       }
     }).disableSelection();
 
+    $('i.dropdown').each(function(){
+      var ul = $(this).next();
+      var randomId = parseInt(Math.random() * (9999 - 99) + 99);
+      $(this).attr('data-activates', 'dropdown' + randomId);
+      $(ul).attr('id', 'dropdown' + randomId);
+      $(this).dropdown();
+      $(this).click(function(e){
+        e.stopPropagation();
+      })
+    });
+
     $('p.alert .fa-times-circle').click(function(){
       $(this).closest('p.alert').slideUp();
     });
@@ -342,5 +346,12 @@ $(document).ready(function(){
        $( ".sortable-todo-items" ).sortable('cancel');
        $(this).hide().closest('p.alert').find('span.message').text('Todo item restored');
     });
+
+     var $on = 'section';
+      $($on).css({
+        'background':'none',
+        'border':'none',
+        'box-shadow':'none'
+      });
 
 });

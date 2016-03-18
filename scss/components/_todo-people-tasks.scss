@@ -34,10 +34,16 @@
 						margin:0px;
 					}
 
-					.task-text{
-						margin:0px;
-						font-size: 1.3em;
-						color: #8B8B8B;
+					.roundedTwo{
+						margin-top: 10px;
+						
+						.task-text{
+							margin:0px;
+							font-size: 1.3em;
+							color: #8B8B8B;
+							margin-top: -5px;
+						}		
+			
 					}
 
 					span.status{
@@ -48,6 +54,41 @@
 					.dots-icon{
 						float: right;
 	    				margin-right: 0px;
+					}
+
+					.todo-activity-dropdown{
+						    min-width: 200px !important;
+						    right: 0 !important;
+						    top: 75px !important;
+						    background-color:#F8F8F8;	
+
+						li{
+					
+							min-height: 20px;
+
+							a{
+								font-size: 1em;
+								padding:5px !important;
+								
+								i{
+									font-size: 1.2em;
+	    							margin-right: 5px;
+								}
+
+								&:hover{
+									color: #fff !important;
+								}
+							}
+
+							&:hover{
+								background-color:#364559;
+								
+							}
+						}
+					}
+
+					&.editable{
+						display: none;
 					}
 				}
 			}
@@ -70,4 +111,55 @@
 			}
 		}
 	}
+
+	/* .roundedTwo */
+		.roundedTwo {
+		  margin-top: 5px;
+		  width: 28px;
+		  height: 28px;
+		  position: relative;
+		  background: #fcfff4;
+		  background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+		  border-radius: 50px;
+		  border:1px solid #ccc;
+
+		  label {
+		    width: 20px;
+		    height: 20px;
+		    position: absolute;
+		    top: 4px;
+		    left: 4px;
+		    cursor: pointer;
+
+		    &:after {
+		      content: '';
+		      position: absolute;
+		      top: 5px;
+		      left: 4px;
+		      border: 3px solid #fcfff4;
+		      border-top: none;
+		      border-right: none;
+		      background: transparent;
+		      opacity: 0;
+		      transform: rotate(-45deg);
+		    }
+		    &:hover::after {
+		      opacity: 0.3;
+		    }
+		  }
+		  input[type=checkbox] {
+		    visibility: hidden;
+		    &:checked + label:after {
+		      opacity: 1;
+		    } 
+		  }   
+
+		  input[type="checkbox"]:checked + label:before{
+		  	border-right: 2px solid #F8A382;
+    		border-bottom: 2px solid #F8A382;
+    		top: -6px;
+    		left: -5px;
+		  }
+		}
+		/* end .roundedTwo */
 }
