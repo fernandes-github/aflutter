@@ -327,6 +327,17 @@ $(document).ready(function(){
       }
     }).disableSelection();
 
+    $('i.dropdown').each(function(){
+      var ul = $(this).next();
+      var randomId = parseInt(Math.random() * (9999 - 99) + 99);
+      $(this).attr('data-activates', 'dropdown' + randomId);
+      $(ul).attr('id', 'dropdown' + randomId);
+      $(this).dropdown();
+      $(this).click(function(e){
+        e.stopPropagation();
+      })
+    });
+
     $('p.alert .fa-times-circle').click(function(){
       $(this).closest('p.alert').slideUp();
     });

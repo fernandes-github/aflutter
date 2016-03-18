@@ -56,13 +56,12 @@
               <span>Tue. Jan 13th 2016</span>-->
             </div>
             <div class="col s6 m1 l1">
-              <i class="material-icons dots-icon" data-activates="dropdown5">more_vert</i>
-
-              <ul id="dropdown5" class='dropdown-content sidenav-links-activity'>
-                <li><a href="#!"><i class="fa fa-check"></i> Mark all as complete</a></li>
-                <li><a href="#delete" class="modal-trigger"><i class="fa fa-pencil"></i> Edit To-do</a></li>
-                <li><a href="#delete" class="modal-trigger"><i class="fa fa-times-circle-o"></i> Delete To-do</a></li>
-            </ul>
+                <i class="material-icons dots-icon dropdown">more_vert</i>
+                <ul class='dropdown-content sidenav-links-activity todo-activity-dropdown'>
+                  <li><a href="#!"><i class="fa fa-check"></i> Mark all as complete</a></li>
+                  <li><a href="#!"><i class="fa fa-pencil"></i> Edit To-do</a></li>
+                  <li><a href="#delete" class="modal-trigger"><i class="fa fa-times-circle-o"></i> Delete To-do</a></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -85,7 +84,7 @@
               </div>
               </div>
           </div>
-          @@include("../components/todo-tabs.html")
+          @@include("../components/todo-tabs.html", {"offsetClass" : "offset-m1", "mclass" : "m11"})
         </div>
       </li>
     </ul>

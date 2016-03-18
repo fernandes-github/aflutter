@@ -56,6 +56,37 @@
 	    				margin-right: 0px;
 					}
 
+					.todo-activity-dropdown{
+						    min-width: 200px !important;
+						    right: 0 !important;
+						    top: 75px !important;
+						    background-color:#F8F8F8;	
+
+						li{
+					
+							min-height: 20px;
+
+							a{
+								font-size: 1em;
+								padding:5px !important;
+								
+								i{
+									font-size: 1.2em;
+	    							margin-right: 5px;
+								}
+
+								&:hover{
+									color: #fff !important;
+								}
+							}
+
+							&:hover{
+								background-color:#364559;
+								
+							}
+						}
+					}
+
 					&.editable{
 						display: none;
 					}
