@@ -70,4 +70,55 @@
 			}
 		}
 	}
+
+	/* .roundedTwo */
+		.roundedTwo {
+		  margin-top: 5px;
+		  width: 28px;
+		  height: 28px;
+		  position: relative;
+		  background: #fcfff4;
+		  background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+		  border-radius: 50px;
+		  border:1px solid #ccc;
+
+		  label {
+		    width: 20px;
+		    height: 20px;
+		    position: absolute;
+		    top: 4px;
+		    left: 4px;
+		    cursor: pointer;
+
+		    &:after {
+		      content: '';
+		      position: absolute;
+		      top: 5px;
+		      left: 4px;
+		      border: 3px solid #fcfff4;
+		      border-top: none;
+		      border-right: none;
+		      background: transparent;
+		      opacity: 0;
+		      transform: rotate(-45deg);
+		    }
+		    &:hover::after {
+		      opacity: 0.3;
+		    }
+		  }
+		  input[type=checkbox] {
+		    visibility: hidden;
+		    &:checked + label:after {
+		      opacity: 1;
+		    } 
+		  }   
+
+		  input[type="checkbox"]:checked + label:before{
+		  	border-right: 2px solid #F8A382;
+    		border-bottom: 2px solid #F8A382;
+    		top: -6px;
+    		left: -5px;
+		  }
+		}
+		/* end .roundedTwo */
 }

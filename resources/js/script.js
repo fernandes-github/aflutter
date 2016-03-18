@@ -343,4 +343,11 @@ $(document).ready(function(){
        $(this).hide().closest('p.alert').find('span.message').text('Todo item restored');
     });
 
+     var $on = 'section';
+      $($on).css({
+        'background':'none',
+        'border':'none',
+        'box-shadow':'none'
+      });
+
 });

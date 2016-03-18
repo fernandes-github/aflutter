@@ -3,20 +3,19 @@
     <ul class="collapsible" data-collapsible="accordion">
       <li class="ui-state-default">
         <div class="collapsible-header todo-tasks-header">
-          <div class="row todo-inner-content">
+          <div class="row todo-inner-content editable">
             <div class="col s5 m5 l5">
-              <p>
-                <input name="group1" type="radio" id="test1" />
-                <label for="test1" class="task-text">`faker.lorem.words`</label>
-              </p>
+                <div class="roundedTwo">
+                  <input type="checkbox" value="None" id="roundedTwo" name="check" checked />
+                  <label for="roundedTwo" class="task-text">`faker.lorem.words`</label>
+                </div>
             </div>
-
             <div class="col s6 m3 l3">
               <i class="material-icons">perm_identity</i>
               <span class="status">2 of 3 complete</span>
             </div>
             <div class="col s6 m3 l3">
-              <div id="" class="row input-group date datepicker-box" data-date-format="mm-dd-yyyy">
+              <div id="" class="row input-group date datepicker-box" data-date-format="D M dd yyyy">
                 <span class="input-group-addon col s2"><i class="material-icons">today</i></span>
                 <input class="form-control col s10 tasks-date-input" type="text" readonly />
               </div>
@@ -24,7 +23,42 @@
               <span>Tue. Jan 13th 2016</span>-->
             </div>
             <div class="col s6 m1 l1">
-              <i class="material-icons dots-icon">more_vert</i>
+              <i class="material-icons dots-icon" data-activates="dropdown5">more_vert</i>
+
+              <ul id="dropdown5" class='dropdown-content sidenav-links-activity'>
+                <li><a href="#!"><i class="fa fa-check"></i> Mark all as complete</a></li>
+                <li><a href="#delete" class="modal-trigger"><i class="fa fa-pencil"></i> Edit To-do</a></li>
+                <li><a href="#delete" class="modal-trigger"><i class="fa fa-times-circle-o"></i> Delete To-do</a></li>
+            </ul>
+            </div>
+          </div>
+          <div class="row todo-inner-content">
+            <div class="col s5 m5 l5">
+                <div class="roundedTwo">
+                  <input type="checkbox" value="None" id="roundedTwo" name="check" checked />
+                  <label for="roundedTwo" class="task-text">`faker.lorem.words`</label>
+                </div>
+            </div>
+            <div class="col s6 m3 l3">
+              <i class="material-icons">perm_identity</i>
+              <span class="status">2 of 3 complete</span>
+            </div>
+            <div class="col s6 m3 l3">
+              <div id="" class="row input-group date datepicker-box" data-date-format="D M dd yyyy">
+                <span class="input-group-addon col s2"><i class="material-icons">today</i></span>
+                <input class="form-control col s10 tasks-date-input" type="text" readonly />
+              </div>
+              <!--<i class="material-icons" id="example1">today</i>
+              <span>Tue. Jan 13th 2016</span>-->
+            </div>
+            <div class="col s6 m1 l1">
+              <i class="material-icons dots-icon" data-activates="dropdown5">more_vert</i>
+
+              <ul id="dropdown5" class='dropdown-content sidenav-links-activity'>
+                <li><a href="#!"><i class="fa fa-check"></i> Mark all as complete</a></li>
+                <li><a href="#delete" class="modal-trigger"><i class="fa fa-pencil"></i> Edit To-do</a></li>
+                <li><a href="#delete" class="modal-trigger"><i class="fa fa-times-circle-o"></i> Delete To-do</a></li>
+            </ul>
             </div>
           </div>
         </div>
