@@ -34,10 +34,16 @@
 						margin:0px;
 					}
 
-					.task-text{
-						margin:0px;
-						font-size: 1.3em;
-						color: #8B8B8B;
+					.roundedTwo{
+						margin-top: 10px;
+						
+						.task-text{
+							margin:0px;
+							font-size: 1.3em;
+							color: #8B8B8B;
+							margin-top: -5px;
+						}		
+			
 					}
 
 					span.status{

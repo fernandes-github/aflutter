@@ -107,10 +107,10 @@ $(document).ready(function(){
       var smallCapsName = value.toLowerCase();
       var randomId = parseInt( Math.random() * (9999 - 99) + 99 );
       var html =  '<li class="group droppable"> '+
-                    '<a href="#'+smallCapsName+'">'+value+'</a>'+
-                    '<a href="#" class="dropdown-button"  data-activates="dropdown'+randomId+'"><i class="material-icons right">more_vert</i></a>'+
+                    '<a class="linked-section" href="#'+smallCapsName+'">'+value+'</a>'+
+                    '<a href="#" class="dropdown-button dots3-sidenav"  data-activates="dropdown'+randomId+'"><i class="material-icons right">more_vert</i></a>'+
                     '<!-- Dropdown Structure -->'+
-                      '<ul id="dropdown'+randomId+'" class="dropdown-content">'+
+                      '<ul id="dropdown'+randomId+'" class="dropdown-content sidenav-links-activity">'+
                         '<li><a href="#!">Rename</a></li>'+
                         '<li><a href="#delete" class="modal-trigger">Delete</a></li>'+
                       '</ul>'+
