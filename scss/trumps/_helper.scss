@@ -153,6 +153,10 @@ p.alert{
 	color:red;
 }
 
+[type="checkbox"] + label:before{
+	border: 2px solid transparent;
+}
+
 /*datepicker box*/
 
 .datepicker-box{

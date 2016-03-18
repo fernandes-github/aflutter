@@ -1,5 +1,8 @@
-@@include("../components/header.html", {"title" : "Dashboard Template"})
-
+@@include("../components/header.html", {"title" : "Dashboard Template", "pageName" : "Groups"})
+<div class="navigation-side-nav">
+    @@include('../components/side-nav.html', {"name" : "Group", "plural" : "Groups"})
+    <div class="clearfix"></div>
+</div>
 <div class="page-content">
 	@@include("../components/page-content.html")
 	@@include("../components/people-collapsed.html")

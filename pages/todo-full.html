@@ -1,10 +1,13 @@
 @@include("../components/header.html", {"title" : "Todo List Full"})
-
+<div class="navigation-side-nav">
+    @@include('../components/side-nav.html', {"name" : "Project", "plural" : "Projects"})
+    <div class="clearfix"></div>
+</div>
 <div class="page-content">
 	@@include("../components/todo-page-content.html")
 	@@include("../components/range-slider.html")
 	<div class="row grey-bg">
-		<div class="col s12">
+		<div class="col s12 page-action-msg">
 			<p class="alert success" style="display:none">
 				<span class="message"></span>
 				<i class="fa fa-times-circle right"></i>
