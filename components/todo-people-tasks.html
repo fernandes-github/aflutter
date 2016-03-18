@@ -3,12 +3,15 @@
     <ul class="collapsible" data-collapsible="accordion">
       <li class="ui-state-default">
         <div class="collapsible-header todo-tasks-header">
+          <form>
           <div class="row todo-inner-content editable">
-            <div class="col s5 m5 l5">
+            <div class="col s1 m1 l1">
                 <div class="roundedTwo">
                   <input type="checkbox" value="None" id="roundedTwo" name="check" checked />
-                  <label for="roundedTwo" class="task-text">`faker.lorem.words`</label>
                 </div>
+            </div>
+            <div class="col s4 m4 l4">
+              <input type="text" class="form-control input-fields" placeholder="abcdef"/>
             </div>
             <div class="col s6 m3 l3">
               <i class="material-icons">perm_identity</i>
@@ -26,12 +29,13 @@
               <i class="material-icons dots-icon" data-activates="dropdown5">more_vert</i>
 
               <ul id="dropdown5" class='dropdown-content sidenav-links-activity'>
-                <li><a href="#!"><i class="fa fa-check"></i> Mark all as complete</a></li>
-                <li><a href="#delete" class="modal-trigger"><i class="fa fa-pencil"></i> Edit To-do</a></li>
-                <li><a href="#delete" class="modal-trigger"><i class="fa fa-times-circle-o"></i> Delete To-do</a></li>
-            </ul>
+                  <li><a href="#!"><i class="fa fa-check"></i> Mark all as complete</a></li>
+                  <li><a href="#delete" class="modal-trigger"><i class="fa fa-pencil"></i> Edit To-do</a></li>
+                  <li><a href="#delete" class="modal-trigger"><i class="fa fa-times-circle-o"></i> Delete To-do</a></li>
+              </ul>
             </div>
           </div>
+          </form>
           <div class="row todo-inner-content">
             <div class="col s5 m5 l5">
                 <div class="roundedTwo">
@@ -68,8 +72,15 @@
              <p class="task-desc">`faker.lorem.paragraph`</p>
               <div class="clearfix"></div>
               <div class="row">
-                <div class="col s8">
+                <div class="col s7">
                   @@include("../components/attachment.html")
+                </div>
+                <div class="col s5">
+                  <div style="float:right">
+                    <input type="reset" class="hide reset-btn">
+                    <button type="button" class="modal-close btn btn-default cancel-btn">Cancel</button>
+                    <button type="submit" class="btn btn-green no-margin disabled-btn disabled">Send</button>
+                  </div>
                 </div>
               </div>
               </div>

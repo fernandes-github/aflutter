@@ -1,12 +1,12 @@
 .attach{
 		background-color: #ccc;
 	    cursor: pointer;
-	    width: 5rem;
-	    height: 5rem !important;
-	    line-height: 5rem !important;
+	    width: 4rem;
+    	height: 5rem !important;
+    	line-height: 4rem !important;
 	    padding: 1rem;
 	    position: relative;
-    	z-index: 1000;
+    	z-index: 999;
 
 	    &:hover{
 	    	background-color:#ccc;
