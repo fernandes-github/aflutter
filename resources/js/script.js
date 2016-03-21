@@ -28,7 +28,7 @@ $(document).ready(function(){
 
     $('.send-reminder-btn').click(function(e){
       e.preventDefault();
-      $('#addperson-modal').closeModal();
+      $('#reminder').closeModal();
       setTimeout(function(){
         showMsg('Reminder sent successfully');
       }, 300);
@@ -36,7 +36,7 @@ $(document).ready(function(){
 
 
     var isMediumAndAbove = Modernizr.mq('(min-width: 900px)')
-    if(isMediumAndAbove){
+    if(isMediumAndAbove){ 
         $('#menu-icon').click(function(){
             if(parseInt($('#nav-mobile').css('left')) !== 0 ){
                 $('.page-content').animate({
@@ -238,7 +238,9 @@ $(document).ready(function(){
     });
 
     //card.js
-    $('.people-collapsed-wrapper .card').click(function(){
+    $('.people-collapsed-wrapper .row.card').unbind('click').click(function(e){
+        e.stopPropagation();
+        e.preventDefault();
         var _this = this;
         if(!$(this).hasClass('expanded')){  
           if($('.people-collapsed-wrapper .expanded .card').length === 1){
@@ -268,7 +270,6 @@ $(document).ready(function(){
           $(this).closest('.box').removeAttr('style');
           $(this).find('.toggle-plus .fa').removeClass('fa-minus').addClass('fa-plus');
         }
-        $(window).resize();
     });
 
     $('.chips-input').keypress(function(e){

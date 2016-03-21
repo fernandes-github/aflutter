@@ -122,6 +122,11 @@
 }
 
 p.alert{
+position: fixed;
+    width: 100%;
+    left: 240px;
+    top: 101px;
+    z-index: 1000;
 	margin: 0;
     color: #fff;
     margin-left: -0.75em;
