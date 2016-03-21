@@ -5,6 +5,36 @@ $(document).ready(function(){
 
     $("select.select-group").chosen({no_results_text: "Create group: "});
 
+    function showMsg(msg){
+      var p = $('.page-action-msg p');
+      p.slideDown().find('span.message').text(msg);
+      setTimeout(function(){
+        p.slideUp();
+      }, 2000);
+    }
+
+    $('.add-person-btn').click(function(e){
+      e.preventDefault();
+      var form = $(this).closest('form');
+      var validator = form.parsley();
+      validator.validate();
+      if(validator.isValid()){
+        $('#addperson-modal').closeModal();
+      }
+      setTimeout(function(){
+        showMsg('New Person added successfully');
+      }, 300);
+    });
+
+    $('.send-reminder-btn').click(function(e){
+      e.preventDefault();
+      $('#addperson-modal').closeModal();
+      setTimeout(function(){
+        showMsg('Reminder sent successfully');
+      }, 300);
+    });
+
+
     var isMediumAndAbove = Modernizr.mq('(min-width: 900px)')
     if(isMediumAndAbove){
         $('#menu-icon').click(function(){
@@ -185,7 +215,6 @@ $(document).ready(function(){
       var selectedItemsCount = $(container).find('.todo-items input:checked').length;
       $(container).find('.total-selected-todos > span' ).text(selectedItemsCount);
       if(selectedItemsCount > 0){
-        debugger;
         $(container).find('.total-selected-todos').css({'visibility': 'visible'});
         $(container).find('button.send-reminder').removeAttr('disabled').removeClass('disabled');
       }
@@ -240,6 +269,7 @@ $(document).ready(function(){
           $(this).closest('.box').removeAttr('style');
           $(this).find('.toggle-plus .fa').removeClass('fa-minus').addClass('fa-plus');
         }
+        $(window).resize();
     });
 
     $('.chips-input').keypress(function(e){
