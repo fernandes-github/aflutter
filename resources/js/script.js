@@ -185,6 +185,7 @@ $(document).ready(function(){
       var selectedItemsCount = $(container).find('.todo-items input:checked').length;
       $(container).find('.total-selected-todos > span' ).text(selectedItemsCount);
       if(selectedItemsCount > 0){
+        debugger;
         $(container).find('.total-selected-todos').css({'visibility': 'visible'});
         $(container).find('button.send-reminder').removeAttr('disabled').removeClass('disabled');
       }
@@ -204,7 +205,7 @@ $(document).ready(function(){
         $(this).closest('.todo-item-row').removeClass('selected');
       }
       var container = $(this).closest('.card-expanded');
-      reclickToggleWrapper(container);
+      // reclickToggleWrapper(container);
       calculateSelectedTodos(container);
     });
 
