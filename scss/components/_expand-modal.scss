@@ -1,13 +1,20 @@
 .expand-modal{
-	width:85% !important;
+	width:75% !important;
 	color: #516580;
 
 	p{
 		margin:0px;
+		color: #676767;
+    	font-size: 1.1em;
 	}
 
 	.todo-inner-content{
 		color: #516580;
+
+		i{
+			position: relative;
+    		top: 5px;
+		}
 
 		p{
 			margin:0px;

@@ -234,7 +234,6 @@ $(document).ready(function(){
         $(this).closest('.todo-item-row').removeClass('selected');
       }
       var container = $(this).closest('.card-expanded');
-      // reclickToggleWrapper(container);
       calculateSelectedTodos(container);
     });
 
