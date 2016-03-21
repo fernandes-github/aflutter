@@ -8,12 +8,12 @@
     	border-radius:0px;
     	background: none;
     	position: absolute;
-    	right: 10px;
-		
+    	right: 5px;
+		top: 5px;
 
 		i{
 			color: #F8A382;
-			font-size: 2em;
+			font-size: 1.5em;
 		}
     }
     
@@ -22,7 +22,7 @@
 	}
 
 	h5{
-		color: #697584;
+		color: #2C3952;
 	}
 
 	p{
@@ -30,7 +30,7 @@
 		margin-top: 5px;
 
 		&.title{
-			color:#ccc;
+			color:#95A0AF;
 			font-size: 1.2em;
 		}
 
@@ -45,5 +45,7 @@
 		border:1px solid #ccc;
 		border-bottom:0px solid #ccc;
 		height: 170px;
+		position: relative;
+		z-index: 1000;
 	}
 }

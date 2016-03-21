@@ -80,13 +80,13 @@
 }
 
 .completed{
-	color:#50B3A1;
-	font-size: 1.3em;
+	color:#50B3A1 !important;
+	font-size: 1.3em !important;
 }
 
 .incomplete{
-	color:#F8A382;
-	font-size:1.3em;
+	color:#F8A382 !important;
+	font-size:1.3em !important;
 }
 
 .pink-border{
@@ -187,7 +187,7 @@ p.alert{
 	span{
 		i{
 			position:relative;
-			right: -45px;
+			right: -35px;
 			&:hover{
 				cursor: pointer;
 			}
