@@ -205,6 +205,8 @@ $(document).ready(function(){
         $(this).closest('.todo-item-row').removeClass('selected');
       }
       var container = $(this).closest('.card-expanded');
+      calculateSelectedTodos(container);
+    });
 
     //card.js
     $('.people-collapsed-wrapper .card').click(function(){
