@@ -1,5 +1,5 @@
 .reminder-modal{
-	height:365px !important;
+    height: auto !important;
 	
 	.slimScrollDiv{
 		height: auto !important;
@@ -34,6 +34,10 @@
 		.reminder-cancel{
 			color:#ccc;
 			font-size: 1.2em;
+		}
+
+		.send-reminder-btn{
+			padding:0px 15px;
 		}
 	}
 }
