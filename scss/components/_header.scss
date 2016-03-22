@@ -6,15 +6,25 @@ body{
 	z-index: 1000;
 	nav{
 
-		img.logo{
-			width:120px;
-			margin-top: 13px;
-			margin-left: 20px;
-		
-			@media #{$medium-and-up}{
-				width: 105px;
-			    margin-top: 13px;
-			    margin-left: 10px;
+		p{
+			margin:0px;
+			text-align:center;
+
+			img.logo{
+				width:120px;
+				margin-top: 10px;
+			
+				@media #{$medium-and-up}{
+					width: 105px;
+				    margin-top: 13px;
+				    margin-left: 10px;
+				}
+
+				@media #{$large-and-up}{
+					width: 120px;
+				    margin-top: 13px;
+				    margin-left: 20px;
+				}
 			}
 		}
 

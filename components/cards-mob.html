@@ -10,11 +10,15 @@
     	<h5 class="truncate">`faker.name.findName`</h5>
     	<p class="title truncate">`faker.name.title`</p>
     	<p class="risk-txt truncate">1 To-do at risk!</p>
+        <br>
+        <p style="display:none" class="status-buttons">
+        @@include("../components/toggle-buttons.html")
+        </p>
     </div>
   </div>
 </div>
 <div class="col s12 m12 l12 hide">
-    <div class="details-section hoverable hide-on-small-only">
-        @@include("./cards-collapsed.html")
+    <div class="details-section hoverable">
+        @@include("./card-expand-mob.html")
     </div>
 </div>

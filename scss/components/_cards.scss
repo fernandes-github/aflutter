@@ -18,7 +18,11 @@
     }
     
 	.card-img{
-		width: 110px;
+		width: 90%;
+
+		@media #{$medium-and-up}{
+			width: 110px;
+		}
 	}
 
 	h5{
