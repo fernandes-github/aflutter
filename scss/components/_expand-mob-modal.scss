@@ -1,0 +1,26 @@
+.modal.expand-mobile{
+	overflow-y:scroll !important;
+	width:90% !important;
+
+	.slimScrollDiv{
+		height: auto !important;
+		
+		.modal-content{
+			height: auto !important;
+
+			.datepicker-box{
+				i{
+					right: auto !important;
+				}
+
+				input{
+					text-align: left;
+				}
+			}
+		}
+	}
+
+	.attach{
+		width: 3rem;
+	}
+}

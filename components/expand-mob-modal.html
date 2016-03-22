@@ -1,0 +1,49 @@
+<!-- Reminder - Modal Structure -->
+  <div id="expand-mob" class="modal expand-modal expand-mobile">
+    <div class="modal-content">
+    	 <div class="row todo-inner-content">
+            <div class="col s1">
+              <i class="fa fa-circle-thin"></i>
+            </div>  
+            <div class="col s7">
+              <p class="task-text">`faker.lorem.words`</p>
+            </div>
+            <div class="col s4">
+              <i class="fa fa-list-ul list-icon right"></i>
+            </div>
+            <div class="col s12 l3">
+              <div class="expand-modal-complete">
+                <i class="material-icons">perm_identity</i>
+                <span>2 of 3 complete</span>
+              </div>
+            </div>
+            <div class="col s12 l3">
+              <div id="" class="row input-group date datepicker-box no-margin no-bg-border expand-datepicker" data-date-format="D M dd yyyy">
+                <span class="input-group-addon"><i class="material-icons">today</i></span>
+                <span><input class="form-control w85" type="text" readonly /></span>
+              </div>
+            </div>
+            <div class="col s12">
+              <p class="task-desc">`faker.lorem.paragraph`</p>
+            </div>
+            <div class="col s12">
+               @@include("../components/attachment.html")
+            </div>
+            <div class="clearfix"></div>
+               @@include("../components/todo-tabs.html")
+        </div>
+
+          <!--<div class="row">
+            <div class="col s12 m12">
+             <p class="task-desc">`faker.lorem.paragraph`</p>
+              <div class="clearfix"></div>
+              <div class="row">
+                <div class="col s8">
+                 
+                </div>
+              </div>
+              </div>
+          </div>-->
+         
+    </div>
+  </div>
