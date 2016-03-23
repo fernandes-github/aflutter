@@ -1,7 +1,7 @@
 
 .todo-item-row{
 
-	border-bottom: 1px solid #F2F2F2;
+	border-bottom: 1px solid rgba(242, 242, 242, 0.62);
     padding-bottom: 10px;
     margin-bottom: 0px;
     padding-top: 10px;
@@ -82,6 +82,46 @@
 		display: inline-block;
 		margin: 0px;
 		color: #95A0AF;
+	}
+
+	&.todo-item-row-mob{
+
+		.col{
+			margin-bottom: 15px;
+
+			.attire{
+				font-size: 1.2em;
+			    background-color: #F2F2F2;
+			    padding: 0px 20px;
+			    border-radius: 7px;
+			    color: #2C3952;
+			    cursor: auto;
+
+			    a{
+					color: #2C3952;
+				}
+			}
+
+			.checkbox-wrapper{
+				display: inline-block;
+			    position: absolute;
+			    right: 0px;
+			    margin-right: 25px;
+
+				label{
+					padding-left: 0px !important;
+					font-size: 1.2em;
+				}
+
+			}
+
+			.expand-datepicker{
+				i{
+					position: relative;
+	    			top: 5px;
+				}
+			}
+		}
 	}
 }
 

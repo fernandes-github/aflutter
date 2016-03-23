@@ -1,6 +1,6 @@
 .card{
 	
-	padding: 10px 15px;
+	padding: 10px 5px;
     cursor : pointer;
 
     .toggle-plus{
@@ -18,15 +18,25 @@
     }
     
 	.card-img{
-		width: 90%;
+		width: 100%;
+	    margin-top: 10px;
+	    height: 75px;
 
 		@media #{$medium-and-up}{
-			width: 110px;
+			width: 75%;
+			margin-top: 0px;
+			height: auto;
 		}
 	}
 
 	h5{
 		color: #2C3952;
+		font-size: 1.2em;
+		font-weight: bold;
+
+		@media #{$medium-and-up}{
+			font-size: 1.6em;
+		}
 	}
 
 	p{
@@ -35,12 +45,21 @@
 
 		&.title{
 			color:#95A0AF;
-			font-size: 1.2em;
+			font-size: 1em;
+
+			@media #{$medium-and-up}{
+				font-size: 1.2em;
+			}
 		}
 
 		&.risk-txt{
 			color: #990C3D;
 			font-size: 1.2em;
+			margin-bottom: 10px;
+
+			@media #{$medium-and-up}{
+				margin-bottom: 0px;
+			}
 		}
 	}
 
@@ -48,8 +67,19 @@
 		box-shadow:none;
 		border:1px solid #ccc;
 		border-bottom:0px solid #ccc;
-		height: 170px;
+		height: auto;
 		position: relative;
 		z-index: 1000;
+
+		@media #{$medium-and-up}{
+			height: 170px;
+		}
+	}
+
+	.hide-on-med-and-up{
+		i{
+			color: #ccc;
+    		font-size: 2.3em;
+		}
 	}
 }

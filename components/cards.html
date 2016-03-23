@@ -1,6 +1,6 @@
 <div class="col s12 m6 l6">
   <div class="row card white hoverable">
-    <a class="btn-floating toggle-plus">
+    <a class="btn-floating toggle-plus hide-on-small-only">
         <i class="fa fa-plus"></i>
     </a>
     <div class="col s4 m4 l4">
@@ -11,10 +11,21 @@
     	<p class="title truncate">`faker.name.title`</p>
     	<p class="risk-txt truncate">1 To-do at risk!</p>
     </div>
+    <br><br>
+    <div style="display:none">
+        <div class="col s2 hide-on-med-and-up">
+            <i class="material-icons">info_outline</i>
+        </div>
+        <div class="col s10 hide-on-med-and-up">
+            <p style="display:none" class="status-buttons">
+            @@include("../components/toggle-buttons.html")
+            </p>
+        </div>
+    </div>
   </div>
 </div>
 <div class="col s12 m12 l12 hide">
-    <div class="details-section hoverable hide-on-small-only">
+    <div class="details-section hoverable">
         @@include("./cards-collapsed.html")
     </div>
 </div>

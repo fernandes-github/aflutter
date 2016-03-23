@@ -1,38 +1,71 @@
 .expand-modal{
-	width:75% !important;
+	width:90%;
 	color: #516580;
 
-	p{
-		margin:0px;
-		color: #676767;
-    	font-size: 1.1em;
+	@media #{$medium-and-up}{
+		width:70% !important;
 	}
 
-	.todo-inner-content{
-		color: #516580;
+	.slimScrollDiv{
+		overflow: scroll !important;
 
-		i{
-			position: relative;
-    		top: 5px;
+		@media #{$medium-and-up}{
+			overflow: hidden !important;
+		}
+	}
+
+	.modal-content{
+		overflow: scroll !important;
+	
+		@media #{$medium-and-up}{
+			overflow: hidden !important;
 		}
 
 		p{
 			margin:0px;
-			margin-top: 5px;
+			color: #676767;
+	    	font-size: 1.1em;
 		}
 
-		.expand-modal-complete{
+		.todo-inner-content{
+			color: #516580;
+
 			i{
-				position:relative;
-				top:5px;
+				position: relative;
+	    		top: 5px;
+			}
+
+			p{
+				margin:0px;
+				margin-top: 5px;
+			}
+
+			.expand-modal-complete{
+				i{
+					position:relative;
+					top:5px;
+				}
+			}
+
+			i.list-icon{
+				float: right;
+			    margin-top: 5px;
+			    font-size: 1.4em;
+			    color: #ccc;
+			}
+		}
+		.datepicker-box{
+			i{
+				right: auto !important;
+			}
+
+			input{
+				text-align: left;
 			}
 		}
 
-		i.list-icon{
-			float: right;
-		    margin-top: 5px;
-		    font-size: 1.4em;
-		    color: #ccc;
+		.attach{
+			width: 100%;
 		}
 	}
 }

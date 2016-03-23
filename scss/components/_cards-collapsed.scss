@@ -6,7 +6,19 @@
 
     .details-wrapper{
         a.contact-website{
-            color: #F8A382;
+            color: #888888;
+
+            @media #{$medium-and-up}{
+                color: #F8A382;
+            }
+        }
+
+        h6{
+            color: #F8A382 !important;
+    
+             @media #{$medium-and-up}{
+                color: #888888 !important;
+             }
         }
     }
 
@@ -30,5 +42,14 @@
         float: right;
         background-color: #FBF9F8;
         width: 45%;
+    }
+
+    .mob-reminder-footer{
+        background-color: #FBF9F8;
+        .send-reminder{
+            padding: 0px 10px;
+            width: 100% !important;
+            font-size: 0.85em;
+        }
     }
 }

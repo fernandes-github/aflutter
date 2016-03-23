@@ -17,7 +17,7 @@
             <p><a href="#" class="contact-website">`faker.internet.url`</a></p>
         </div>
     </div>
-    <div class="row">
+    <div class="row hide-on-small-only">
         <div class="col s12 m4 l3">
             @@include("../components/toggle-buttons.html")
         </div>
@@ -29,7 +29,15 @@
         </div>
     </div>
     
-    <div class="row reminder-footer">
+    <div class="row reminder-footer hide-on-small-only">
+        <div class="col s5">
+            <p class="total-selected-todos"><span>1</span> to-do selected</p>
+        </div>
+        <div class="col s7">
+            <button type="button" class="btn btn-default send-reminder btn-green disabled modal-trigger" href="#reminder">Send Reminder</button>
+        </div>
+    </div>
+    <div class="row hide-on-med-and-up mob-reminder-footer">
         <div class="col s5">
             <p class="total-selected-todos"><span>1</span> to-do selected</p>
         </div>

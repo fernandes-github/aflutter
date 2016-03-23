@@ -10,8 +10,12 @@
 
 	.below-navbar{
 		margin-bottom:0px;
-		padding-top: 15px;
-		margin-left: 240px;
+		margin-left: 0px;
+
+		@media #{$medium-and-up}{
+			padding-top: 15px;
+			margin-left: 240px;
+		}
 
 		.add-person-section{
 	    	text-align: center;
@@ -28,6 +32,29 @@
 		    	margin-bottom: 5px;
 	    		margin-top: 5px;
 		    }
+		}
+
+		.hide-on-med-and-up{
+
+			.add-person-section{
+		    	text-align: center;
+				margin-top: -70px;
+			    position: relative;
+			    z-index: 10000;
+			}
+
+			p{
+		    	color: #fff;
+		    	margin-bottom: 5px;
+	    		margin-top: 5px;
+		    }
+
+			p.people-title{
+				margin: 0px;
+			    color: #fff;
+			    font-size: 1.5em;
+				text-align:center;
+			}
 		}
 	}
 }
