@@ -189,9 +189,10 @@ $(document).ready(function(){
 
 
     $('.modal-trigger').leanModal({
-      ready: function(evt){
+      ready: function(evt){ 
         var resetBtn = $('.modal-content form input.reset-btn');
         resetBtn.click();
+        $('.modal-content').slimScroll({scrollTo : '0px'})
       }
     });
 
