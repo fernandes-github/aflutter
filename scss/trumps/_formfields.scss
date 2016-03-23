@@ -95,7 +95,13 @@ form{
 		label{
 			color: #4C4C4C;
     		font-size: 1.1em;
-    		float: right;
+    		margin-bottom: 10px;
+    		display: block;
+
+    		@media #{$medium-and-up}{
+    			float: right;
+    			margin-bottom: 0px;
+    		}
 		}
 
 		select{
@@ -126,7 +132,11 @@ form{
 			label, a.upload-btn{
 				margin-top: 10px !important;
 				display: inline-block;
-				width:40%;
+				width:100%;
+
+				@media #{$medium-and-up}{
+					width:40%;
+				}
 			}
 		}
 
