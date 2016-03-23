@@ -201,13 +201,13 @@ $(document).ready(function(){
     $('.card-expanded .toggle-section').click(function(){
       var action = $(this).find('span').text();
       if(action === 'Complete'){
-        $(this).closest('.card-expanded').find('.row.todo-items').find('.todo-item-row').hide();
-        $(this).closest('.card-expanded').find('.row.todo-items').find('.todo-item-row.selected').show();
+        $(this).closest('.card-expanded').find('.row.todo-items').find('.complete-tasks').show();
+        $(this).closest('.card-expanded').find('.row.todo-items').find('.incomplete-tasks').hide();
       }
       else{
-        $(this).closest('.card-expanded').find('.row.todo-items').find('.todo-item-row').show();
-        $(this).closest('.card-expanded').find('.row.todo-items').find('.todo-item-row.selected').hide(); 
-      }
+        $(this).closest('.card-expanded').find('.row.todo-items').find('.complete-tasks').hide();
+        $(this).closest('.card-expanded').find('.row.todo-items').find('.incomplete-tasks').show();
+       }
     });
     $('.card-expanded .toggle-section.active').click();
 
