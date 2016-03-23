@@ -1,4 +1,6 @@
 var $ = jQuery.noConflict();
+var isMobile = Modernizr.mq('(max-width: 767px)');
+
 $(document).ready(function(){
 
 	  $(".button-collapse").sideNav();
@@ -257,19 +259,30 @@ $(document).ready(function(){
         $(this).toggleClass('hoverable expanded').parent().toggleClass('expanded');
         expandedSection.toggleClass('hide');
         if(!$(this).hasClass('hoverable')){
-          expandedSection.css({
-            position: 'absolute',
-            top: 192,
-            zIndex: 100
-          });
-          $(this).closest('.box').css('margin-bottom', expandedSection.height());
-          $(this).find('.toggle-plus .fa').removeClass('fa-plus').addClass('fa-minus');
+          if(!isMobile){
+            expandedSection.css({
+              position: 'absolute',
+              top: 190,
+              zIndex: 100
+            });
+            $(this).closest('.box').css('margin-bottom', expandedSection.height());
+            $(this).find('.toggle-plus .fa').removeClass('fa-plus').addClass('fa-minus');
+          }
+          else{
+            expandedSection.css('top','40px').css('margin-bottom', '40px');
+            $(this).find('.mobile-toggle').removeClass('hide');
+          }
         }
         else{
           expandedSection.removeAttr('style');
           $(this).closest('.box').removeAttr('style');
           $(this).find('.toggle-plus .fa').removeClass('fa-minus').addClass('fa-plus');
+          $(this).find('.mobile-toggle').addClass('hide');
         }
+    });
+
+    $('.mobile-toggle .toggle-section').click(function(e){
+        e.stopPropagation();
     });
 
     $('.chips-input').keypress(function(e){
