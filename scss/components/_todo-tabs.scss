@@ -19,7 +19,7 @@
 			
 			a{
 				background-color: #F1F1F1;
-	    		margin-left: 10px;
+	    		margin-left: 5px;
 	    		width: auto;
 	    		color: #516580;
 			
@@ -93,14 +93,18 @@
 		    background-color: #F8F8F8;
 		    float:left;
 		    height:20px;
-		    margin:.8em 0 0 .5em; 
 		    outline:0;
 		    padding:.4em 0 .4em .6em; 
-		    width:85%; 
+		    width:65%; 
 
 		     &:focus{
 		    	border-bottom: 2px solid #ECECEC;
 		    	box-shadow:none;
+		    }
+
+		    @media #{$medium-and-up}{
+		    	width:85%; 
+		    	margin:.8em 0 0 .5em; 
 		    }
 		}
 
@@ -112,14 +116,19 @@
 		    cursor:pointer;
 		    float:left;
 		    height:36px;
-		    line-height: 40px;
-		    margin:12px 0 0 0;
+		    line-height: 35px;
 		    text-align:center;
-		    width:50px;
+		    width:40px;
 
 		    i{
 		    	font-size: 1.5em;
 		    }
+
+		     @media #{$medium-and-up}{
+		     	width: 50px;
+		     	line-height: 40px;
+		     	margin:12px 0 0 0;
+		     }
 		}
 
 		.discuss-send-btn{
@@ -151,6 +160,7 @@
 				border-bottom: 1px solid #F1F1F1;
 				margin-bottom:0px;
 				padding-top: 10px;
+				padding-bottom:10px;
 				
 				&:hover{
 					background-color:#F8F8F8;
@@ -160,8 +170,19 @@
 					}
 				}
 
+				@media #{$small-and-down} {
+					.pink-border{
+						display: block !important;
+						margin-top: 10px;
+					}
+				}
+		
 				img{
-					width: 40px;
+					width: 100%;
+
+					@media #{$medium-and-up}{
+						width:40px;
+					}
 				}
 
 				p{
@@ -181,6 +202,17 @@
 				.pink-border{
 					display: none;
 				}
+
+				&.people-tab-mob{
+					i{
+						position: relative;
+						top:0px !important;
+					}
+
+					p{
+						margin-bottom: 10px;
+					}
+				}
 			}
 		}
 	}
@@ -198,7 +230,7 @@
 
 		p{
 			padding:0px;
-			margin-top: 25px;
+			margin-top: 25px !important;
 		}
 
 		.incomplete-reminder{
@@ -207,7 +239,36 @@
 			margin-bottom: 0px;
 
 			.incomplete-txt{
-				margin-top: 10px;
+				margin-top: 10px !important;
+			}
+		}
+
+		&.tabs-mob-footer{
+
+			>.col{
+				padding-right:0px;
+				padding-left:0px;
+			}
+
+			i{
+				position:relative;
+				top:0px !important;
+			}
+
+			span{
+				position: relative;
+			    top: 10px;
+			    left: 15px;
+			}
+
+			p.incomplete-txt{
+				font-size: 0.95em;
+			}
+
+			a.btn{
+			    width: 100%;
+			    font-size: 0.95em;
+			    padding: 0px;
 			}
 		}
 	}
