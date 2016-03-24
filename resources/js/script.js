@@ -283,7 +283,19 @@ $(document).ready(function(){
     });
 
     $('.mobile-toggle .toggle-section').click(function(e){
-        e.stopPropagation();
+      e.stopPropagation();
+      var action = $(this).find('span').text();
+      var row = $(this).closest('.expanded').parent().next();
+      if(action === 'Complete'){
+        $(row).find('.card-expanded').find('.row.todo-items').find('.complete-tasks').show();
+        $(row).find('.card-expanded').find('.row.todo-items').find('.incomplete-tasks').hide();
+      }
+      else{
+        $(row).find('.card-expanded').find('.row.todo-items').find('.complete-tasks').hide();
+        $(row).find('.card-expanded').find('.row.todo-items').find('.incomplete-tasks').show();
+       }
+        $(this).closest('.toggle-wrapper').find('.toggle-section').removeClass('active');
+       $(this).addClass('active');
     });
 
     $('.chips-input').keypress(function(e){
