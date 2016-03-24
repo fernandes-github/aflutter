@@ -123,16 +123,19 @@
 }
 
 p.alert{
-position: fixed;
+	position: fixed;
     width: 100%;
-    left: 240px;
-    top: 101px;
+    left: 0px;
+    top: 110px;
     z-index: 1000;
 	margin: 0;
     color: #fff;
-    margin-left: -0.75em;
-    margin-right: -0.75em;
     padding: 5px 30px;
+
+    @media #{$medium-and-up}{
+    	left: 240px;
+    	top: 120px;
+    }
 
     &.success{
     	background-color: #8EC0B7;
@@ -220,7 +223,13 @@ position: fixed;
 }
 
 .todo-main-content{
-	position:relative;
+	position:relative;	
+
+	.hide-on-med-and-up{
+		.toggle-wrapper{
+			margin-top: 85px;
+		}
+	}
 }
 
 .m5{

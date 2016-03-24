@@ -1,16 +1,23 @@
 
 <div class="blue-bar">
 	<div class="row below-navbar to-do-content">
-		<div class="col s8 m4 l4">
+		<div class="col m4 l4 hide-on-small-only">
 			@@include("../components/search.html", {"placeholder" : "Search to-do"})
 		</div>
-		<div class="col s8 m3 l3">
+		<div class="col  l3 hide-on-small-only">
 			@@include("../components/toggle-buttons.html")
 		</div>
-		<div class="col s8 m3 l3">
+		<div class="col m3 l3 hide-on-small-only">
 			@@include("../components/blue-select.html")
 		</div>
-		<div class="col s4 m2 l2">
+		<div class="col m2 l2 hide-on-small-only">
+			<div class="add-todo">
+				<a class="btn-floating btn-large modal-trigger" href="#addtodo-modal"><i class="material-icons">add</i></a>
+				<p>Add To-do</p>
+			</div>
+		</div>
+		<div class="col s12 hide-on-med-and-up">
+			<p class="center-align todo-mob-select">@@include("../components/blue-select.html")</p>
 			<div class="add-todo">
 				<a class="btn-floating btn-large modal-trigger" href="#addtodo-modal"><i class="material-icons">add</i></a>
 				<p>Add To-do</p>
@@ -18,6 +25,7 @@
 		</div>
 	</div>
 </div>
+
 @@include('./modal.html', {
 	"title" : "Add a To-do",
 	"id" : "addtodo-modal",
