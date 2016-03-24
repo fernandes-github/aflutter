@@ -1,3 +1,5 @@
+
+
 .clearfix{
 	clear: both;
 }
@@ -93,7 +95,6 @@
 	background-color:#fff;
 	border:1px solid #F8A382;
 	color:#F8A382;
-	float:right;
 	box-shadow:none;
 
 	&:hover{
@@ -235,4 +236,20 @@ p.alert{
 .m5{
 	position:relative !important;
 	left:5px !important;
+}
+
+.expand-desc-row{
+	margin-bottom: 0px;
+
+	.task-desc{
+		padding: 0rem;
+		padding-top: 10px;
+		font-size: 1.15em;
+		color: #8B8B8B;
+		margin-left: 20px;
+
+		@media #{$medium-and-up}{
+			margin-left: 0px;
+		}
+	}
 }

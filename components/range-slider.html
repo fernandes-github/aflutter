@@ -1,14 +1,17 @@
-<div class="row range-slider-wrapper grey-bg hide-on-small-only">
-	<div class="col s12 m1 l1">
+<div class="row range-slider-wrapper grey-bg">
+	<div class="col m1 l1 hide-on-small-only">
 		<p class="center-align">TODAY</p>
 	</div>
-	<div class="col s12 m9 l9">
+	<div class="col m9 l9 hide-on-small-only">
 		<div id="slider" class="ui-slider"></div>
 	</div>
-	<div class="col s12 m2 l2">
+	<div class="col m2 l2 hide-on-small-only">
 		<div class="rings-section">
 			<img src="images/weddingringicon.svg" class="responsive-img wedding-rings" alt="wedding rings"/>
 			<span>Wedding</span>
 		</div>
+	</div>
+	<div class="col s12 hide-on-med-and-up">
+		@@include("../components/toggle-buttons.html")
 	</div>
 </div>

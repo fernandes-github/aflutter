@@ -16,6 +16,7 @@ form{
 			border-radius:3px;
 			background: none;
 			height: 35px;
+			box-shadow:none;
 		}
 
 		.chosen-search{
@@ -30,7 +31,6 @@ form{
 		}
 
 		&.chosen-container-active{
-			border: 1px solid #E6E6E6 !important;
 			border-radius:3px;
 			
 

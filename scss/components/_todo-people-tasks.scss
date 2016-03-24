@@ -42,7 +42,7 @@
 						
 						.task-text{
 							margin:0px;
-							font-size: 1.3em;
+							font-size: 1.2em;
 							color: #8B8B8B;
 							margin-top: -5px;
 						}		
@@ -123,22 +123,6 @@
 
 				background-color: #fff;
 				color: #516580;
-				
-				.task-desc{
-					padding: 0rem;
-					padding-top: 10px;
-					font-size: 1.15em;
-    				color: #8B8B8B;
-    				margin-left: 15px;
-
-    				@media #{$medium-and-up}{
-    					margin-left: 0px;
-    				}
-				}
-
-				> .row{
-					margin-bottom: 0px;
-				}
 			}
 		}
 	}

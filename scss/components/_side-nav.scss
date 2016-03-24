@@ -114,11 +114,11 @@
 		position:absolute !important;
 
 		li{
-			    min-height: 35px;
-			    line-height: 35px;
+			    min-height: 15px;
+    			line-height: 20px;
 		
 			a{
-				color: #F8A382;
+				color: #8B8B8B;
 				height: 30px;
 				line-height: 35px;
 				padding: 0 16px;
@@ -147,13 +147,13 @@
 
 
 	.dots3-sidenav{
-		float: right;
     	margin-top: 10px;
     	display: none;
 
     	i{
     		margin-top: 5px;
     		color: #F8A382;
+    		float: right !important;
     	}
 	}
 
@@ -161,7 +161,16 @@
 		background-color:#F8F8F8 !important;
 	
 		.dots3-sidenav{
-			display: block;
+			display: inline;
+			float: right !important;
+			width: 30px;
+			position: absolute;
+			right: 0px !important;
+			padding: 0;
+
+			i{
+				width:30px;
+			}
 		}
 	}
 }
