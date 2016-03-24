@@ -28,6 +28,11 @@ form{
 		.chosen-drop{
 			border: 1px solid #E6E6E6 !important;
 			border-radius:0px;
+
+			.highlighted{
+				background-color:#50B3A1 !important;
+				background-image:none;
+			}
 		}
 
 		&.chosen-container-active{
