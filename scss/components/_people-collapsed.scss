@@ -63,4 +63,13 @@
 			margin-bottom: 20px;
 		}
 	}
+
+	.alert{
+		position:fixed;
+		top:90px;
+
+		@media #{$medium-and-up}{
+			top:100px;
+		}
+	}
 }

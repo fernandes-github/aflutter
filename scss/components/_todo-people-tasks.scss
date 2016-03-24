@@ -26,9 +26,12 @@
 				min-height:none;
 				color:#516580;
 				border-bottom: 0px solid #ccc;
+				padding:0px;
+				padding-bottom:10px;
 
 				 .todo-inner-content{
 					margin-bottom: 0px;
+					position:relative;
 
 					p{
 						margin:0px;
@@ -39,7 +42,7 @@
 						
 						.task-text{
 							margin:0px;
-							font-size: 1.3em;
+							font-size: 1.2em;
 							color: #8B8B8B;
 							margin-top: -5px;
 						}		
@@ -59,7 +62,7 @@
 					.todo-activity-dropdown{
 						    min-width: 200px !important;
 						    right: 0 !important;
-						    top: 75px !important;
+						    top: 35px !important;
 						    background-color:#F8F8F8;	
 
 						li{
@@ -90,6 +93,29 @@
 					&.editable{
 						display: none;
 					}
+
+					.todo-status-mob{
+						margin-left: 35px;
+
+						@media #{$medium-and-up}{
+							margin-left: 0px;
+						}
+					}
+
+					.date{
+						margin-left: 25px;
+    					margin-right: 25px;
+
+    					@media #{$medium-and-up}{
+    						margin-left: 0px;
+    						margin-right: 0px;
+    					}
+					}
+				}
+
+				@media #{$medium-and-up}{
+					padding:0 1rem;
+					padding-bottom:0px;
 				}
 			}
 
@@ -97,17 +123,6 @@
 
 				background-color: #fff;
 				color: #516580;
-				
-				.task-desc{
-					padding: 0rem;
-					padding-top: 10px;
-					font-size: 1.15em;
-    				color: #8B8B8B;
-				}
-
-				> .row{
-					margin-bottom: 0px;
-				}
 			}
 		}
 	}

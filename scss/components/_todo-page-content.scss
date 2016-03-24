@@ -26,4 +26,19 @@
     		margin-top: -45px;
     	}
     }
+
+    .hide-on-med-and-up{
+        .todo-mob-select{
+            width: 60%;
+            margin: 0px auto;
+            position: relative;
+            top: 8px;
+            left: -10px;
+        }
+
+        .add-todo{
+            margin-top: -90px;
+        }
+    
+    }
 }

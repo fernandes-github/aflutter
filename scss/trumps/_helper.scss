@@ -1,3 +1,5 @@
+
+
 .clearfix{
 	clear: both;
 }
@@ -93,7 +95,6 @@
 	background-color:#fff;
 	border:1px solid #F8A382;
 	color:#F8A382;
-	float:right;
 	box-shadow:none;
 
 	&:hover{
@@ -123,16 +124,19 @@
 }
 
 p.alert{
-position: fixed;
+	position: fixed;
     width: 100%;
-    left: 240px;
-    top: 101px;
+    left: 0px;
+    top: 110px;
     z-index: 1000;
 	margin: 0;
     color: #fff;
-    margin-left: -0.75em;
-    margin-right: -0.75em;
     padding: 5px 30px;
+
+    @media #{$medium-and-up}{
+    	left: 240px;
+    	top: 120px;
+    }
 
     &.success{
     	background-color: #8EC0B7;
@@ -220,10 +224,32 @@ position: fixed;
 }
 
 .todo-main-content{
-	position:relative;
+	position:relative;	
+
+	.hide-on-med-and-up{
+		.toggle-wrapper{
+			margin-top: 85px;
+		}
+	}
 }
 
 .m5{
 	position:relative !important;
 	left:5px !important;
+}
+
+.expand-desc-row{
+	margin-bottom: 0px;
+
+	.task-desc{
+		padding: 0rem;
+		padding-top: 10px;
+		font-size: 1.15em;
+		color: #8B8B8B;
+		margin-left: 20px;
+
+		@media #{$medium-and-up}{
+			margin-left: 0px;
+		}
+	}
 }
