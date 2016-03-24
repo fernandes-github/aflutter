@@ -365,10 +365,8 @@ $(document).ready(function(){
         sortable.prev().find('p.alert').slideUp(50);
       },
       stop : function( event, ui ){
-        var sortable = $(event.target).closest('.sortable-todo-items');
-        sortable.prev().find('p.alert').find('.undo-todo-move').show();
-        sortable.prev().find('p.alert').find('span.message').text('To do order changed');
-        sortable.prev().find('p.alert').slideDown();
+        var sortable = $('.page-action-msg');
+        showMsg('To do order changed');
       }
     }).disableSelection();
 
