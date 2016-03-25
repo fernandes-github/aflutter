@@ -254,6 +254,15 @@ p.alert{
 	}
 }
 
+#calendar{
+	width : 90%;
+	margin :0 auto;
+
+	.fc-toolbar{
+		display: none;
+	}
+}
+
 select{
 	-webkit-appearance:none;
 }

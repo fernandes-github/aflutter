@@ -1,0 +1,29 @@
+.schedule-icons{
+	padding-top:70px;
+	width:90%;
+	margin-bottom: 0px;
+
+	h5{
+		color: #F8A382;
+		margin:0px
+	}
+
+	p{
+		margin:5px;
+		color: #ccc;
+	}
+
+	.icons-list{
+		margin-top: 25px;
+
+		i{
+			font-size: 1.3em;
+			color:#ccc;
+			margin-right: 5px;
+
+			&.blue-icon{
+				color: #364559;
+			}
+		}
+	}
+}
