@@ -1,47 +1,7 @@
-
-    <!-- inject:js -->
-  	<script src="./js/modernizr.js"></script>
-  	<script src="./jquery/dist/jquery.js"></script>
-  	<script src="./js/jquery-ui.js"></script>
-  	<script src="./Materialize/dist/js/materialize.js"></script>
-  	<script src="./jQRangeSlider/jQRangeSliderMouseTouch.js"></script>
-  	<script src="./jQRangeSlider/jQRangeSliderDraggable.js"></script>
-  	<script src="./jQRangeSlider/jQRangeSliderHandle.js"></script>
-  	<script src="./jQRangeSlider/jQRangeSliderBar.js"></script>
-  	<script src="./jQRangeSlider/jQRangeSliderLabel.js"></script>
-  	<script src="./jQRangeSlider/jQRangeSlider.js"></script>
-  	<script src="./jQRangeSlider/jQDateRangeSliderHandle.js"></script>
-  	<script src="./jQRangeSlider/jQDateRangeSlider.js"></script>
-  	<script src="./jQRangeSlider/jQRuler.js"></script>
-  	<script src="./jquery-slimscroll/jquery.slimscroll.js"></script>
-  	<script src="./parsleyjs/dist/parsley.js"></script>
-  	<!-- endinject -->
-    <script>
-    jQuery.browser = {};
-    (function () {
-        jQuery.browser.msie = false;
-        jQuery.browser.version = 0;
-        if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
-            jQuery.browser.msie = true;
-            jQuery.browser.version = RegExp.$1;
-        }
-    })();
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.4.2/chosen.jquery.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
-    <script src="./js/Common.js" type="text/javascript"></script>    
-    <script src="./js/datepicker_lang_US.js" type="text/javascript"></script>  
-    <script src="./js/jquery.alert.js" type="text/javascript"></script>    
-    <script src="./js/jquery.ifrmdailog.js" defer="defer" type="text/javascript"></script>
-    <script src="./js/wdCalendar_lang_US.js" type="text/javascript"></script>    
-    <script src="./js/jquery.calendar.js" type="text/javascript"></script> 
-    <script src="./js/script.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {     
-            var view="day";          
-            var events = {"events":[[92444,"remote meeting","03\/26\/2016 18:06","12\/31\/2016 19:20",0,0,0,8,1,null,""],[17223,"project plan review","03\/21\/2016 20:35","12\/31\/2016 18:43",1,0,0,9,1,null,""],[63186,"team meeting","03\/25\/2016 14:21","12\/31\/2016 18:04",0,1,0,10,1,null,""],[58809,"annual report","03\/25\/2016 04:52","12\/31\/2016 18:13",1,1,0,-1,1,null,""],[71067,"remote meeting","03\/24\/2016 05:49","12\/31\/2016 18:25",0,0,0,9,1,null,""],[97729,"go to dinner","03\/24\/2016 15:09","12\/31\/2016 18:07",0,0,0,6,1,null,""],[26765,"project plan review","03\/22\/2016 07:02","12\/31\/2016 18:52",1,0,0,3,1,null,""],[75647,"team meeting","03\/27\/2016 18:19","12\/31\/2016 18:32",1,0,0,3,1,null,""],[23432,"go to dinner","03\/27\/2016 07:14","12\/31\/2016 19:37",1,0,0,6,1,null,""],[82094,"team meeting","03\/27\/2016 13:15","12\/31\/2016 19:56",1,0,0,3,1,null,""],[91930,"remote meeting","03\/23\/2016 23:22","12\/31\/2016 18:52",1,0,0,13,1,null,""],[21562,"remote meeting","03\/21\/2016 11:12","12\/31\/2016 19:14",0,1,0,8,1,null,""],[18105,"annual report","03\/21\/2016 19:24","12\/31\/2016 19:42",1,0,0,7,1,null,""],[97805,"team meeting","03\/26\/2016 23:34","12\/31\/2016 18:06",1,0,0,3,1,null,""],[56472,"project plan review","03\/22\/2016 14:09","12\/31\/2016 19:32",0,0,0,10,1,null,""],[37490,"team meeting","03\/27\/2016 22:56","12\/31\/2016 19:30",0,0,0,6,1,null,""],[10451,"annual report","03\/22\/2016 21:58","12\/31\/2016 19:45",1,0,0,9,1,null,""],[94086,"go to dinner","03\/27\/2016 06:37","12\/31\/2016 18:16",1,0,0,4,1,null,""],[29241,"team meeting","03\/25\/2016 12:28","12\/31\/2016 19:32",0,0,0,11,1,null,""],[33411,"team meeting","03\/22\/2016 10:16","12\/31\/2016 19:13",1,0,0,5,1,null,""]],"issort":true,"start":"03\/21\/2016 00:00","end":"03\/27\/2016 23:59","error":null};
-            var DATA_FEED_URL = "data/events.json";
+$(document).ready(function() {     
+           var view="week";          
+           
+            var DATA_FEED_URL = "php/datafeed.php";
             var op = {
                 view: view,
                 theme:3,
@@ -54,7 +14,10 @@
                 onAfterRequestData: cal_afterrequest,
                 onRequestDataError: cal_onerror, 
                 autoload:true,
-                eventItems : events.events       
+                url: DATA_FEED_URL + "?method=list",  
+                quickAddUrl: DATA_FEED_URL + "?method=add", 
+                quickUpdateUrl: DATA_FEED_URL + "?method=update",
+                quickDeleteUrl: DATA_FEED_URL + "?method=remove"        
             };
             var $dv = $("#calhead");
             var _MH = document.documentElement.clientHeight;
@@ -222,6 +185,3 @@
             });
             
         });
-    </script>
-    </body>
-</html>
