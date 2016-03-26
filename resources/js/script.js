@@ -415,9 +415,10 @@ $(document).ready(function(){
         header: {
           left: '',
           center: '',
-          right: 'basicDay'
+          right: ''
         },
         defaultDate: '2016-01-12',
+        defaultView: 'basicDay',
         editable: true,
         eventLimit: true, // allow "more" link when too many events
         events: [
