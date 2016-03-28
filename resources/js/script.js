@@ -435,12 +435,12 @@ $(document).ready(function(){
             {
               id: 999,
               title: 'Repeating Event',
-              start: '2014-06-09T16:00:00'
+              start: '2014-06-012T16:00:00'
             },
             {
               id: 999,
               title: 'Repeating Event',
-              start: '2014-06-16T16:00:00'
+              start: '2014-06-12T16:00:00'
             },
             {
               title: 'Meeting',
@@ -449,11 +449,11 @@ $(document).ready(function(){
             },
             {
               title: 'Lunch',
-              start: '2014-06-12T12:00:00'
+              start: '2014-06-12T00:00:00'
             },
             {
               title: 'Birthday Party',
-              start: '2014-06-13T07:00:00'
+              start: '2014-06-12T07:00:00'
             },
             {
               title: 'Click for Google',
