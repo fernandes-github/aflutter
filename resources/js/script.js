@@ -422,6 +422,9 @@ $(document).ready(function(){
           defaultDate: '2014-06-12',
           defaultView: 'agendaDay',
           editable: true,
+          eventClick: function(calEvent, jsEvent, view) {
+            $('#edit-event').openModal();
+          },
           events: [
             {
               title: 'All Day Event',
@@ -469,6 +472,8 @@ $(document).ready(function(){
         var subNav = $(this).parent().find('.subnav');
         subNav.slideToggle();
       });
+
+      
 
       $('.basicExample').timepicker();
 });
