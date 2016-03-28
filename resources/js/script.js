@@ -410,7 +410,7 @@ $(document).ready(function(){
       });
 
 
-      //////////////////////////////////////////////////////////////////////////
+      ////////////////////////// schedule.js /////////////////////////////////////
 
       setTimeout(function(){
         $('#calendar').fullCalendar({
@@ -463,4 +463,10 @@ $(document).ready(function(){
           ]
         });
       }, 30);
+      $('.schedule-day .subnav').hide();
+      $('.schedule-day .linked-section').click(function(e){
+        e.preventDefault();
+        var subNav = $(this).parent().find('.subnav');
+        subNav.slideToggle();
+      });
 });
