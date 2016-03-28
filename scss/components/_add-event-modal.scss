@@ -21,9 +21,20 @@
 	    padding: 5px;
 	    border:1px solid #ccc;
 	    border-radius:5px;
+	    position: relative;
+
+		input{
+			width: 45% !important;
+		}
 
 		p{
 			margin:0px;
 		}
 	}
+}
+
+.ui-timepicker-wrapper{
+	z-index:99999 !important;
+	position:absolute !important;
+	top:50% !important;
 }

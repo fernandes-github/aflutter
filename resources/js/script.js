@@ -469,4 +469,6 @@ $(document).ready(function(){
         var subNav = $(this).parent().find('.subnav');
         subNav.slideToggle();
       });
+
+      $('.basicExample').timepicker();
 });
