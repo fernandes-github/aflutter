@@ -1,5 +1,11 @@
 .add-event-modal{
 	width:40% !important;
+
+	.modal-content{
+		.row{
+			margin-bottom: 0px;
+		}
+	}
 	
 	.event-persons{
 		img{
