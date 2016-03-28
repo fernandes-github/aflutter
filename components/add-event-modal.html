@@ -7,7 +7,7 @@
 				    <br>
 					<div class="row">
 						<div class="col s12">
-							<label class="leftLabel">To-do Name*</label><br>
+							<label class="leftLabel">Event Name*</label><br>
 							<input type="text" class="input-fields large-inputs w90" required=""/>
 						</div>
 					</div>
@@ -17,22 +17,9 @@
 							<textarea id="textarea1" class="materialize-textarea input-fields textarea-field"></textarea>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col s3">
-							<label class="leftLabel">Project</label>
-						</div>
-						<div class="col s5">
-							<select style="width:100%;" name="group_name" class="select-group" required="">
-							    <option value="unassigned" selected>Unassigned</option>
-							    <option value="bridesmaid">Bridesmaid</option>
-							    <option value="groomsmen">Groomsmen</option>
-							    <option value="couple">Couple</option>
-							</select>
-						</div>
-					</div>
 					<div class="row todo-modal-datepicker">
 						<div class="col s3 l3">
-							<label class="leftLabel">Due Date</label>
+							<label class="leftLabel">Date</label>
 						</div>
 						<div class="col s9 l5">
 					      	<div id="" class="row input-group date datepicker-box" data-date-format="D M dd yyyy">
@@ -42,27 +29,36 @@
 						</div> 	
 					</div>
 					<div class="row">
+						<div class="col s3 l3">
+							<label class="leftLabel">Time</label>
+						</div>
+						<div class="col s9 l5">
+					      	<div class="time-section center-align">
+					      		<p>3:00 pm - 5:00 pm</p>
+					      	</div>
+						</div> 	
+					</div>
+					<div class="row">
 						<div class="col s3">
-							<label class="leftLabel">Assigned to:</label>
+							<label class="leftLabel">Participants:</label>
 						</div>
 						<div class="col s9">
 							<input type="text" class="input-fields chips-input" placeholder="Type a person or group name to add"/>
 						</div>
-				        <div class="col s12">
+						<div class="col s9 offset-s3 event-persons">
+							<img src="`faker.image.avatar`" class="circle responsive-img s2" alt="sidenav avatars" />
+							<img src="`faker.image.avatar`" class="circle responsive-img s2" alt="sidenav avatars" />
+							<img src="`faker.image.avatar`" class="circle responsive-img s2" alt="sidenav avatars" />
+							<img src="`faker.image.avatar`" class="circle responsive-img s2" alt="sidenav avatars" />
+						</div>
+				        <div class="col s9 offset-s3">
 							<div class="chip tag-inputs">
 				    			<i class="material-icons chip-close">close</i>Bridesmaids	
 				  			</div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col s12">
-							<label class="leftLabel">Add attachments</label>
-							<div class="clearfix"></div>
-							@@include("../components/attachment.html")
-						</div>
-					</div>
 					<div class="modal-footer">
-						<button type="submit" class="btn btn-green disabled disabled-btn">Add To-do</button>
+						<button type="submit" class="btn btn-green disabled disabled-btn">Add Event</button>
 						<input type="reset" class="hide reset-btn">
 						<button type="button" class="modal-close btn btn-default cancel-btn">Cancel</button>
 					</div>
