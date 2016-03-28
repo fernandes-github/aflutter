@@ -143,6 +143,18 @@
 		a{
 			color: #F8A382;
 		}
+
+		.schedule-tabs{
+			li{
+				a{
+					color: #F8A382;
+					margin-left: 15px;
+					height: 30px;
+					line-height: 30px;
+					display: block;
+				}
+			}
+		}
 	}
 
 
@@ -170,6 +182,18 @@
 
 			i{
 				width:30px;
+			}
+		}
+	}
+
+	.schedule-tabs{
+		li{
+			a{
+				color:#95A0AF;
+				margin-left: 15px;
+				height: 30px;
+				line-height: 30px;
+				display: block;
 			}
 		}
 	}

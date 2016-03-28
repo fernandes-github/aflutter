@@ -5,9 +5,18 @@
 </div>
 
 <div class="page-content">
-	@@include("../components/page-content.html")
-	@@include("../components/schedule-options.html")
-	@@include("../components/schedule-calendar.html")
+	@@include("../components/schedule-page-content.html")
+	<div style="background-color:#FBF9F8;">
+		@@include("../components/schedule-options.html")
+		@@include("../components/schedule-calendar.html")
+	</div>
 </div>
+
+@@include('../components/add-event-modal.html', {
+	"title" : "",
+	"id" : "add-event-modal",
+	"modalContent" : "add-event-modal"
+})
+
 
 @@include("../components/footer.html") 

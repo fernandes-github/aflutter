@@ -52,6 +52,7 @@
 @import "../bower_components/Materialize/sass/components/date_picker/default.date.scss";
 @import "../bower_components/Materialize/sass/components/date_picker/default.time.scss";
 // inject:components
+@import "components/_add-event-modal";
 @import "components/_attachment";
 @import "components/_blue-select";
 @import "components/_cards-collapsed";
@@ -68,6 +69,7 @@
 @import "components/_reminder-modal";
 @import "components/_schedule-calendar";
 @import "components/_schedule-options";
+@import "components/_schedule-page-content";
 @import "components/_search";
 @import "components/_side-nav";
 @import "components/_todo-page-content";
