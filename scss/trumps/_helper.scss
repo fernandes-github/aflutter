@@ -267,4 +267,37 @@ select{
 	-webkit-appearance:none;
 }
 
+.mobile-fixed-footer{
+	margin-bottom:0px;
+	position:fixed;
+	bottom:0px;
+	width:100%;
+	
+	.col{
+		padding-left:0px;
+		padding-right:0px;
+	}
+
+	.footer-user-active{
+		background-color: #364559;
+	    padding: 15px;
+	    text-align: center;
+
+	    i{
+	    	font-size: 2em;
+	    	color:#fff;
+	    }
+	}
+
+	.footer-user-inactive{
+	    padding: 15px;
+	    text-align: center;
+
+	    i{
+	    	font-size: 2em;
+	    	color:#ccc;
+	    }
+	}
+}
+
 

@@ -1,7 +1,10 @@
 .schedule-icons{
-	padding-top:90px;
-	width:90%;
-	margin-bottom: 0px;
+	padding-top:70px;
+	width:100%;
+	background-color: #FBF9F8;
+	padding-left:20px;
+	padding-right:20px;
+	margin-bottom:0px;
 
 	h5{
 		color: #F8A382;
@@ -12,6 +15,10 @@
 		margin: 0px;
 		color: #95A0AF;
 		margin-bottom: 10px;
+
+		&.active-txt{
+			color: #F8A382;
+		}
 	}
 
 	.icons-list{

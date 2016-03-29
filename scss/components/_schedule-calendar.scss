@@ -1,43 +1,84 @@
+.calendar-row{
+	background-color: #FBF9F8;
+	margin-bottom:0px;
 
-#calendar{
-	background-color: #fff;
-	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-	border-radius:7px;
-}
-
-.fc-event{
-	border: 1px solid #FEEAE3;
-    background-color: #FEEAE3;
-    color: #2C3952 !important;
-    width: 35%;
-    font-size: 1em;
-    font-weight: 700;
-}
-
-.fc-content{
-	padding: 10px 0 0 10px;
-
-	.fc-time{
-		font-size:1em;
+	@media #{$medium-and-up}{
+		margin-bottom: 40px;
 	}
-}
 
-.fc-head-container, .fc-day-grid, .fc-divider, .fc-minor{
-	display:none;
-}
+	.slimScrollDiv{
+		height: 360px !important;
 
-.fc td, .fc th{
-	border-width:0px;
-}
+		.people-scroll{
+			height: 500px !important;
+		}
+	}
 
-.fc-slats tr{
-	border-bottom: 1px solid rgba(242, 242, 242, 0.62);
-}
+	#calendar{
+		background-color: #fff;
+		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+		border-radius:7px;
+		margin-left: 20px !important;
+	    margin-right: 20px !important;
+	    width: auto !important;
 
-.fc-time-grid .fc-slats td{
-	height: 2.5em;
-}
+	    .fc-event{
+			border: 1px solid #FEEAE3;
+		    background-color: #FEEAE3;
+		    color: #2C3952 !important;
+		    width: 35%;
+		    font-size: 1em;
+		    font-weight: 700;
+		}
 
-thead{
-	border-bottom:0px solid #fff;
+		.fc-content{
+			padding: 10px 0 0 10px;
+
+			.fc-time{
+				font-size:1em;
+			}
+		}
+
+		.fc-head-container, .fc-day-grid, .fc-divider, .fc-minor{
+			display:none;
+		}
+
+		.fc td, .fc th{
+			border-width:0px;
+		}
+
+		.fc-slats tr{
+			border-bottom: 1px solid rgba(242, 242, 242, 0.62);
+		}
+
+		.fc-time-grid .fc-slats td{
+			height: 2.5em;
+		}
+
+		thead{
+			border-bottom:0px solid #fff;
+		}
+	}
+
+	.list-view-events{
+
+		tr{
+			border-bottom: 1px solid rgba(242, 242, 242, 0.62);
+
+			td{
+				padding:10px 5px;
+			}
+		}
+		
+		p{
+			margin: 0px;
+		}
+
+		p.time{
+			margin: 0px;
+		    text-align: center;
+		    border-right: 4px solid #E4E1E1;
+		    margin-right: 10px;
+		}
+	}
 }

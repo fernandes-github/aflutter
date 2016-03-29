@@ -1,5 +1,9 @@
 .add-event-modal{
-	width:40% !important;
+	width:100%;
+
+	@media #{$large-and-up}{
+		width: 40%;
+	}
 
 	.modal-content{
 		.row{
@@ -29,6 +33,12 @@
 
 		p{
 			margin:0px;
+		}
+	}
+
+	.modal-footer{
+		button{
+			padding:0 1rem;
 		}
 	}
 }

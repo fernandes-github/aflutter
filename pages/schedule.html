@@ -6,9 +6,15 @@
 
 <div class="page-content">
 	@@include("../components/schedule-page-content.html")
-	<div style="background-color:#FBF9F8;">
-		@@include("../components/schedule-options.html")
-		@@include("../components/schedule-calendar.html")
+	@@include("../components/schedule-options.html")
+	@@include("../components/schedule-calendar.html")
+	<div class="row mobile-fixed-footer hide-on-med-and-up">
+		<div class="col s6">
+			<div class="footer-user-active"><i class="fa fa-user"></i></div>
+		</div>
+		<div class="col s6">
+			<div class="footer-user-inactive"><i class="fa fa-users"></i></div>
+		</div>
 	</div>
 </div>
 

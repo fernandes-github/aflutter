@@ -1,68 +1,64 @@
 <div id="add-event-modal" class="modal add-event-modal">
     <div class="modal-content">
     <h5>Add an Event</h5>
-		<div class="row">
-			<div class="col s12">
-				<form class="todo-form" data-parsley-validate>
-					<div class="row">
-						<div class="col s12">
-							<label class="leftLabel">Event Name*</label><br>
-							<input type="text" class="input-fields large-inputs w90" required=""/>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col s12">
-							<label class="leftLabel">Description</label><br>
-							<textarea id="textarea1" class="materialize-textarea input-fields textarea-field"></textarea>
-						</div>
-					</div>
-					<div class="row todo-modal-datepicker">
-						<div class="col s3 l3">
-							<label class="leftLabel">Date</label>
-						</div>
-						<div class="col s9 l5">
-					      	<div id="" class="row input-group date datepicker-box" data-date-format="D M dd yyyy">
-				                <span class="input-group-addon col s2"><i class="material-icons">today</i></span>
-				                <input class="form-control col s10 tasks-date-input" type="text" readonly />
-				              </div>
-						</div> 	
-					</div>
-					<div class="row">
-						<div class="col s3 l3">
-							<label class="leftLabel">Time</label>
-						</div>
-						<div class="col s9 l5">
-					      	<div class="time-section center-align">
-					      		<p><input type="text" class="basicExample time ui-timepicker-input" placeholder="3:00 pm">-<input type="text" class="basicExample time ui-timepicker-input" placeholder=" 5:00 pm"></p>
-					      	</div>
-						</div> 	
-					</div>
-					<div class="row">
-						<div class="col s3">
-							<label class="leftLabel">Participants:</label>
-						</div>
-						<div class="col s9">
-							<input type="text" class="input-fields chips-input" placeholder="Type a person or group name to add"/>
-						</div>
-						<div class="col s9 offset-s3 event-persons">
-							<img src="`faker.image.avatar`" class="circle responsive-img s2" alt="sidenav avatars" />
-							<img src="`faker.image.avatar`" class="circle responsive-img s2" alt="sidenav avatars" />
-							<img src="`faker.image.avatar`" class="circle responsive-img s2" alt="sidenav avatars" />
-							<img src="`faker.image.avatar`" class="circle responsive-img s2" alt="sidenav avatars" />
-						</div>
-				        <div class="col s9 offset-s3">
-							<div class="chip tag-inputs">
-				    			<i class="material-icons chip-close">close</i>Bridesmaids	
-				  			</div>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="submit" class="btn btn-green disabled disabled-btn">Add Event</button>
-						<input type="reset" class="hide reset-btn">
-						<button type="button" class="modal-close btn btn-default cancel-btn">Cancel</button>
-					</div>
-				</form>
+		<form class="todo-form" data-parsley-validate>
+			<div class="row">
+				<div class="col s12">
+					<label class="leftLabel">Event Name*</label><br>
+					<input type="text" class="input-fields large-inputs w90" required=""/>
+				</div>
 			</div>
-		</div>
+			<div class="row">
+				<div class="col s12">
+					<label class="leftLabel">Description</label><br>
+					<textarea id="textarea1" class="materialize-textarea input-fields textarea-field"></textarea>
+				</div>
+			</div>
+			<div class="row todo-modal-datepicker">
+				<div class="col s3 l3">
+					<label class="leftLabel">Date</label>
+				</div>
+				<div class="col s9 l5">
+			      	<div id="" class="row input-group date datepicker-box" data-date-format="D M dd yyyy">
+		                <span class="input-group-addon col s2"><i class="material-icons">today</i></span>
+		                <input class="form-control col s10 tasks-date-input" type="text" readonly />
+		              </div>
+				</div> 	
+			</div>
+			<div class="row">
+				<div class="col s3 l3">
+					<label class="leftLabel">Time</label>
+				</div>
+				<div class="col s9 l5">
+			      	<div class="time-section center-align">
+			      		<p><input type="text" class="basicExample time ui-timepicker-input" placeholder="3:00 pm">-<input type="text" class="basicExample time ui-timepicker-input" placeholder=" 5:00 pm"></p>
+			      	</div>
+				</div> 	
+			</div>
+			<div class="row">
+				<div class="col s3 l3">
+					<label class="leftLabel">Participants:</label>
+				</div>
+				<div class="col s9 l9">
+					<input type="text" class="input-fields chips-input" placeholder="Type a person or group name to add"/>
+				</div>
+				<div class="col s12 l9 offset-l3 event-persons">
+					<img src="`faker.image.avatar`" class="circle responsive-img s2" alt="sidenav avatars" />
+					<img src="`faker.image.avatar`" class="circle responsive-img s2" alt="sidenav avatars" />
+					<img src="`faker.image.avatar`" class="circle responsive-img s2" alt="sidenav avatars" />
+					<img src="`faker.image.avatar`" class="circle responsive-img s2" alt="sidenav avatars" />
+				</div>
+		        <div class="col s12 l9 offset-l3">
+					<div class="chip tag-inputs">
+		    			<i class="material-icons chip-close">close</i>Bridesmaids	
+		  			</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="submit" class="btn btn-green disabled disabled-btn">Add Event</button>
+				<input type="reset" class="hide reset-btn">
+				<button type="button" class="modal-close btn btn-default cancel-btn">Cancel</button>
+			</div>
+		</form>
 	</div>
 </div>
