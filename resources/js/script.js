@@ -475,5 +475,9 @@ $(document).ready(function(){
 
       
 
-      $('.basicExample').timepicker();
+      $('.basicExample').each(function(){
+        $(this).timepicker({
+          appendTo : $(this).parent()
+        });
+      });
 });

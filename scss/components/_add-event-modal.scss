@@ -2,7 +2,7 @@
 	width:100%;
 
 	@media #{$large-and-up}{
-		width: 40%;
+		width: 40% !important;
 	}
 
 	.modal-content{
@@ -13,14 +13,17 @@
 	
 	.event-persons{
 		img{
-			width: 50px;
+			width: 45px;
 			margin-top: 10px;
 			margin-bottom: 10px;
+
+			@media #{$large-and-up}{
+				width: 50px;
+			}
 		}
 	}
 
 	.time-section{
-		
 	    background-color: #F7F7F7;
 	    padding: 5px;
 	    border:1px solid #ccc;
@@ -28,7 +31,8 @@
 	    position: relative;
 
 		input{
-			width: 45% !important;
+			width: 35% !important;
+			text-align: center;
 		}
 
 		p{

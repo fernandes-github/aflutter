@@ -7,10 +7,10 @@
 	}
 
 	.slimScrollDiv{
-		height: 360px !important;
+		height: 470px !important;
 
 		.people-scroll{
-			height: 500px !important;
+			height: 470px !important;
 		}
 	}
 
@@ -60,6 +60,14 @@
 		}
 	}
 
+	.fc-unthemed tbody{
+		border-color: rgba(242, 242, 242, 0.62) !important;
+	}
+
+	.fc td{
+			border-style:none !important;
+		}
+
 	.list-view-events{
 
 		tr{
@@ -72,13 +80,19 @@
 		
 		p{
 			margin: 0px;
-		}
 
-		p.time{
-			margin: 0px;
-		    text-align: center;
-		    border-right: 4px solid #E4E1E1;
-		    margin-right: 10px;
+			&.time{
+				text-align: center;
+			    border-right: 4px solid #E4E1E1;
+			    margin-right: 10px;
+			    color: #878787;
+			}
+
+			&.mob-events{
+				color: #4F637F;
+				font-weight: bold;
+				letter-spacing: 0.5px;
+			}
 		}
 	}
 }

@@ -1,13 +1,41 @@
-.time-section{
-	position: relative;
+.edit-event-modal{
+	width:100%;
 
-	input{
-		width: 45% !important;
+	@media #{$large-and-up}{
+		width: 40% !important;
 	}
-}
 
-.ui-timepicker-wrapper{
-	z-index:99999 !important;
-	position:absolute !important;
-	top:50% !important;
+	.time-section{
+	    background-color: #F7F7F7;
+	    padding: 5px;
+	    border:1px solid #ccc;
+	    border-radius:5px;
+	    position: relative;
+
+		input{
+			width: 35% !important;
+			text-align: center;
+		}
+
+		p{
+			margin:0px;
+		}
+	}
+
+	.ui-timepicker-wrapper{
+		z-index:99999 !important;
+		position:absolute !important;
+		top:50% !important;
+	}
+
+	.event-persons{
+		img{
+			width:50px;
+		}
+	}
+
+	.datepicker-box{
+		margin-top: 0px !important;
+		margin-bottom: 0px !important;
+	}
 }
