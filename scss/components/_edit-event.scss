@@ -5,37 +5,49 @@
 		width: 40% !important;
 	}
 
-	.time-section{
-	    background-color: #F7F7F7;
-	    padding: 5px;
-	    border:1px solid #ccc;
-	    border-radius:5px;
-	    position: relative;
+	form{
 
-		input{
-			width: 30% !important;
-			text-align: center;
+		.row{
+			margin-bottom: 20px;
 		}
 
-		p{
-			margin:0px;
+		.time-section{
+		    background-color: #F7F7F7;
+		    padding: 5px;
+		    border:1px solid #ccc;
+		    border-radius:5px;
+		    position: relative;
+
+			input{
+				width: 30% !important;
+				text-align: center;
+			}
+
+			p{
+				margin:0px;
+			}
 		}
-	}
 
-	.ui-timepicker-wrapper{
-		z-index:99999 !important;
-		position:absolute !important;
-		top:50% !important;
-	}
-
-	.event-persons{
-		img{
-			width:50px;
+		.ui-timepicker-wrapper{
+			z-index:99999 !important;
+			position:absolute !important;
+			top:50% !important;
 		}
-	}
 
-	.datepicker-box{
-		margin-top: 0px !important;
-		margin-bottom: 0px !important;
+		.event-persons{
+			img{
+				width:50px;
+			}
+		}
+
+		.datepicker-box{
+			margin-top: 0px !important;
+			margin-bottom: 0px !important;
+		}
+
+		.textarea-field{
+			width: 75% !important;
+		}
+
 	}
 }
