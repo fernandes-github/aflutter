@@ -53,7 +53,7 @@
 						  border:1px solid #ccc;
 						
 						.task-text{
-							margin:0px;
+							margin:0px;		
 							font-size: 1.2em;
 							color: #8B8B8B;
 							margin-top: -3px;
@@ -94,8 +94,8 @@
 						  input[type="checkbox"]:checked + label:before{
 						  	border-right: 2px solid #F8A382;
 				    		border-bottom: 2px solid #F8A382;
-				    		top: -6px;
-				    		left: -5px;
+				    		top: -5px;
+    						left: 0px;
 				    		width: 10px;
 				    		height: 20px;
 						  }
