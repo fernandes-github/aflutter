@@ -8,7 +8,6 @@
 	.todo-tabs{
 		width: 100% !important;
 	    background-color: #FAFAFA;
-	    padding-bottom: 5px;
 	    overflow-x: hidden;
 
 
@@ -49,12 +48,8 @@
 
 		.discussion-tab{
 
-		    padding:20px 15px 10px 15px;
+		    padding: 25px 15px 0px 15px;
 		    margin-bottom: 0px;
-
-		    img{
-		    	margin-top: 10px;
-		    }
 
 			p{
 				padding:0px;
@@ -81,7 +76,7 @@
 		margin-bottom: 0px;
 
 		@media #{$medium-and-up}{
-			padding:20px 15px 10px 15px;
+			padding: 0px 15px 0px 15px;
 		}
 
 		i{
@@ -140,6 +135,10 @@
 	}
 }
 
+.people-row{
+	margin-bottom:5px;
+}
+
 	.slimScrollDiv{
 		
 		width:100% !important;
@@ -188,7 +187,8 @@
 
 				p{
 					padding:0px;
-					margin-top: 10px;
+					margin-top: 5px;
+					font-size: 1.1em;
 
 					&.completed{
 						margin-top: 5px;
@@ -196,6 +196,7 @@
 
 					&.incomplete{
 						margin-top: 5px;
+						color:#F06363;
 					}
 
 				}
@@ -214,24 +215,36 @@
 						margin-bottom: 10px;
 					}
 				}
+
+				.incomplete-img{
+					position: relative;
+    				top: 5px;
+
+    				img{
+    					width: 22px;
+    				}
+				}
 			}
 		}
 	}
 
 	.people-tab-footer{
 
-		border-top: 2px solid #ccc;
-	    padding-top: 15px;
-		margin-bottom:15px !important;
+		border-top: 1px solid #F2F2F2;
+	    padding-top: 5px;
+		margin-bottom:0px !important;
 
 		.people-tab-add{
 			margin-left: 15px;
-			margin-top: 15px;
+			margin-top: 5px;
+			width: 45px;
+		    height: 45px;
+		    line-height: 55px;
 		}
 
 		p{
 			padding:0px;
-			margin-top: 25px !important;
+			margin-top: 20px !important;
 		}
 
 		.incomplete-reminder{

@@ -14,8 +14,11 @@
 	}
 
 	.collapsible{
-		box-shadow: none;
 		border:none;
+
+		&:hover{
+			transition: box-shadow .25s;
+		}
 
 		.ui-state-default{
 
@@ -26,7 +29,7 @@
 				min-height:none;
 				color:#516580;
 				border-bottom: 0px solid #ccc;
-				padding:0px;
+				padding:0rem !important;
 				padding-bottom:10px;
 
 				 .todo-inner-content{
@@ -37,20 +40,70 @@
 						margin:0px;
 					}
 
+					i.todo-status-mob{
+						line-height: 1.8em;
+					}
+
 					.roundedTwo{
-						margin-top: 10px;
+						  margin-top: 10px;
+						  width: 20px;
+				    	  height: 20px;
+						  position: relative;
+						  border-radius: 50px;
+						  border:1px solid #ccc;
 						
 						.task-text{
 							margin:0px;
 							font-size: 1.2em;
 							color: #8B8B8B;
 							margin-top: -5px;
-						}		
-			
+							text-transform: capitalize;
+						}	
+
+						& label {
+						    width: 20px;
+						    height: 20px;
+						    position: absolute;
+						    top: 4px;
+						    left: 4px;
+						    cursor: pointer;
+
+						    &:after {
+						      content: '';
+						      position: absolute;
+						      top: 5px;
+						      left: 4px;
+						      border: 3px solid #fcfff4;
+						      border-top: none;
+						      border-right: none;
+						      background: transparent;
+						      opacity: 0;
+						      transform: rotate(-45deg);
+						    }
+						    &:hover::after {
+						      opacity: 0.3;
+						    }
+						  }	
+							
+						input[type=checkbox] {
+						    visibility: hidden;
+						    &:checked + label:after {
+						      opacity: 1;
+						    } 
+						  }   
+
+						  input[type="checkbox"]:checked + label:before{
+						  	border-right: 2px solid #F8A382;
+				    		border-bottom: 2px solid #F8A382;
+				    		top: -6px;
+				    		left: -5px;
+				    		width: 10px;
+				    		height: 20px;
+						  }
 					}
 
 					span.status{
-						color: #9C9C9C;
+						color: #818181;
 						font-size: 1.1em;
 					}
 
@@ -72,9 +125,10 @@
 							a{
 								font-size: 1em;
 								padding:5px !important;
+								color: #8B8B8B;
 								
 								i{
-									font-size: 1.2em;
+									font-size: 0.85em;
 	    							margin-right: 5px;
 								}
 
@@ -126,55 +180,4 @@
 			}
 		}
 	}
-
-	/* .roundedTwo */
-		.roundedTwo {
-		  margin-top: 5px;
-		  width: 28px;
-		  height: 28px;
-		  position: relative;
-		  background: #fcfff4;
-		  background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
-		  border-radius: 50px;
-		  border:1px solid #ccc;
-
-		  label {
-		    width: 20px;
-		    height: 20px;
-		    position: absolute;
-		    top: 4px;
-		    left: 4px;
-		    cursor: pointer;
-
-		    &:after {
-		      content: '';
-		      position: absolute;
-		      top: 5px;
-		      left: 4px;
-		      border: 3px solid #fcfff4;
-		      border-top: none;
-		      border-right: none;
-		      background: transparent;
-		      opacity: 0;
-		      transform: rotate(-45deg);
-		    }
-		    &:hover::after {
-		      opacity: 0.3;
-		    }
-		  }
-		  input[type=checkbox] {
-		    visibility: hidden;
-		    &:checked + label:after {
-		      opacity: 1;
-		    } 
-		  }   
-
-		  input[type="checkbox"]:checked + label:before{
-		  	border-right: 2px solid #F8A382;
-    		border-bottom: 2px solid #F8A382;
-    		top: -6px;
-    		left: -5px;
-		  }
-		}
-		/* end .roundedTwo */
 }

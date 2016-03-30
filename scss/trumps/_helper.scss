@@ -93,14 +93,15 @@
 
 .pink-border{
 	background-color:#fff;
-	border:1px solid #F8A382;
-	color:#F8A382;
+	border:1px solid #F06363;
+	color: #F06363;
 	box-shadow:none;
+	border-radius:5px;
 
 	&:hover{
 		background-color:#fff;
-		border:1px solid #F8A382;
-		color:#F8A382;
+		border:1px solid #F06363;
+		color:#F06363;
 	}
 }
 
@@ -156,6 +157,7 @@ p.alert{
 .modal{
 	z-index: 10003 !important;
 	top:10% !important;
+	overflow:visible;
 }
 
 .parsley-errors-list{
@@ -173,19 +175,19 @@ p.alert{
 	z-index: 1000;
 	background-color: #F7F7F7;
 	margin-bottom: 0px;
-	margin-top: 7px;
+	margin-top: 5px;
 	color:#9C9C9C;
+	border-radius: 5px;
 
 	&:focus{
 		background-color:#F8A382;
 		border:1px solid #F8A382;
-		color: #fff !important;
 	}
 
 	&:hover{
-		background-color:#F8A382;
-		border:1px solid #F8A382;
-		color: #fff !important;
+		span, input{
+			color:#F8A382;
+		}
 	}
 
 	&:visited{
@@ -197,7 +199,7 @@ p.alert{
 	span{
 		i{
 			position:relative;
-			right: -35px;
+			right: -15px;
 			&:hover{
 				cursor: pointer;
 			}
@@ -212,6 +214,8 @@ p.alert{
 		position: relative;
 		top: -4px;
 		text-align: center;
+		color: #818181;
+		font-weight: bold;
 
 		&.tasks-date-input{
 			margin-top: 5px;
@@ -225,6 +229,7 @@ p.alert{
 
 .todo-main-content{
 	position:relative;	
+	padding-top: 135px;
 
 	.hide-on-med-and-up{
 		.toggle-wrapper{
@@ -299,6 +304,14 @@ select{
 	    	color:#ccc;
 	    }
 	}
+}
+
+hr{
+	background-color: #F2F2F2;
+    color: #F2F2F2;
+    width: 100%;
+    height: 1px;
+    border: 0 none;
 }
 
 
