@@ -28,12 +28,33 @@ $(document).ready(function(){
       }, 300);
     });
 
+    $('.add-todo-btn').click(function(e){
+      e.preventDefault();
+      var form = $(this).closest('form');
+      var validator = form.parsley();
+      validator.validate();
+      if(validator.isValid()){
+        $('#addtodo-modal').closeModal();
+      }
+      setTimeout(function(){
+        showMsg('New todo added successfully');
+      }, 300);
+    });
+
     $('.send-reminder-btn').click(function(e){
       e.preventDefault();
       $('#reminder').closeModal();
       setTimeout(function(){
         showMsg('Reminder sent successfully');
       }, 300);
+    });
+
+    var addTodoForm = $('#add-todo-form').parsley().on('form:success', function(){
+      $('.add-todo-btn').removeAttr('disabled');
+    });
+
+    $('#add-todo-form input').keypress(function(){
+      addTodoForm.validate();
     });
 
 
@@ -396,7 +417,7 @@ $(document).ready(function(){
       $(this).dropdown();
       $(this).click(function(e){
         e.stopPropagation();
-      })
+      });
     });
 
     $('p.alert .fa-times-circle').click(function(){
