@@ -35,6 +35,10 @@
 
 			.ui-rangeSlider-handle{
 				top: -2px !important;
+				background:#F8A382;
+				width: 25px;
+				border-radius: 7px;
+				height: 30px;
 			}
 
 			.ui-rangeSlider-innerBar{
@@ -44,13 +48,6 @@
 			.ui-rangeSlider-bar{
 				@include linear-gradient-left(#364559, #364559, 20%, #CCC, 100%);
 				height: 25px;
-			}
-
-			.ui-rangeSlider-handle{
-				background:#F8A382;
-				width: 25px;
-				border-radius: 7px;
-				height: 30px;
 			}
 		}
 
