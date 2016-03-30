@@ -81,6 +81,8 @@ $(document).ready(function(){
     //scrollspy.js
     (function(){
       // Cache selectors
+      var dateRangeSliderHeight = $('.range-slider-wrapper').length === 1 ? $('.range-slider-wrapper').height() : 0;
+             
       var lastId,
           topMenu = $("li.group").first(),
           // All list items
@@ -97,7 +99,7 @@ $(document).ready(function(){
           // so we can get a fancy scroll animation
           menuItems.click(function(e){
             var href = $(this).attr("href"),
-                offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+                offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight - dateRangeSliderHeight - 1;
             $('html, body').stop().animate({ 
                 scrollTop: offsetTop
             }, 300);
@@ -107,7 +109,7 @@ $(document).ready(function(){
           // Bind to scroll
           $(window).scroll(function(){
              // Get container scroll position
-             var fromTop = $(this).scrollTop()+topMenuHeight;
+             var fromTop = $(this).scrollTop()+topMenuHeight+dateRangeSliderHeight + 30;
              
              // Get id of current scroll item
              var cur = scrollItems.map(function(){
@@ -184,7 +186,10 @@ $(document).ready(function(){
   	});
 
     setTimeout(function(){
-      $("#slider").dateRangeSlider();
+      $("#slider").dateRangeSlider({
+        symmetricPositionning : true,
+        range: {min: 0}  
+      });
     },200);
 
 
@@ -332,11 +337,12 @@ $(document).ready(function(){
 
     $('.roundedTwo input[type="checkbox"]').change(function(){
       var p = $('.page-action-msg p');
+      var todo = $(this).next().text();
       if($(this).is(':checked')){
-        p.slideDown().find('span.message').text('Todo item marked as complete');
+        p.slideDown().find('span.message').html('Todo item <b>'+todo+'</b> marked as complete');
       }
       else{
-        p.slideDown().find('span.message').text('Todo item marked as incomplete');
+        p.slideDown().find('span.message').html('Todo item <b>'+todo+'</b> marked as incomplete');
       }
       setTimeout(function(){
         p.slideUp();
