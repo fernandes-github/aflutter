@@ -20,6 +20,7 @@ var MODE = 'dev';
 var JSFILES = [
   './resources/js/modernizr.js',
   './bower_components/jquery/dist/jquery.js',
+  './resources/js/polyfill.js',
   './resources/js/jquery-ui.js',
   './bower_components/Materialize/dist/js/materialize.js',
   './bower_components/jQRangeSlider/jQRangeSliderMouseTouch.js',
@@ -32,7 +33,13 @@ var JSFILES = [
   './bower_components/jQRangeSlider/jQDateRangeSlider.js',
   './bower_components/jQRangeSlider/jQRuler.js',
   './bower_components/jquery-slimscroll/jquery.slimscroll.js',
-  './bower_components/parsleyjs/dist/parsley.js'
+  './bower_components/parsleyjs/dist/parsley.js',
+  './bower_components/jquery-ui-touch-punch/jquery-ui-touch-punch.js',
+  './bower_components/chosen/chosen.jquery.js',
+  './bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js',
+  './bower_components/moment/moment.js',
+  './bower_components/fullcalendar/dist/fullcalendar.js',
+  './bower_components/jt.timepicker/jquery.timepicker.js'
 ];
 
 var onError = function(err) {

@@ -15,7 +15,9 @@
 
 	.collapsible{
 		border:none;
-
+		border-radius: 5px;
+    	background: #fff;
+		
 		&:hover{
 			transition: box-shadow .25s;
 		}
@@ -26,13 +28,14 @@
 
 			.todo-tasks-header{
 
-				min-height:none;
+				min-height:auto;
 				color:#516580;
 				border-bottom: 0px solid #ccc;
 				padding:0rem !important;
 				padding-bottom:10px;
+				background-color: transparent;
 
-				 .todo-inner-content{
+				.todo-inner-content{
 					margin-bottom: 0px;
 					position:relative;
 
@@ -174,7 +177,7 @@
 
 			.collapsible-body{
 
-				background-color: #fff;
+				background-color: transparent;
 				color: #516580;
 			}
 		}

@@ -48,14 +48,15 @@ $(document).ready(function(){
         showMsg('Reminder sent successfully');
       }, 300);
     });
+    if($('#add-todo-form').length > 0){
+      var addTodoForm = $('#add-todo-form').parsley().on('form:success', function(){
+        $('.add-todo-btn').removeAttr('disabled');
+      });
 
-    var addTodoForm = $('#add-todo-form').parsley().on('form:success', function(){
-      $('.add-todo-btn').removeAttr('disabled');
-    });
-
-    $('#add-todo-form input').keypress(function(){
-      addTodoForm.validate();
-    });
+      $('#add-todo-form input').keypress(function(){
+       addTodoForm.validate();
+      });
+    }
 
 
     var isMediumAndAbove = Modernizr.mq('(min-width: 900px)')
@@ -398,7 +399,7 @@ $(document).ready(function(){
 
     // todo-items.sort.js
     $( ".sortable-todo-items" ).sortable({
-      items: "> .row",
+      items: "> .row:not(.heading)",
       start : function(event, ui){
         var sortable = $(event.target).closest('.sortable-todo-items');
         sortable.prev().find('p.alert').slideUp(50);
