@@ -6,6 +6,10 @@
 	overflow-y:hidden;
 
 	@media #{$medium-and-up}{
+		width:65%;
+	}
+
+	@media #{$large-and-up}{
 		width:45%;
 	}
 

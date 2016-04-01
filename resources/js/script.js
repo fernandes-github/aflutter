@@ -508,4 +508,12 @@ $(document).ready(function(){
           appendTo : $(this).parent()
         });
       });
+
+      $('.cal-switch').click(function(e){
+        e.preventDefault();
+        var hash= $(this).attr('href');
+        $('.calendars-wrapper > div').hide();
+        $(hash).show();
+        $('html,body').animate({scrollTop:0});
+      }).first().click();
 });

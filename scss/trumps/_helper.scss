@@ -200,6 +200,16 @@ p.alert{
 		i{
 			position:relative;
 			right: -15px;
+			@media #{$medium-and-up}{
+				position:relative;
+				right: 0px;
+			}
+
+			@media #{$large-and-up}{
+				position:relative;
+				right: -15px;
+			}
+
 			&:hover{
 				cursor: pointer;
 			}

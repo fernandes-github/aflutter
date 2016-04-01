@@ -12,7 +12,10 @@
 
     @media #{$medium-and-up}{
     	padding-bottom: 15px;
-    	 margin-left: 240px;
+    }
+
+    @media #{$large-and-up}{
+		margin-left: 240px;
     }
 
 	p{
