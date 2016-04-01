@@ -14,7 +14,6 @@
 		.time-section{
 		    background-color: #F7F7F7;
 		    padding: 5px;
-		    border:1px solid #ccc;
 		    border-radius:5px;
 		    position: relative;
 
@@ -24,6 +23,29 @@
 				margin-bottom: 0px;
 			    height: 2rem;
 			    line-height: 2rem;
+			   	border: none;
+		   	    color: #818181;
+		   	    font-weight: bold;
+
+		   	    &::-webkit-input-placeholder {
+		    		color: #818181;
+		   	    	font-weight: bold;
+		    	}
+		    
+		    	&:-moz-placeholder { /* Firefox 18- */
+		  		  color: #818181;
+		   	    	font-weight: bold;
+		  		}
+		    
+		   		&::-moz-placeholder {  /* Firefox 19+ */
+		    		color: #818181;
+		   	    	font-weight: bold; 
+		  		}
+		 
+		   		&:-ms-input-placeholder {  
+		 		   color: #818181;
+		   	    	font-weight: bold;
+		   		}
 			}
 
 			p{
