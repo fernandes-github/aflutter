@@ -38,6 +38,11 @@
 				.todo-inner-content{
 					margin-bottom: 0px;
 					position:relative;
+					padding-bottom:10px;
+
+					@media #{$medium-and-up}{
+						padding-bottom:0px;
+					}
 
 					p{
 						margin:0px;

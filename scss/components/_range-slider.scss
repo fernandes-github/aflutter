@@ -9,10 +9,10 @@
 	padding-bottom:0px;
     margin-bottom: 0px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.01), 0 3px 0px 0 rgba(0, 0, 0, 0.06);
-    margin-left: 240px;
 
     @media #{$medium-and-up}{
     	padding-bottom: 15px;
+    	 margin-left: 240px;
     }
 
 	p{
