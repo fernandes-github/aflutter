@@ -1,0 +1,17 @@
+@@include("../components/header.html", {"title" : "Dashboard Template", "pageName" : "Groups"})
+<div class="navigation-side-nav">
+    @@include('../components/side-nav.html', {"page" : "schedule"})
+    <div class="clearfix"></div>
+</div>
+
+<div class="page-content">
+	@@include("../components/schedule-page-content.html")
+</div>
+
+@@include('../components/add-event-modal.html', {
+	"title" : "",
+	"id" : "add-event-modal",
+	"modalContent" : "add-event-modal"
+})
+
+@@include("../components/footer.html") 
