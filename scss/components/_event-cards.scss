@@ -1,0 +1,8 @@
+.event-cards-row{
+	padding-top: 70px;
+
+	@media #{$medium-and-up}{
+		padding-left:30px;
+		padding-right:30px;
+	}
+}

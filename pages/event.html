@@ -1,11 +1,12 @@
 @@include("../components/header.html", {"title" : "Dashboard Template", "pageName" : "Groups"})
 <div class="navigation-side-nav">
-    @@include('../components/side-nav.html', {"page" : "schedule"})
+    @@include('../components/side-nav.html', {"page" : "event"})
     <div class="clearfix"></div>
 </div>
 
 <div class="page-content">
-	@@include("../components/schedule-page-content.html")
+	@@include("../components/event-page-content.html")
+	@@include("../components/event-cards.html")
 </div>
 
 @@include('../components/add-event-modal.html', {

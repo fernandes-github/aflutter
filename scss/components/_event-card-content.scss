@@ -1,0 +1,53 @@
+.card{
+		text-align: center;
+		margin-left: 15px;
+    	margin-right: 15px;
+
+		p{
+			color: #95A0AF;
+			font-size: 1.1em;
+			margin:0px;
+		}
+	}
+
+	h4.active{
+		color: #F8A382;
+		margin-left: 15px;
+	}
+
+	.event-icon-section{
+		width: 100%;
+		text-align: center;
+
+		.toggle-plus{
+			font-weight: bold;
+    		color: #8B8B8B;
+		}
+	}
+
+	.event-title-section{
+		h5{
+			color: #8A8A8A;
+			margin: 0px;
+		    margin-top: 10px;
+		    margin-bottom: 0px;
+		}
+	}
+
+	.event-address{
+		margin-top: 15px;
+		margin-bottom: 15px;
+
+		a{
+			color: #95A0AF;
+			text-decoration: underline;
+		}
+	}
+
+	.event-time-section{
+		margin-bottom: 15px;
+
+		.m-left{
+			margin-left: 25px;
+		}
+	}
