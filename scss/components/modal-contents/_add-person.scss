@@ -42,6 +42,14 @@ form{
 				box-shadow:none;
 				background:none;
 			}
+
+			&.chosen-with-drop{
+				.chosen-single{
+					div b{
+						background-position:0px 2px;
+					}
+				}
+			}
 		}
 
 	}
