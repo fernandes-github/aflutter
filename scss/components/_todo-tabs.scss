@@ -1,7 +1,7 @@
 .tabs-wrapper-row{
 	margin-bottom:0px;
 	background-color: #FAFAFA;
-    padding: 10px 10px 0px 10px;
+    padding: 20px 6px 0px 20px;
     height: auto;
 }
 
@@ -18,7 +18,7 @@
 			
 			a{
 				background-color: #F1F1F1;
-	    		margin-left: 5px;
+	    		margin-left: 10px;
 	    		width: auto;
 	    		color: #516580;
 			
@@ -83,9 +83,13 @@
 			font-size: 3em;
 		}
 
+		img{
+			margin-left: 10px;
+		}
+
 		.add-textfield{
 		    border: 2px solid #ECECEC;
-		    background-color: #F8F8F8;
+		    background-color: #FAFAFA;
 		    float:left;
 		    height:20px;
 		    outline:0;

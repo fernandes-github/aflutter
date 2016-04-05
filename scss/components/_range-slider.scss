@@ -33,14 +33,14 @@
 			background: #E6E6E6;
 			border:1px solid #E6E6E6;
 			border-radius: 7px;
-			height: 25px;
+			height: 24px;
 			box-shadow:none;
 
 			.ui-rangeSlider-handle{
-				top: -2px !important;
+				top: -4px !important;
 				background:#F8A382;
 				width: 25px;
-				border-radius: 7px;
+				border-radius: 5px;
 				height: 30px;
 			}
 
@@ -51,6 +51,8 @@
 			.ui-rangeSlider-bar{
 				@include linear-gradient-left(#364559, #364559, 20%, #CCC, 100%);
 				height: 25px;
+				position:absolute;
+				top:-2px !important;
 			}
 		}
 
