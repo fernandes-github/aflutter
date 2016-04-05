@@ -93,15 +93,21 @@
 
 .pink-border{
 	background-color:#fff;
-	border:1px solid #F06363;
-	color: #F06363;
+	border:1px solid #990C3D;
+	color: #990C3D;
 	box-shadow:none;
 	border-radius:5px;
 
 	&:hover{
 		background-color:#fff;
-		border:1px solid #F06363;
-		color:#F06363;
+		border:1px solid #990C3D;
+		color:#990C3D;
+	}
+
+	&:focus{
+		background-color:#fff;
+		border:1px solid #990C3D;
+		color:#990C3D;
 	}
 }
 
@@ -203,11 +209,6 @@ p.alert{
 			@media #{$medium-and-up}{
 				position:relative;
 				right: 0px;
-			}
-
-			@media #{$large-and-up}{
-				position:relative;
-				right: -15px;
 			}
 
 			&:hover{
