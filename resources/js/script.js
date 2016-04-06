@@ -100,6 +100,11 @@ $(document).ready(function(){
     });
     
 
+    $('.todo-tabs li').click(function(){
+      $('.todo-tabs li').removeClass('tab-active');
+      $(this).addClass('tab-active');
+    });
+
     //scrollspy.js
     (function(){
       // Cache selectors

@@ -3,18 +3,28 @@
 	background-color: #FAFAFA;
     padding: 20px 6px 0px 20px;
     height: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.todo-tab-container{
+	height: 350px;
+	overflow-y:scroll;
 }
 
 	.todo-tabs{
 		width: 100% !important;
 	    background-color: #FAFAFA;
-	    overflow-x: hidden;
-
+	    display: inline;
+		
 
 	    li.tab{
-	    height: auto;
-
+	    	height: auto;
 	    	text-transform: none;
+	    	width: 35% !important;
+
+	    	&.tab-active{
+				margin-bottom: -1px;
+	    	}
 			
 			a{
 				background-color: #F1F1F1;
