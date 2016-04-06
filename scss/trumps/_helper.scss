@@ -238,6 +238,15 @@ p.alert{
 	}
 }
 
+.datepicker.datepicker-dropdown:after{
+	border:none !important;
+	display:none;
+}
+
+.datepicker-dropdown:before{
+	border:none;
+}
+
 .todo-main-content{
 	position:relative;	
 	padding-top: 135px;
