@@ -93,9 +93,11 @@
 			}
 
 			&.mob-events{
-				color: #4F637F;
-				font-weight: bold;
-				letter-spacing: 0.5px;
+				a{
+					color: #4F637F;
+					font-weight: bold;
+					letter-spacing: 0.5px;
+				}
 			}
 		}
 	}

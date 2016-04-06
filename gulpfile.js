@@ -39,7 +39,9 @@ var JSFILES = [
   './bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js',
   './bower_components/moment/moment.js',
   './bower_components/fullcalendar/dist/fullcalendar.js',
-  './bower_components/jt.timepicker/jquery.timepicker.js'
+  './bower_components/jt.timepicker/jquery.timepicker.js',
+  './resources/js/jquery.magnific-popup.js'
+
 ];
 
 var onError = function(err) {
