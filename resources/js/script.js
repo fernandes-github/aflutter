@@ -3,7 +3,7 @@ var isMobile = Modernizr.mq('(max-width: 767px)');
 
 $(document).ready(function(){
 
-	  $(".button-collapse").sideNav();
+	  // $(".button-collapse").sideNav();
 
     $("select.select-group").chosen({no_results_text: "Create group: "});
 
@@ -63,16 +63,38 @@ $(document).ready(function(){
     if(isMediumAndAbove){ 
         $('#menu-icon').click(function(){
             if(parseInt($('#nav-mobile').css('left')) !== 0 ){
+                $('#nav-mobile').animate({
+                   'left' : '0px' 
+                }, 200);
                 $('.page-content').animate({
                     'padding-left' : '240px'
                 }, 200);
             }
             else{
+                $('#nav-mobile').animate({
+                   'left' : '-250px' 
+                }, 200);
                 $('.page-content').animate({
                     'padding-left' : '0px'
                 }, 200);
             }
-        }).click();
+        });
+    }
+
+    var isMediumAndBelow = Modernizr.mq('(max-width: 899px)')
+    if(isMediumAndBelow){ 
+        $('#menu-icon').click(function(){
+            if(parseInt($('#nav-mobile').css('left')) !== 0 ){
+                $('#nav-mobile').animate({
+                   'left' : '0px' 
+                }, 200);
+            }
+            else{
+                $('#nav-mobile').animate({
+                   'left' : '-250px' 
+                }, 200);
+            }
+        });
     }
 
     //new group/project
@@ -103,6 +125,10 @@ $(document).ready(function(){
     $('.todo-tabs li').click(function(){
       $('.todo-tabs li').removeClass('tab-active');
       $(this).addClass('tab-active');
+    });
+
+    $('.todo-activity-dropdown a').click(function(e){
+      e.stopPropagation();
     });
 
     //scrollspy.js
@@ -215,7 +241,10 @@ $(document).ready(function(){
     setTimeout(function(){
       $("#slider").dateRangeSlider({
         symmetricPositionning : true,
-        range: {min: 0}  
+        range: {min: 5},
+        formatter: function(value){
+          return moment(value).format("MMM DD YYYY");
+        }
       });
     },200);
 
