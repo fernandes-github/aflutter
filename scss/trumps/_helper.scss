@@ -256,6 +256,7 @@ p.alert{
 
 .expand-desc-row{
 	margin-bottom: 0px;
+	background-color:#FAFAFA;
 
 	.task-desc{
 		padding: 0rem;
@@ -319,6 +320,43 @@ hr{
     width: 100%;
     height: 1px;
     border: 0 none;
+}
+
+.mfp-bg{
+	z-index:100000;
+}
+
+.mfp-wrap{
+	z-index: 100000;
+}
+
+.mfp-arrow-left{
+	background-image: url('../images/left-arrow.png') !important;
+    background-size: 50% 50% !important;
+    background-repeat: no-repeat !important;
+    margin-left: 10px;
+
+    &:focus{
+		background-color:transparent;
+	}
+}
+
+.mfp-arrow-left:before, .mfp-arrow-left:after{
+	border:none;
+}
+
+.mfp-arrow-right{
+	background-image: url('../images/right-arrow.png') !important;
+    background-size: 50% 50% !important;
+    background-repeat: no-repeat !important;
+
+    &:focus{
+		background-color:transparent;
+	}
+}
+
+.mfp-arrow-right:before, .mfp-arrow-right:after{
+	border:none;
 }
 
 

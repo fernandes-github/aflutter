@@ -516,4 +516,12 @@ $(document).ready(function(){
         $(hash).show();
         $('html,body').animate({scrollTop:0});
       }).first().click();
+
+
+       $('.image-link').magnificPopup({
+        type: 'image',
+        gallery:{enabled:true}
+        // other options
+      });
+      
 });
