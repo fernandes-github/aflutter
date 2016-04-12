@@ -1,7 +1,12 @@
 .page-content{
 	@media #{$medium-and-up}{
+		padding-left: 0px;
+	}
+
+	@media #{$large-and-up} {
 		padding-left: 240px;
 	}
+
 	.blue-bar{
 		position: fixed;
 	    width: 100%;

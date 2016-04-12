@@ -16,12 +16,13 @@
 				color: #95A0AF;
 				position: relative;
 			    top: 3px;
-			    margin-right: 15px;
+			    margin: none;
 			}
 
 			span{
 				color: #95A0AF;
 				display: inline-block;
+				font-size: 1em;
 			}
 
 			&.active{
@@ -130,6 +131,11 @@
         background-color: #FBF9F8;
         width: 45%;
         margin-top: 20px !important;	
+
+        @media #{$medium-and-up} {
+        	width:50%;
+        }
+
     }
 
     .mob-reminder-footer{
@@ -148,5 +154,10 @@
 	text-align:center;
 	margin-left: 5px;
     margin-right: 5px;
+
+    @media #{$medium-and-up} {
+	    margin-top: 5px;
+		display: block;
+    }
 }
 

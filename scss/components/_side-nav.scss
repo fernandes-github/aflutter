@@ -3,10 +3,10 @@
 	top: auto; 
 	left:-240px !important;
 
-	@media #{$medium-and-up}{
+
+	@media #{$large-and-up}{
 		left:0px !important;
 	}
-
 
 	li{
 		padding:0px;
