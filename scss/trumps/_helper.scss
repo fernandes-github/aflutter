@@ -166,7 +166,11 @@ p.alert{
 	overflow:visible;
 
 	@media #{$medium-and-up} {
-		width: 60%;
+		width: 75%;
+	}
+
+	@media #{$large-and-up} {
+		width: 45%;
 	}
 }
 

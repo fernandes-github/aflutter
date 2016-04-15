@@ -1,48 +1,48 @@
 <form data-parsley-validate class="add-person-modal">
 	<div class="row upload-section">
-		<div class="col s3 l2">
+		<div class="col s3 m3 l2">
 			<label class="upload-txt">Photo</label>
 		</div>
-		<div class="col s3 l2">
+		<div class="col s3 m3 l2">
 			<img src="images/upload.png" class="select-image responsive-img" alt="upload icon"/>
 			<input type="file" class="hide" />
 		</div>
-		<div class="col s6 l8">
+		<div class="col s6 m6 l8">
 			<a class="btn btn-green upload-btn">Upload</a>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col s12 l2">
+		<div class="col s12 m2 l2">
 			<label>Name *</label>
 		</div>
-		<div class="col s6 l5">
+		<div class="col s12 m5 l5">
 			<input type="text" name="first_name" class="input-fields active" placeholder="First name" required=""/>
 		</div>
-		<div class="col s6 l5">
+		<div class="col s12 m5 l5">
 			<input type="text" name="last_name" class="input-fields" placeholder="Last name" required=""/>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col s12 l2">
+		<div class="col s12 m2 l2">
 			<label>Email *</label>
 		</div>
-		<div class="col s12 l7">
-			<input type="email" name="email_id" class="validate input-fields" placeholder="Email address" data-parsley-trigger="change" required=""/>
+		<div class="col s12 m7 l7">
+			<input type="email" name="email_id" class="validate input-fields add-person-textfields" placeholder="Email address" data-parsley-trigger="change" required=""/>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col s12 l2">
+		<div class="col s12 m2 l2">
 			<label>Phone *</label>
 		</div>
-		<div class="col s12 l5">
-			<input type="tel" name="tel_number" class="validate input-fields" placeholder="(XXX) XXX-XXXX" required=""/>
+		<div class="col s12 m5 l5">
+			<input type="tel" name="tel_number" class="validate input-fields add-person-textfields" placeholder="(XXX) XXX-XXXX" required=""/>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col s12 l2">
+		<div class="col s12 m2 l2">
 			<label>Group *</label>
 		</div>
-		<div class="col s12 l5">
+		<div class="col s12 m5 l5">
 			<select style="width:100%;" name="group_name" class="select-group" required="">
 			    <option value="unassigned" selected>Unassigned</option>
 			    <option value="bridesmaid">Bridesmaid</option>
@@ -52,24 +52,24 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col s12 l2">
+		<div class="col s12 m2 l2">
 			<label>Role</label>
 		</div>
-		<div class="col s12 l5">
-			<input type="text" name="person_role" class="input-fields" placeholder="i.e. Maid of honor"/>
+		<div class="col s12 m5 l5">
+			<input type="text" name="person_role" class="input-fields add-person-textfields" placeholder="i.e. Maid of honor"/>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col s12 l2">
+		<div class="col s12 m2 l2">
 			<label>Address 1</label>
 		</div>
-		<div class="col s12 l7">
-			<input type="text" name="address_1" class="input-fields address-fields" placeholder="Address 1"/>
+		<div class="col s12 m10 l7">
+			<input type="text" name="address_1" class="input-fields" placeholder="Address 1"/>
 			<div class="row marginBottomNone">
-				<div class="col s5 l5 paddingLeftNone">
+				<div class="col s12 m5 l5 paddingLeftNone">
 					<input type="text" name="address1_city" class="input-fields" placeholder="City"/>
 				</div>
-				<div class="col s3 l3">
+				<div class="col s12 m3 l3">
 					<select class="browser-default js-example-basic-single">
 					    <option value="" selected>-</option>
 					    <option value="1">1</option>
@@ -77,23 +77,23 @@
 					    <option value="3">3</option>
 					</select>
 				</div>
-				<div class="col s4 l4 paddingLeftNone paddingRightNone">
+				<div class="col s12 m4 l4 paddingLeftNone paddingRightNone">
 					<input type="text" name="address1_zip" class="input-fields" placeholder="Zip"/>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col s12 l2">
+		<div class="col s12 m2 l2">
 			<label>Address 2</label>
 		</div>
-		<div class="col s12 l7">
-			<input type="text" name="address_2" class="input-fields address-fields" placeholder="Address 2"/>
+		<div class="col s12 m10 l7">
+			<input type="text" name="address_1" class="input-fields" placeholder="Address 1"/>
 			<div class="row marginBottomNone">
-				<div class="col s5 l5 paddingLeftNone">
+				<div class="col s12 m5 l5 paddingLeftNone">
 					<input type="text" name="address1_city" class="input-fields" placeholder="City"/>
 				</div>
-				<div class="col s3 l3">
+				<div class="col s12 m3 l3">
 					<select class="browser-default js-example-basic-single">
 					    <option value="" selected>-</option>
 					    <option value="1">1</option>
@@ -101,26 +101,26 @@
 					    <option value="3">3</option>
 					</select>
 				</div>
-				<div class="col s4 l4 paddingLeftNone paddingRightNone">
+				<div class="col s12 m4 l4 paddingLeftNone paddingRightNone">
 					<input type="text" name="address1_zip" class="input-fields" placeholder="Zip"/>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col s12 l2">
+		<div class="col s12 m2 l2">
 			<label>Company</label>
 		</div>
-		<div class="col s12 l5">
-			<input type="text" class="input-fields" placeholder="Company name"/>
+		<div class="col s12 m5 l5">
+			<input type="text" class="input-fields add-person-textfields" placeholder="Company name"/>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col s12 l2">
+		<div class="col s12 m2 l2">
 			<label>Website</label>
 		</div>
-		<div class="col s12 l5">
-			<input type="text" class="input-fields" placeholder="Website"/>
+		<div class="col s12 m5 l5">
+			<input type="text" class="input-fields add-person-textfields" placeholder="Website"/>
 		</div>
 	</div>
 	<div class="modal-footer">
