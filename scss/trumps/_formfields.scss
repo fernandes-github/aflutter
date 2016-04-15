@@ -120,27 +120,6 @@ form{
     		}
 		}
 
-		&.upload-section{
-
-			margin-top: 15px;
-			margin-bottom: 15px;
-
-
-			.select-image{
-				width: 60px;
-			}
-
-			label, a.upload-btn{
-				margin-top: 10px !important;
-				display: inline-block;
-				width:100%;
-
-				@media #{$medium-and-up}{
-					width:40%;
-				}
-			}
-		}
-
 		.browser-default{
 			color: #757575 !important;
 		}

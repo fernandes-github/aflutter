@@ -1,12 +1,6 @@
 .add-person-modal{
 
-	width:60%;
-
-	@media #{$medium-and-up} {
-		width:100% !important;
-	}
-
-	form{
+	width:100%;
 		.add-person-btn{
 			width:48%;
 			padding:0px;
@@ -17,8 +11,47 @@
 			}
 		}
 
-		.chosen-container{
+		.upload-section{
 
+			margin-top: 15px;
+			margin-bottom: 15px;
+			.select-image{
+				width: 60px;
+			}
+
+			label.upload-txt{
+				margin-top: 10px !important;
+			}
+
+			a.upload-btn{
+				margin-top: 10px !important;
+				display: inline-block;
+
+				@media #{$medium-and-up}{
+					width:40%;
+				}
+			}
+		}
+
+	.w70{
+		width:90% !important;
+
+		@media #{$medium-and-up} {
+			width: 70% !important;
+		}
+	}
+
+	.w45{
+		width:90% !important;
+
+		@media #{$medium-and-up} {
+			width:45% !important;
+		}
+	}
+
+	.chosen-container{
+
+			width:50% !important;
 			.chosen-single{
 				border: 2px solid #E6E6E6 !important;
 				border-radius:5px;
@@ -58,6 +91,27 @@
 						}
 					}
 				}
+			}
+		}
+	.address-row {
+		margin-bottom: 0px;
+		.col{
+			padding:0;
+
+			.city-field{
+				width:65% !important;
+
+				@media #{$medium-and-up} {
+					width:75% !important;
+				}
+			}
+
+			select{
+				width:85%;
+			}
+
+			.zip-field{
+				width:70% !important;
 			}
 		}
 	}
